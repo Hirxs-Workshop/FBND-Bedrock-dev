@@ -8,8 +8,7 @@ assignees: ''
 ---
 
 ## Necessary information
-- **Type:**
-- **MC Version type:**
+- **MC Version type:** Bedrock
 - **MC version:**
 - **FB&D version:**
 - **Discord nametag:**
