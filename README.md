@@ -1,104 +1,73 @@
-![Image](https://raw.githubusercontent.com/Hirxs-MC/FD-Bedrock-development/main/FNAF%E2%80%99S%20DECORATIONS.svg)
+**![](https://hirxs-workshop.com/wp-content/uploads/2024/12/fsdfasda-2.png)**
 
-> [!NOTE]
-> 🔧 This page is created so that you can see the development of FD and also be able to be aware of FD updates if the website is not working for you or something like that, you can also use FD for a personal project For you, if your project will be public, send a message to hyrxs commenting on this and see if he approves (you can also use this source to create a dlc for the addon)
+### <span style="color: #ba372a;"><a style="color: #ba372a;" href="https://mcpedl.com/fnaf-blocks/" rel="nofollow"><span style="text-decoration: underline;"><strong>FNaF's Build &amp; Decor for Bedrock</strong></span></a></span>
 
-## ***Developers & Insiders/Testers***
-Creator
-- Hyrxs
+An addon with which you can recreate the restaurant from the famous FNAF game but now in Minecraft Bedrock! This addon is currently still under development, so there are missing blocks such as those of FNAF 2,3,4, etc...
 
-Coproyect manager
-- Hryu (Modeler & Animator) (EX)
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
 
-Helpers
-- Cheez (Models & Textures)
-- Jennyfer (Textures)
-- Murasaki (Modeler,suits code,textures)
+![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Titulo.png)
+---------------------------------------------------------------------
 
-Insiders/Testers
-- doortame
-- YellowRabbit
-- Myst
-- Dargelixt Gamer
-- Claus
-- Springdom
-- Bh11us
-- croaked.
-- Elias
-- Kivi's
-- Potato_Fan
-- Thomas York
-- Xeno Neo
-- ZachDoesGames
-- Ghosty
-- ManSam
-- The FantasticBOB
-- PuppetMZ
-- lasoyas
+\- You can create a pizzeria using a wide variety of blocks that will expand every wednesday  
+\- The blocks have a function to change the variants of the blocks using the item Changer Tool  
+\- Decorative blocks really well designed and added to avoid any bugs  
+\- Good textures and designs  
+\- and more!
 
-_____________________________________
-<details>
-  <summary>📚 - FD Bedrock - Description</summary>
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
+---------------------------------------------------------------------------------------------------------------
 
-![Image](https://hirxs-website.net/wp-content/uploads/2023/11/image-31-1.png)
-## FNaF's Decorations for Bedrock edition
+![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Titulo-1.png)
+-----------------------------------------------------------------------
 
-#### An addon with which you can recreate the restaurant from the famous FNAF game but now in Minecraft Bedrock! This addon is currently still under development, so there are missing blocks such as those of FNAF 2,3,4, etc...
+Ever wanted to recreate the restaurant from FNAF 1/2 in Minecraft? Well, now you can do it with FNAF's Decorations, this addon adds a wide variety of blocks to decorate, obviously inspired by the FNAF 1/2 restaurant, also in the future, blocks based on other FNAF 2,3 restaurants or even the house on 4 will be added!
 
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
-## ***Features***
-- You can create a pizzeria using a wide variety of blocks that will expand every wednesday
-- The blocks have a function to change the variants of the blocks using the mc vanilla axes
-- Decorative blocks really well designed and added to avoid any bugs
-- Good textures and designs
-- and more!
+Also, this addon you can use it in your maps based on FNAF 1/2/3, but you have to leave respective credits of Modrinth link of this mod
 
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
-## ***Description***
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
+---------------------------------------------------------------------------------------------------------------
 
-> Ever wanted to recreate the restaurant from FNAF 1/2 in Minecraft? Well, now you can do it with FNAF's Decorations, this addon adds a wide variety of blocks to decorate, obviously inspired by the FNAF 1/2 restaurant, also in the future, blocks based on other FNAF 2,3 restaurants or even the house on 4 will be added!
+### <span style="color: #fff;"><strong>PROJECT MAIN DEV</strong></span>
 
-> Also, this addon you can use it in your maps based on FNAF 1/2/3, but you have to leave respective credits of Modrinth link of this mod
+* * *
 
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
-## ***Compatibility versions:***
-- 1.20.50 🕛 (Working on this support)
-- 1.20.40 ✅ 
-- 1.20.30 ⚠️ (All blocks,items and entities works,but the cameras no)
-- 1.20.20 ⚠️ (All blocks,items and entities works,but the cameras no)
-- 1.20.10 ❌
+*   <span style="color: #ced4d9;"><strong>HirxsMC</strong></span> (Animatronics, Code, Textures & Models)
 
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
-## ***Social Accounts:***
+### <span style="color: #fff;"><strong>PROJECT OG DEVELOPER</strong></span>
 
-**Twitter/X** 
-- *[@Hirxs_MC](https://x.com/@Hirxs_mc)*
+* * *
 
-**Youtube** 
-- *https://www.youtube.com/@Hirxs_MC/featured*
+*   <span style="color: #ced4d9;"><strong>stupid_cheezit </strong></span> (Textures & Models)
 
-**Discord Community**
-- *https://discord.gg/zRYvw9Ft8e*
+### <span style="color: #fff;"><strong>PROJECT DEVELOPERS</strong></span>
 
-**Discord username**
-- *hirxs_mc*
+* * *
 
-## ***All Helpers***
-Creator
-- Hyrxs
+> *   **<span style="color: #ced4d9;">chypd0</span>** (Textures & Models)
+> *   <span style="color: #ced4d9;"><strong>.cameraman27</strong></span> (Textures & Models)
+> *   <span style="color: #ced4d9;"><strong>kristoffer1976</strong></span> (Textures & Models)
+> *   <span style="color: #ced4d9;"><strong>mansam47</strong></span> (Animatronics, Textures & Models)
+> *   **<span style="color: #ced4d9;">fantasticbob_mc</span>** (Textures & Models)
+> *   **<span style="color: #ced4d9;">electro1987</span>** (Concept art)
+> *   <span style="color: #ced4d9;"><strong>polarfredrick</strong></span> (Animatronics, Textures & Models)
+> *   **<span style="color: #ced4d9;">abcbutter0609</span>** (Animatronics, textures & Models)
 
-Coproyect manager
-- Hryu (Modeler & Animator)
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
 
-Helpers
-- Cheez (Models & Textures)
-- Jenny (Textures)
-- Murasaki (Modeler,suits code,textures)
+  
+![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Titulo-2.png)
+--------------------------------------------------------------------------
 
-![Image](https://cdn.discordapp.com/attachments/962161701040562206/1145117919039209563/image_21.png)
-## Make sure you have these experimental options enabled in your world to avoid bugs and performance issues!
+![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Screenshot-2024-12-02-234837.png)
 
-![Image](https://media.discordapp.net/attachments/962161701040562206/1074891143898202164/Screenshot_2023-02-13_162254.png)
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
 
-Keep in mind that this addon is still in BETA status so there are many more blocks to add but don't worry, this addon will have constant updates to add more blocks!
-</details>
+[![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Copy-of-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Agregar-un-titulo-4.png)](https://discord.gg/jCcWuTFxk3)
+
+Join to Hirx's Community Server!
+================================
+
+![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
+
+undefined
