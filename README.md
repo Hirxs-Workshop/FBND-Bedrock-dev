@@ -1,4 +1,4 @@
-### [**FNaF's Build & Decor for Bedrock**](https://mcpedl.com/fnaf-blocks/)
+# [**FNaF's Build & Decor for Bedrock**](https://mcpedl.com/fnaf-blocks/)
 
 An addon with which you can recreate the restaurant from the famous FNAF game but now in Minecraft Bedrock! This addon is currently still under development, so there are missing blocks such as those of FNAF 2,3,4, etc...
 
