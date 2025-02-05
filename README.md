@@ -55,7 +55,3 @@ Also, this addon you can use it in your maps based on FNAF 1/2/3, but you have t
 ![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
 
 [![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Copy-of-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Agregar-un-titulo-4.png)](https://discord.gg/jCcWuTFxk3)
-
-# Join to Hirx's Community Server!
-
-![](https://api.mcpedl.com/storage/submissions/204447/images/fnaf-decorations-v4-pre-release-2--phase-1-_3.png)
