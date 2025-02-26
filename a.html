@@ -1151,7 +1151,7 @@ function closeViewer() {
           dateP.classList.add("hw-gallery-card-date");
           dateP.textContent = commitDate 
             ? new Date(commitDate).toLocaleDateString()
-            : "Fecha desconocida";
+            : "???";
 
           footer.appendChild(dateP);
           card.appendChild(img);
@@ -1159,7 +1159,6 @@ function closeViewer() {
           galleryGrid.appendChild(card);
         });
 
-        // 6. Animación opcional
         applyFadeInEffect(galleryGrid);
       })
       .catch(error => {
@@ -1167,7 +1166,6 @@ function closeViewer() {
       });
   }
 
-  // =========== Inicialización ===========
   function fetchAllData() {
     fetchReadme();
     fetchChangelog();
