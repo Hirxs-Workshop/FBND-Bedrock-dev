@@ -1,7 +1,7 @@
 import { system, world } from "@minecraft/server";
 
 system.beforeEvents.startup.subscribe(initEvent => {
-    initEvent.BlockComponentRegistry.registerCustomComponent('fbd:stair_placement', {
+    initEvent.blockComponentRegistry.registerCustomComponent('fbd:stair_placement', {
         onPlace: e => {
             const { block } = e;
             const northBlock = block.north();

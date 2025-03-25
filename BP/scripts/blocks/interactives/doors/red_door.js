@@ -346,7 +346,7 @@ world.beforeEvents.playerBreakBlock.subscribe((data) => {
   } catch { }
 });
 let int = 0;
-world.beforeEvents.worldInitialize.subscribe((data) => {
+system.beforeEvents.startup.subscribe((data) => {
   int = int + 1;
   if (int != 1) return;
   for (const comp of blockComps) {

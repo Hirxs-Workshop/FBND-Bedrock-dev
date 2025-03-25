@@ -5,14 +5,18 @@ system.beforeEvents.startup.subscribe(initEvent => {
     onUseOn: e => {
       const { block, player } = e;
       if (block.hasTag('changeable')) {
-        const updates = e.block.permutation.getState("p:changer")
-        block.setPermutation(block.permutation.withState("p:changer", updates + 1));
-        block.dimension.playSound("block.lantern.break", block.center());
-        block.dimension.spawnParticle("foxes:texture", block.center());
+        const currentState = Number(block.permutation.getState("p:changer")) || 0;
+        const newState = currentState + 1;
+        block.setPermutation(block.permutation.withState("p:changer", newState));
+        const center = block.center();
+        block.dimension.playSound("block.lantern.break", center);
+        block.dimension.spawnParticle("foxes:texture", center);
       }
     }
-  })
+  });
 });
+
+
 
 system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:banjo_sound', {

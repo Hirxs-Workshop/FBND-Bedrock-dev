@@ -1236,20 +1236,6 @@ system.beforeEvents.startup.subscribe(({ blockComponentRegistry }) => {
   });
 });
 
-system.beforeEvents.startup.subscribe(initEvent => {
-  initEvent.itemComponentRegistry.registerCustomComponent('test:changer_tool', {
-    onUseOn: e => {
-      const { block, player } = e;
-      if (block.hasTag('changeable')) {
-        const updates = e.block.permutation.getState("p:changer");
-        block.setPermutation(block.permutation.withState("p:changer", updates + 1));
-        block.dimension.playSound("block.lantern.break", block.center());
-        block.dimension.spawnParticle("foxes:texture", block.center());
-      }
-    }
-  });
-});
-
 system.beforeEvents.startup.subscribe(event => {
   event.blockComponentRegistry.registerCustomComponent("fbd:snack_variants_function", {
     onPlace: onPlaceEvent => {
