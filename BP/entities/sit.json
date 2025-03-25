@@ -76,14 +76,6 @@
 					},
 					{
 						"block": {
-							"name": "fb:pizzeria_chairs"
-						},
-						"exited_block_event": {
-							"event": "kill"
-						}
-					},
-					{
-						"block": {
 							"name": "fb:black_party_chair"
 						},
 						"exited_block_event": {

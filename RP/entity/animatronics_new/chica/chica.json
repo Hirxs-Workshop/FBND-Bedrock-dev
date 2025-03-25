@@ -38,7 +38,7 @@
 				"default": "geometry.chik.geo_2"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {

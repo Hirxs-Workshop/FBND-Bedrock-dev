@@ -38,12 +38,11 @@
 				"default": "geometry.spring_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#B88A00",
-				"overlay_color": "#1E1D1B"
+				"texture": "springbonnie_souled"
 			}
 		}
 	}

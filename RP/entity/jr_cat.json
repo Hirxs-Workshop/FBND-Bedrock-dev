@@ -46,8 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#FFBF00",
-				"overlay_color": "#FFD580"
+				"texture": "jr_cat_statue"
 			}
 		}
 	}

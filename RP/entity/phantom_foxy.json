@@ -11,7 +11,7 @@
 				"default": "textures/entity/fnaf3/phantom_foxy"
 			},
 			"spawn_egg": {
-				"texture": "phantom_freddy_icon"
+				"texture": "phantom_foxy_statue"
 			},
 			"animations": {
 				"default_pose": "animation.new_withered_foxy.idle_test_5",

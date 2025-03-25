@@ -7,9 +7,9 @@
 				"category": "construction"
 			},
 			"traits": {
-				"minecraft:placement_direction": {
+				"minecraft:placement_position": {
 					"enabled_states": [
-						"minecraft:cardinal_direction"
+						"minecraft:block_face"
 					]
 				}
 			},
@@ -18,10 +18,32 @@
 					0,
 					1,
 					2
-				]
+				],
+				"fb:rotation": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				}
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
@@ -63,23 +85,14 @@
 					16,
 					16
 				]
-			}
+			},
+			"minecraft:custom_components": [
+				"fd:advanced_rotation_v1"
+			]
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							180,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"condition": "q.block_state('fb:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -91,19 +104,19 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"condition": "q.block_state('fb:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							0,
+							180,
 							0
 						]
 					}
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"condition": "q.block_state('fb:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -115,13 +128,32 @@
 				}
 			},
 			{
-				"condition": "q.block_state('p:facing') == 3",
+				"condition": "q.block_state('minecraft:block_face') != 'up'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
 				}
 			},
 			{
@@ -134,7 +166,16 @@
 							"ambient_occlusion": false
 						}
 					},
-					"minecraft:geometry": "geometry.battington_shelve1"
+					"minecraft:geometry": {
+						"identifier": "geometry.battington_shelve1",
+						"bone_visibility": {
+							"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
+							"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
+							"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
+							"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
+							"side": "q.block_state('minecraft:block_face') != 'up'"
+						}
+					}
 				}
 			},
 			{
@@ -147,7 +188,16 @@
 							"ambient_occlusion": false
 						}
 					},
-					"minecraft:geometry": "geometry.battington_shelve2"
+					"minecraft:geometry": {
+						"identifier": "geometry.battington_shelve2",
+						"bone_visibility": {
+							"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
+							"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
+							"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
+							"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
+							"side": "q.block_state('minecraft:block_face') != 'up'"
+						}
+					}
 				}
 			},
 			{
@@ -160,7 +210,16 @@
 							"ambient_occlusion": false
 						}
 					},
-					"minecraft:geometry": "geometry.battington_shelve3"
+					"minecraft:geometry": {
+						"identifier": "geometry.battington_shelve3",
+						"bone_visibility": {
+							"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
+							"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
+							"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
+							"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
+							"side": "q.block_state('minecraft:block_face') != 'up'"
+						}
+					}
 				}
 			}
 		]

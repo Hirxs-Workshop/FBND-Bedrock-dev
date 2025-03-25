@@ -34,18 +34,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": "geometry.ffd_poster",
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
+			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
 					-8,

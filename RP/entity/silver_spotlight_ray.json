@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fd:silver_spotlight_ray",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "fbnd_light"
+			},
+			"textures": {
+				"default": "textures/entity/spotlight_colors/silver_spotlight/yellow",
+				"blue": "textures/entity/spotlight_colors/silver_spotlight/red",
+				"red": "textures/entity/spotlight_colors/silver_spotlight/blue",
+				"green": "textures/entity/spotlight_colors/silver_spotlight/green",
+				"pink": "textures/entity/spotlight_colors/silver_spotlight/pink"
+			},
+			"geometry": {
+				"default": "geometry.silver_spotlight_ray"
+			},
+			"render_controllers": [
+				"controller.render.silver_spotlight_ray"
+			]
+		}
+	}
+}

@@ -1,0 +1,215 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:small_neon_line",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"fbnd:neon_colors": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 0",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 1",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 2",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 3",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 4",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 5",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "red_neon_light_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		], 
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "red_neon_light",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:neon_place_entity"
+			],
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 6,
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": "geometry.small_neon_line",
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					6
+				],
+				"size": [
+					16,
+					16,
+					2
+				]
+			}
+		}
+	}
+}

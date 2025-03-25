@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "fb:office_light",
 			"menu_category": {
-				"category": "commands"
+				"category": "none",
+				"is_hidden_in_commands": false
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -34,29 +35,29 @@
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-8,
-					16,
-					-8
+					-7,
+					7,
+					-7
 				],
 				"size": [
-					16,
-					2,
-					16
+					14,
+					9,
+					14
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-8,
-					14,
-					-8
+					-7,
+					7,
+					-7
 				],
 				"size": [
-					16,
-					2,
-					16
+					14,
+					9,
+					14
 				]
 			},
-			"minecraft:light_emission": 0
+			"minecraft:light_emission": 15
 		},
 		"permutations": [
 			{

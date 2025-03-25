@@ -26,8 +26,7 @@
 				"controller.render.nothing"
 			],
 			"spawn_egg": {
-				"base_color": "#FFD934",
-				"overlay_color": "#FF8219"
+				"texture": "toy_chica_showtime"
 			}
 		}
 	}

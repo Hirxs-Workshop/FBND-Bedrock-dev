@@ -23,6 +23,22 @@
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"tag:red_soda": {},
 			"minecraft:collision_box": {
 				"origin": [

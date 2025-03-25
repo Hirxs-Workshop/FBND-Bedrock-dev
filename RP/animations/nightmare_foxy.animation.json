@@ -1,0 +1,482 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.nightmare_foxy.idle1": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [
+						15.00815,
+						-7.7275,
+						-9.82599
+					]
+				},
+				"armL2": {
+					"rotation": [
+						13.77969,
+						-11.7105,
+						-33.54839
+					]
+				},
+				"lower7": {
+					"rotation": [
+						-43.29913,
+						-14.77679,
+						25.38949
+					]
+				},
+				"hand3": {
+					"rotation": [
+						0,
+						37.5,
+						0
+					]
+				},
+				"fingers2": {
+					"rotation": [
+						0,
+						0,
+						17.5
+					]
+				},
+				"thumb2": {
+					"rotation": [
+						0,
+						47.5,
+						0
+					]
+				},
+				"armL3": {
+					"rotation": [
+						-20,
+						0,
+						40
+					]
+				},
+				"lower8": {
+					"rotation": [
+						-48.08298,
+						16.95233,
+						43.55801
+					]
+				},
+				"Head": {
+					"rotation": [
+						-7.5,
+						0,
+						17.5
+					]
+				},
+				"bone": {
+					"rotation": [
+						15,
+						0,
+						0
+					]
+				},
+				"belowpart": {
+					"rotation": [
+						0,
+						-17.5,
+						0
+					]
+				},
+				"legL5": {
+					"rotation": [
+						-27.5,
+						47.5,
+						0
+					]
+				},
+				"lower3": {
+					"rotation": [
+						27.70212,
+						6.64851,
+						3.47875
+					]
+				},
+				"legR2": {
+					"rotation": [
+						0,
+						-20,
+						0
+					]
+				}
+			}
+		},
+		"animation.nightmare_foxy.idle2": {
+			"loop": true,
+			"bones": {
+				"feddy": {
+					"rotation": [
+						0,
+						0,
+						-22.5
+					],
+					"position": [
+						7,
+						1,
+						0
+					]
+				},
+				"upperpart": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					],
+					"position": [
+						0,
+						-1,
+						0
+					]
+				},
+				"armL2": {
+					"rotation": [
+						-37.5,
+						0,
+						-45
+					]
+				},
+				"lower7": {
+					"rotation": [
+						-31.32977,
+						-35.63104,
+						19.52546
+					]
+				},
+				"hand3": {
+					"rotation": [
+						0,
+						0,
+						15
+					]
+				},
+				"thumb2": {
+					"rotation": [
+						0,
+						37.5,
+						0
+					]
+				},
+				"armL3": {
+					"rotation": [
+						-32.5,
+						0,
+						60
+					]
+				},
+				"lower8": {
+					"rotation": [
+						5.46045,
+						39.5377,
+						12.56178
+					]
+				},
+				"Head": {
+					"rotation": [
+						-5,
+						0,
+						30
+					]
+				},
+				"bone": {
+					"rotation": [
+						17.5,
+						0,
+						0
+					]
+				},
+				"belowpart": {
+					"position": [
+						0,
+						-1,
+						0
+					]
+				},
+				"legL5": {
+					"rotation": [
+						-42.5,
+						27.5,
+						25
+					],
+					"position": [
+						0,
+						1,
+						0
+					]
+				},
+				"lower3": {
+					"rotation": [
+						45,
+						0,
+						0
+					]
+				},
+				"legR2": {
+					"rotation": [
+						-7.43656,
+						-44.5119,
+						10.54684
+					]
+				},
+				"foot3": {
+					"rotation": [
+						19.8423,
+						-2.55868,
+						7.05239
+					]
+				}
+			}
+		},
+		"animation.nightmare_foxy.idle3": {
+			"loop": true,
+			"bones": {
+				"upperpart": {
+					"rotation": [
+						0,
+						0,
+						5
+					]
+				},
+				"armL2": {
+					"rotation": [
+						-140.62539,
+						-56.85811,
+						135.57543
+					]
+				},
+				"lower7": {
+					"rotation": [
+						-5.17544,
+						14.94159,
+						36.1622
+					]
+				},
+				"armL3": {
+					"rotation": [
+						-163.71152,
+						3.80153,
+						-149.20314
+					]
+				},
+				"lower8": {
+					"rotation": [
+						17.5,
+						0,
+						-127.5
+					]
+				},
+				"Head": {
+					"rotation": [
+						0,
+						0,
+						-10
+					]
+				},
+				"bone": {
+					"rotation": [
+						12.5,
+						0,
+						0
+					]
+				},
+				"legL5": {
+					"rotation": [
+						0,
+						20,
+						0
+					]
+				},
+				"legR2": {
+					"rotation": [
+						0,
+						-7.5,
+						0
+					]
+				}
+			}
+		},
+		"animation.nightmare_foxy.idle4": {
+			"loop": true,
+			"bones": {
+				"armL2": {
+					"rotation": [
+						0,
+						0,
+						-22.5
+					],
+					"position": [
+						-1,
+						0,
+						0
+					]
+				},
+				"lower7": {
+					"rotation": [
+						0,
+						0,
+						37.5
+					]
+				},
+				"hand3": {
+					"rotation": [
+						0,
+						-17.5,
+						-7.5
+					]
+				},
+				"thumb2": {
+					"rotation": [
+						0,
+						27.5,
+						0
+					]
+				},
+				"armL3": {
+					"rotation": [
+						0,
+						0,
+						20
+					]
+				},
+				"lower8": {
+					"rotation": [
+						0,
+						0,
+						-35
+					]
+				},
+				"bone": {
+					"rotation": [
+						10,
+						0,
+						0
+					]
+				},
+				"legL5": {
+					"rotation": [
+						0,
+						20,
+						0
+					]
+				}
+			}
+		},
+		"animation.nightmare_foxy.idle5": {
+			"loop": true,
+			"bones": {
+				"feddy": {
+					"position": [
+						0,
+						-3,
+						0
+					]
+				},
+				"upperpart": {
+					"rotation": [
+						55,
+						0,
+						0
+					]
+				},
+				"armL2": {
+					"rotation": [
+						-119.66122,
+						-15.7528,
+						16.81586
+					]
+				},
+				"lower7": {
+					"rotation": [
+						-17.99014,
+						32.68214,
+						13.2713
+					]
+				},
+				"hand3": {
+					"rotation": [
+						0,
+						42.5,
+						0
+					]
+				},
+				"thumb2": {
+					"rotation": [
+						0,
+						50,
+						0
+					]
+				},
+				"armL3": {
+					"rotation": [
+						-77.79698,
+						51.86576,
+						27.15389
+					]
+				},
+				"lower8": {
+					"rotation": [
+						-35.36922,
+						34.60395,
+						-28.11381
+					]
+				},
+				"Head": {
+					"rotation": [
+						-27.55814,
+						-17.94973,
+						-30.56393
+					]
+				},
+				"bone": {
+					"rotation": [
+						22.5,
+						0,
+						0
+					]
+				},
+				"legL5": {
+					"rotation": [
+						-56.30993,
+						25.65891,
+						16.10211
+					]
+				},
+				"lower3": {
+					"rotation": [
+						64.57552,
+						11.91579,
+						-3.70143
+					]
+				},
+				"legR2": {
+					"rotation": [
+						-47.5,
+						-37.5,
+						0
+					]
+				},
+				"lower6": {
+					"rotation": [
+						50,
+						0,
+						0
+					],
+					"position": [
+						0,
+						1,
+						0
+					]
+				},
+				"foot3": {
+					"position": [
+						0,
+						0.4,
+						0
+					]
+				}
+			}
+		}
+	}
+}

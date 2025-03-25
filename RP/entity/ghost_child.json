@@ -46,8 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#E0DFDF",
-				"overlay_color": "#1C1A1A"
+				"texture": "crying_kid"
 			}
 		}
 	}

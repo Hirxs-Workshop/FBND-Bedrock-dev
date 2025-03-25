@@ -57,7 +57,6 @@
 				]
 			},
 			"minecraft:map_color": "#646D85",
-			"minecraft:light_dampening": 15,
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 4
 			},

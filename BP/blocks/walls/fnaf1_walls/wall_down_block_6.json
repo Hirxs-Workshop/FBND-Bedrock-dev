@@ -20,7 +20,7 @@
 					"texture": "bridge_wall_down_block_6",
 					"render_method": "opaque"
 				},
-				"north": {
+				"*": {
 					"texture": "bridge_wall_down_block_6",
 					"render_method": "opaque"
 				}

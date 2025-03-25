@@ -1,6 +1,6 @@
-import { world, BlockPermutation, ItemStack } from '@minecraft/server'
+import { world, BlockPermutation, ItemStack, system } from '@minecraft/server'
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('test:changer_tool', {
     onUseOn: e => {
       const { block, player } = e;
@@ -14,40 +14,40 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
   })
 });
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:banjo_sound', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("note.bass");
     }
   })
 });
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:guitar_sound', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("note.guitar");
     }
   })
 });
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:flashlight_on', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("flashlight.click");
-      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb: flashlight")
+      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb:flashlight")
     }
   })
 });
 
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
   initEvent.itemComponentRegistry.registerCustomComponent('fbd:flashlight_off', {
-    onUseOn: e => {
+    onUse: e => {
       const { block, player } = e;
       e.source.playSound("flashlight.click");
-      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb: flashlight_off")
+      e.source.runCommand("replaceitem entity @s slot.weapon.mainhand 0 fb:flashlight_off")
       return;
     }
   })
@@ -55,7 +55,7 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
 
 // ITEMS
 
-// world.beforeEvents.worldInitialize.subscribe(initEvent => {
+// system.beforeEvents.startup.subscribe(initEvent => {
 //  initEvent.itemComponentRegistry.registerCustomComponent('fbd:stars_change', {
 //    onUseOn: e => {
 //      const { block, player } = e;

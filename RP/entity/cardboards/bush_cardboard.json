@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:bush_cardboard",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/cardboards/bush_cardboard"
+			},
+			"geometry": {
+				"default": "geometry.bush"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "bush_cardboard_item"
+			}
+		}
+	}
+}

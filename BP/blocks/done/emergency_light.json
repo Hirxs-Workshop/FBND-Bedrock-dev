@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fd:emergency_light",
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_position": {

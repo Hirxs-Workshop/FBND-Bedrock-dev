@@ -80,20 +80,20 @@
 								"minecraft:dead_"
 							]
 						},
-						"run_command": {
+						"queue_command": {
 							"command": [],
 							"target": "self"
 						}
 					}
 				],
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"execute as @e[type=showtime_toy_freddy_nm] run function stage_plate_test"
 					]
 				}
 			},
 			"despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @e[type=fb:toy_freddy_nm,r=4] slowness 5 20 true",
 						"event entity @e[type=fb:toy_freddy_nm,r=6] fb:toy_freddy_nm_showtime",

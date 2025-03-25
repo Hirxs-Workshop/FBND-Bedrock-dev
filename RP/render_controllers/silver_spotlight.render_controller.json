@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.silver_spotlight_ray": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.entity_beam_additive"
+				}
+			],
+			"textures": [
+				"array.variants[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.default",
+						"Texture.blue",
+						"Texture.red",
+						"texture.green",
+						"texture.pink"
+					]
+				}
+			},
+			"light_color_multiplier": 1,
+			"ignore_lighting": true
+		}
+	}
+}

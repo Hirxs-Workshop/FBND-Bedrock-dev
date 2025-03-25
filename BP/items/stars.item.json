@@ -1,9 +1,8 @@
-	{
+{
 	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:stars_item",
-			"category": "construction",
 			"menu_category": {
 				"category": "construction"
 			}

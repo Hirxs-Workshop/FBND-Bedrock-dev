@@ -9,7 +9,10 @@
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.solid_block_2",
+			            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "hw_wall_texture",

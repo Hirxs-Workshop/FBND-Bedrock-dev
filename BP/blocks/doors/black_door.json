@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "fb:black_door",
 			"menu_category": {
+				"category": "none",
 				"is_hidden_in_commands": false
 			},
 			"states": {
@@ -191,7 +192,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "black_door_bottom",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -202,7 +203,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "black_door_top",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}

@@ -1,6 +1,6 @@
-import { world, ItemStack } from '@minecraft/server';
+import { world, ItemStack, system } from '@minecraft/server';
 
-world.beforeEvents.worldInitialize.subscribe(eventData => {
+system.beforeEvents.startup.subscribe(eventData => {
   eventData.blockComponentRegistry.registerCustomComponent('fbd:on_player_destroy', {
     onPlayerDestroy(e) {
       const { player, dimension } = e;

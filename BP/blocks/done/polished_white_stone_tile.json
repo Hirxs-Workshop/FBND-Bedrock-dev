@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fd:polished_white_stone_tiles",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#181818",
+			"tag:wall": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 3
+			}
+		}
+	}
+}

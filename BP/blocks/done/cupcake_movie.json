@@ -1,10 +1,11 @@
-	{
+{
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:cupcake_block_movie",
 			"menu_category": {
-				"category": "construction"
+				"category": "none",
+				"is_hidden_in_commands": false
 			},
 			"traits": {
 				"minecraft:placement_direction": {

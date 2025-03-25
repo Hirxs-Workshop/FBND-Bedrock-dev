@@ -46,8 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#6F6A13",
-				"overlay_color": "#B2951F"
+				"texture": "withered_golden_freddy_statue"
 			}
 		}
 	}

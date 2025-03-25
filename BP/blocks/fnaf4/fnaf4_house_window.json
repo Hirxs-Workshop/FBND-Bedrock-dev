@@ -1,108 +1,309 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:fnaf4_house_window",
-			"is_experimental": false,
-			"properties": {
-				"bridge:block_rotation": [
-					2,
-					3,
-					4,
-					5
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"fbd:north_block_connection": [
+					0,
+					1
+				],
+				"fbd:south_block_connection": [
+					0,
+					1
+				],
+				"fbd:east_block_connection": [
+					0,
+					1
+				],
+				"fbd:west_block_connection": [
+					0,
+					1
 				]
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.house_window",
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 5,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": false,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fnaf4_house_window",
 					"render_method": "blend"
+				},
+				"up": {
+					"texture": "fnaf4_house_window_top",
+					"render_method": "blend"
 				}
 			},
-			"minecraft:pick_collision": {
-				"origin": [
-					-8,
-					0,
-					-1
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					-8,
-					0,
-					-1
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
-			"minecraft:block_light_absorption": 0,
-			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
-			},
-			"tag:wall": {}
+			"minecraft:custom_components": [
+				"fbd:curtain_connection"
+			],
+			"minecraft:geometry": {
+				"identifier": "geometry.panel_block",
+				"bone_visibility": {
+					"north": false,
+					"south": false,
+					"west": false,
+					"east": false
+				}
+			}
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": true,
+							"west": true,
+							"east": true
+						}
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"west": false,
+							"east": false
+						}
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": false,
+							"west": false,
+							"east": false
+						}
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": true,
+							"west": false,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"west": false,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"west": true,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": true,
+							"west": true,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": true,
+							"west": false,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": false,
+							"west": true,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": false,
+							"west": false,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": true,
+							"west": true,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": false,
+							"west": true,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": true,
+							"west": true,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": true,
+							"west": false,
+							"east": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": true,
+							"south": true,
+							"west": false,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.panel_block",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"west": true,
+							"east": true
+						}
+					}
 				}
 			}
-		],
-		"events": {
-			"bridge:update_rotation": {
-				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
-				}
-			}
-		}
+		]
 	}
 }

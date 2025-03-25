@@ -50,13 +50,11 @@
 			"minecraft:movement": {
 				"value": 0.13
 			},
-			"minecraft:hunter_mode": {
-				"minecraft:navigation.generic": {
-					"is_amphibious": true,
-					"can_break_doors": true,
-					"can_walk": true,
-					"avoid_sun": true
-				}
+			"minecraft:navigation.generic": {
+				"is_amphibious": true,
+				"can_break_doors": true,
+				"can_walk": true,
+				"avoid_sun": true
 			},
 			"minecraft:behavior.melee_attack": {
 				"priority": 1,

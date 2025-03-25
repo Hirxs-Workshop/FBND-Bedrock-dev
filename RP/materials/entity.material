@@ -4,10 +4,26 @@
     "custom_animated:entity_emissive_alpha": {
       "+defines": [
         "BLEND",
-        "ALPHA_TEST"
+        "ALPHA_TEST",
+        "USE_UV_ANIM"
       ],
       "+states": [
         "Blending"
+      ]
+    },
+    "fbnd_light:entity_static": {
+      "+defines": [ "USE_UV_ANIM", "ALPHA_TEST", "BLEND" ],
+      "+states": [         "Blending",
+      
+      "DisableDepthWrite" ],
+      "blendSrc": "One",
+      "blendDst": "One",
+      "msaaSupport": "Both",
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureWrap": "Repeat"
+        }
       ]
     },
     "carousel_test:entity_emissive_alpha": {

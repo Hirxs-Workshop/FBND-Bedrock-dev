@@ -1,0 +1,68 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:vent_light",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": false
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:light_emission": 0,
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "texture_vent_block",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				},
+				"up": {
+					"texture": "texture_vent_block_off",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				},
+				"down": {
+					"texture": "texture_vent_block_off",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

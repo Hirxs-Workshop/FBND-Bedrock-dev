@@ -127,7 +127,7 @@
 		},
 		"events": {
 			"despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"fill ~-1 ~1 ~1 ~1 ~-1 ~-1 air [] replace fb:stage_plate_withered_freddy_nm",
 						"execute at @e[type=fb:stage_plate_withered_freddy_nm] run fill ~-1 ~1 ~1 ~1 ~-1 ~-1 air [] replace fb:stage_plate_withered_freddy_nm",
@@ -143,7 +143,7 @@
 				}
 			},
 			"fb:day_execute": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon fb:stage_plate_mark_withered_freddy_nm2 ~ ~ ~"
 					],
@@ -151,7 +151,7 @@
 				}
 			},
 			"fb:night_execute": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon fb:stage_plate_mark_withered_freddy_nm3 ~ ~ ~"
 					],
@@ -159,7 +159,7 @@
 				}
 			},
 			"fb:rotate": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tp @s ~ ~ ~ ~45 ~",
 						"particle fb:rotate ~ ~1 ~",
@@ -169,7 +169,7 @@
 				}
 			},
 			"fb:remove": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"execute at @e[type=fb:stage_plate_withered_freddy_nm] run fill ~-1 ~1 ~1 ~1 ~-1 ~-1 air [] replace fb:stage_plate_withered_freddy_nm",
 						"execute as @e[type=fb:stage_plate_withered_freddy_nm] run fill ~-1 ~1 ~1 ~1 ~-1 ~-1 air [] replace fb:stage_plate_withered_freddy_nm",

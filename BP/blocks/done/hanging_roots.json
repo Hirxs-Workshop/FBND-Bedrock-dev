@@ -116,7 +116,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -129,7 +129,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -142,7 +142,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 2",
+				"condition": "q.block_state('p:changer') == 2",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -155,7 +155,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 3",
+				"condition": "q.block_state('p:changer') == 3",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {

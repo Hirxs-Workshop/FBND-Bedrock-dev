@@ -8,101 +8,32 @@
 				"texture_height": 16,
 				"visible_bounds_width": 2,
 				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [
-					0,
-					0.75,
-					0
-				]
+				"visible_bounds_offset": [0, 0.75, 0]
 			},
 			"bones": [
 				{
 					"name": "bb_main",
-					"pivot": [
-						0,
-						0,
-						0
-					],
+					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [
-								-8,
-								4,
-								7
-							],
-							"size": [
-								16,
-								5,
-								0
-							],
+							"origin": [-8, 3, 7],
+							"size": [16, 7, 0],
 							"uv": {
-								"north": {
-									"uv": [
-										0,
-										0
-									],
-									"uv_size": [
-										16,
-										5
-									]
-								},
-								"south": {
-									"uv": [
-										16,
-										0
-									],
-									"uv_size": [
-										-16,
-										5
-									]
-								}
+								"north": {"uv": [0, 0], "uv_size": [16, 7]}
 							}
 						},
 						{
-							"origin": [
-								-5.5,
-								6,
-								7
-							],
-							"size": [
-								0,
-								1,
-								1
-							],
+							"origin": [-5.5, 6, 7],
+							"size": [0, 1, 1],
 							"uv": {
-								"east": {
-									"uv": [
-										6,
-										8
-									],
-									"uv_size": [
-										1,
-										1
-									]
-								}
+								"east": {"uv": [6, 10], "uv_size": [1, 1]}
 							}
 						},
 						{
-							"origin": [
-								5.5,
-								6,
-								7
-							],
-							"size": [
-								0,
-								1,
-								1
-							],
+							"origin": [5.5, 6, 7],
+							"size": [0, 1, 1],
 							"uv": {
-								"west": {
-									"uv": [
-										2,
-										9
-									],
-									"uv_size": [
-										1,
-										1
-									]
-								}
+								"west": {"uv": [2, 11], "uv_size": [1, 1]}
 							}
 						}
 					]

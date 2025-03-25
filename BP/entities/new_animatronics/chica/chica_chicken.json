@@ -277,7 +277,7 @@
 		},
 		"events": {
 			"nose": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"playanimation @s animation.fb_chica_chicken.nose",
 						"effect @s slowness 1 2 true"

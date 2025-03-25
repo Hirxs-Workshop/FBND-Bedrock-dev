@@ -1,242 +1,112 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:dev_plush_guyy",
-			"is_experimental": false,
-			"properties": {
-				"fb:block_rotation": [
-					2,
-					3,
-					4,
-					5
-				],
-				"fb:box": [
-					0,
-					1
-				]
-			}
-		},
-		"components": {
-			"minecraft:destroy_time": 1,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:block_light_filter": 0,
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
+			"menu_category": {
+				"category": "construction"
 			},
-			"minecraft:explosion_resistance": 0.1,
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "dev_plush_guyy",
-					"render_method": "alpha_test"
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
 				}
-			},
-			"minecraft:geometry": "geometry.creators_2",
-			"minecraft:aim_collision": {
-				"origin": [
-					-4,
-					0,
-					-1
-				],
-				"size": [
-					8,
-					13,
-					5
-				]
-			},
-			"minecraft:block_collision": {
-				"origin": [
-					-4,
-					0,
-					-1
-				],
-				"size": [
-					8,
-					13,
-					5
-				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "fb:block_placed"
-			},
-			"minecraft:on_placed": {
-				"event": "fb:destroy"
-			},
-			"minecraft:rotation": [
-				0,
-				0,
-				0
-			]
-		},
-		"events": {
-			"fb:destroy": {
-				"sequence": [
-					{
-						"run_command": {
-							"target": "self",
-							"command": [
-								""
-							]
-						}
-					}
-				]
-			},
-			"fb:block_placed": {
-				"sequence": [
-					{
-						"set_block_property": {
-							"fb:block_rotation": "q.cardinal_facing_2d"
-						}
-					},
-					{
-						"set_block_property": {
-							"fb:box": 0
-						}
-					}
-				]
-			},
-			"fb:var_1": {
-				"sequence": [
-					{
-						"condition": "q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_2",
-							"target": "self"
-						}
-					},
-					{
-						"condition": "!q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_1",
-							"target": "self"
-						}
-					}
-				]
-			},
-			"fb:var_2": {
-				"sequence": [
-					{
-						"condition": "q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_2",
-							"target": "self"
-						}
-					},
-					{
-						"condition": "!q.is_sneaking",
-						"trigger": {
-							"event": "fb:box_1",
-							"target": "self"
-						}
-					}
-				]
-			},
-			"fb:box_1": {
-				"sequence": [
-					{
-						"set_block_property": {
-							"fb:box": 1
-						}
-					},
-					{
-						"run_command": {
-							"target": "self",
-							"command": [
-								"gamerule sendcommandfeedback false",
-								"playsound fb:freddy_noze @a[r=5] ~~~ 5",
-								"particle foxes:texture ~ ~ ~"
-							]
-						}
-					}
-				]
-			},
-			"fb:box_2": {
-				"sequence": [
-					{
-						"set_block_property": {
-							"fb:box": 2
-						}
-					},
-					{
-						"run_command": {
-							"target": "self",
-							"command": [
-								"gamerule sendcommandfeedback false",
-								"playsound random.fizz @a[r=5] ~~~ 5",
-								"setblock ~ ~ ~ air 0 destroy",
-								"particle fb:smoke ~ ~ ~"
-							]
-						}
-					}
-				]
 			}
 		},
 		"permutations": [
 			{
-				"condition": "q.block_property('fb:block_rotation') == 2",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 4",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						-90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:block_rotation') == 5",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('fb:box') == 0",
-				"components": {
-					"minecraft:on_interact": {
-						"event": "fb:var_1"
-					},
-					"minecraft:geometry": "geometry.creators_2",
-					"minecraft:on_player_destroyed": {
-						"event": "fb:destroy"
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			},
 			{
-				"condition": "q.block_property('fb:box') == 1",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-					"minecraft:on_interact": {
-						"event": "fb:var_2"
-					},
-					"minecraft:geometry": "geometry.creators_2",
-					"minecraft:on_player_destroyed": {
-						"event": "fb:destroy"
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
 					}
 				}
 			}
-		]
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.creators_2"
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 100
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:custom_components": [
+				"fb:plushy_sound_interaction"
+			],
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "dev_plush_guyy",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false
+				}
+			}
+		}
 	}
 }

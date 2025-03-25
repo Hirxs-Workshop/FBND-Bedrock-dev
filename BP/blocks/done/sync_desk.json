@@ -86,7 +86,6 @@
 						"identifier": "geometry.desk",
 						"bone_visibility": {
 							"couch_left": false,
-							"couch_corner": false,
 							"couch_middle": false,
 							"couch_right": true,
 							"couch": false
@@ -101,7 +100,6 @@
 						"identifier": "geometry.desk",
 						"bone_visibility": {
 							"couch_left": false,
-							"couch_corner": false,
 							"couch_middle": true,
 							"couch_right": false,
 							"couch": false
@@ -116,7 +114,6 @@
 						"identifier": "geometry.desk",
 						"bone_visibility": {
 							"couch_left": true,
-							"couch_corner": false,
 							"couch_middle": false,
 							"couch_right": false,
 							"couch": false

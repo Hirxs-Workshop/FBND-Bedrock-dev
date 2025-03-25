@@ -3,7 +3,6 @@
 	"minecraft:block": {
 		"description": {
 			"menu_category": {
-				"group": "construction",
 				"category": "construction"
 			},
 			"identifier": "fb:floor_3",
@@ -92,9 +91,10 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": {
-				"identifier": "geometry.solid_block_2"
-			},
+            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 			"minecraft:collision_box": {
 				"origin": [
 					-8,

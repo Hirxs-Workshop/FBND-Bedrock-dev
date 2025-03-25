@@ -25,12 +25,9 @@
 					"default": "fb_security_guard_boots"
 				}
 			},
-			"minecraft:render_offsets": "boots",
-			"minecraft:armor": {
-				"protection": 2
-			},
 			"minecraft:wearable": {
-				"slot": "slot.armor.feet"
+				"slot": "slot.armor.feet",
+				"protection": 3
 			},
 			"minecraft:repairable": {
 				"repair_items": [

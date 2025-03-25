@@ -71,17 +71,6 @@
 				}
 			}
 		},
-		"controller.animation.fb_possed_springbonnie.ded.entity": {
-			"states": {
-				"default": {
-					"transitions": [
-						{
-							"ded": "!query.is_alive"
-						}
-					]
-				}
-			}
-		},
 		"controller.animation.fb_possed_springbonnie.function2.entity": {
 			"states": {
 				"default": {

@@ -8,23 +8,23 @@
 				"default": "enderman"
 			},
 			"textures": {
-				"default": "textures/entity/purple_man"
+				"default": "textures/entity/purple_guy"
 			},
 			"animations": {
 				"default_pose": "animation.purple_man.idle",
-				"no_pose": "animation.purple_man.idle2",
-				"solemn_pose": "animation.purple_man.idle3",
-				"athena_pose": "animation.purple_man.walk_idle",
-				"brandish_pose": "animation.purple_man.move1",
-				"honor_pose": "animation.purple_man.move2",
+				"no_pose": "animation.purple_man.idle",
+				"solemn_pose": "animation.purple_man.idle",
+				"athena_pose": "animation.purple_man.idle",
+				"brandish_pose": "animation.purple_man.idle",
+				"honor_pose": "animation.purple_man.idle",
 				"entertain_pose": "animation.purple_man.idle",
-				"salute_pose": "animation.purple_man.idle2",
-				"riposte_pose": "animation.purple_man.idle3",
-				"zombie_pose": "animation.purple_man.walk_idle",
-				"cancan_a_pose": "animation.purple_man.move1",
-				"cancan_b_pose": "animation.purple_man.move2",
+				"salute_pose": "animation.purple_man.idle",
+				"riposte_pose": "animation.purple_man.idle",
+				"zombie_pose": "animation.purple_man.idle",
+				"cancan_a_pose": "animation.purple_man.idle",
+				"cancan_b_pose": "animation.purple_man.idle",
 				"hero_pose": "animation.purple_man.idle",
-				"wiggle": "animation.purple_man.idle2",
+				"wiggle": "animation.purple_man.idle",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},

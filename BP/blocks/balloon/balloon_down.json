@@ -1,10 +1,44 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "fb:balloons_down"
+			"identifier": "fb:balloons_down",
+			"menu_category": {
+				"category": "none"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			}
 		},
 		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					14,
+					16,
+					14
+				]
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "new_balloons_string",
@@ -14,72 +48,64 @@
 				}
 			},
 			"minecraft:geometry": "geometry.balloons",
-			"minecraft:block_light_absorption": 0,
-			"minecraft:block_light_emission": 0,
-			"minecraft:pick_collision": {
-				"origin": [
-					-5,
-					0,
-					-5
-				],
-				"size": [
-					10,
-					16,
-					10
-				]
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					0,
-					0,
-					0
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
-			},
-			"minecraft:on_placed": {
-				"event": "place"
-			},
-			"minecraft:on_player_destroyed": {
-				"event": "destroy"
-			},
-			"minecraft:explosion_resistance": 0.1,
-			"minecraft:loot": "loot_tables/empty.json",
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"allowed_faces": [
-							"up"
+			"minecraft:custom_components": [
+				"fbd:balloons_down",
+				"fbd:balloons_down_destroy"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"tag:north": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
 						]
 					}
-				]
-			},
-			"minecraft:breathability": "air"
-		},
-		"events": {
-			"place": {
-				"set_block_at_pos": {
-					"block_type": "fb:balloons_middle",
-					"block_offset": [
-						0,
-						1,
-						0
-					]
 				}
 			},
-			"destroy": {
-				"set_block_at_pos": {
-					"block_type": "minecraft:air",
-					"block_offset": [
-						0,
-						1,
-						0
-					]
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"tag:east": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"tag:south": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"tag:west": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
 				}
 			}
-		}
+		]
 	}
 }

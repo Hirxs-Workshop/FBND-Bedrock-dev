@@ -31,14 +31,14 @@
 		"components": {
 			"minecraft:collision_box": {
 				"origin": [
+					-7,
 					0,
-					0,
-					0
+					-5
 				],
 				"size": [
-					0,
-					0,
-					0
+					10,
+					2,
+					10
 				]
 			},
 			"minecraft:selection_box": {

@@ -8,7 +8,10 @@
 			}
 		},
 		"components": {
-			"tag:wall": {}
+			"tag:wall": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			}
 		}
 	}
 }

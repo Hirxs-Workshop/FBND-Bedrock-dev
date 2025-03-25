@@ -4,38 +4,142 @@
 		"description": {
 			"identifier": "fb:red_chair",
 			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:vertical_half"
+					]
+				},
 				"minecraft:placement_direction": {
 					"enabled_states": [
 						"minecraft:cardinal_direction"
-					]
+					],
+					"y_rotation_offset": 180
 				}
 			},
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"minecraft:geometry": {
 				"identifier": "geometry.chair"
 			},
-			"minecraft:map_color": "#AE3A3E",
+			"minecraft:map_color": "#90282C",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "red_chair",
 					"render_method": "alpha_test"
 				}
 			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side",
+							"up"
+						]
+					}
+				]
+			},
 			"minecraft:flammable": {
 				"catch_chance_modifier": 5,
 				"destroy_chance_modifier": 10
-			},
-			"minecraft:custom_components": [
-				"fbd:seat_function"
-			]
+			}
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							180
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.chair_upped"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'south' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							180,
+							0,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.chair_upped"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'east' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							180,
+							-270,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.chair_upped"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'west' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							180,
+							270,
+							0
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.chair_upped"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'north' ",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:seat_function"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'south' ",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -43,43 +147,40 @@
 							180,
 							0
 						]
-					}
+					},
+					"minecraft:custom_components": [
+						"fbd:seat_function"
+					]
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'east' ",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							-90,
+							270,
 							0
 						]
-					}
+					},
+					"minecraft:custom_components": [
+						"fbd:seat_function"
+					]
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'west' ",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							0,
+							-270,
 							0
 						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							0
-						]
-					}
+					},
+					"minecraft:custom_components": [
+						"fbd:seat_function"
+					]
 				}
 			}
 		]

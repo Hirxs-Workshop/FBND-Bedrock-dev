@@ -1,103 +1,103 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "fb:light",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false,
-            "runtime_identifier": "minecraft:arrow"
-        },
-        "component_groups": {
-            "fb:despawn": {
-                "minecraft:instant_despawn": {}
-            },
-            "fb:light_timer": {
-                "minecraft:timer": {
-                    "looping": true,
-                    "time": 0.2,
-                    "time_down_event": {
-                        "event": "fb:despawn_process"
-                    }
-                }
-            }
-        },
-        "components": {
-            "minecraft:ageable": {
-                "duration": 20,
-                "grow_up": {
-                    "event": "fb:despawn_process", // make sure entity despawned
-                    "target": "self"
-                }
-            },
-            "minecraft:pushable": {
-                "is_pushable": false,
-                "is_pushable_by_piston": false
-            },
-            "minecraft:is_baby": {},
-            "minecraft:collision_box": {
-                "width": 0,
-                "height": 0
-            },
-            "minecraft:movement.hover": {},
-            "minecraft:navigation.hover": {},
-            "minecraft:can_fly": {},
-            "minecraft:fire_immune": true,
-            "minecraft:type_family": {
-                "family": [
-                    "flashlight_dummy"
-                ]
-            },
-            "minecraft:loot": {
-                "table": "loot_tables/empty.json"
-            },
-            "minecraft:health": {
-                "value": 1,
-                "min": 1
-            }
-        },
-        "events": {
-            "minecraft:entity_spawned": {
-                "run_command": {
-                    "command": [
-                        "setblock ~~~ light_block [\"block_light_level\"=12] keep"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "fb:light_timer"
-                    ]
-                }
-            },
-            "fb:despawn_process": {
-                "run_command": {
-                    "command": [
-                        "fill ~~~ ~~~ air replace light_block [\"block_light_level\"=12]"
-                    ]
-                },
-                "trigger": {
-                    "event": "fb:despawn"
-                }
-            },
-            "fb:despawn": {
-                "add": {
-                    "component_groups": [
-                        "fb:despawn"
-                    ]
-                }
-            },
-            "fb:reset": {
-                "remove": {
-                    "component_groups": [
-                        "fb:light_timer"
-                    ]
-                },
-                "add": {
-                    "component_groups": [
-                        "fb:light_timer"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fb:light",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:arrow"
+		},
+		"component_groups": {
+			"fb:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"fb:light_timer": {
+				"minecraft:timer": {
+					"looping": true,
+					"time": 0.2,
+					"time_down_event": {
+						"event": "fb:despawn_process"
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:ageable": {
+				"duration": 20,
+				"grow_up": {
+					"event": "fb:despawn_process",
+					"target": "self"
+				}
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:is_baby": {},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement.hover": {},
+			"minecraft:navigation.hover": {},
+			"minecraft:can_fly": {},
+			"minecraft:fire_immune": true,
+			"minecraft:type_family": {
+				"family": [
+					"flashlight_dummy"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": [
+						"setblock ~~~ light_block [\"block_light_level\"=12] keep"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"fb:light_timer"
+					]
+				}
+			},
+			"fb:despawn_process": {
+				"queue_command": {
+					"command": [
+						"fill ~~~ ~~~ air replace light_block [\"block_light_level\"=12]"
+					]
+				},
+				"trigger": {
+					"event": "fb:despawn"
+				}
+			},
+			"fb:despawn": {
+				"add": {
+					"component_groups": [
+						"fb:despawn"
+					]
+				}
+			},
+			"fb:reset": {
+				"remove": {
+					"component_groups": [
+						"fb:light_timer"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"fb:light_timer"
+					]
+				}
+			}
+		}
+	}
 }

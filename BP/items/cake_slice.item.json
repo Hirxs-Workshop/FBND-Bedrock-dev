@@ -24,7 +24,6 @@
 				"saturation_modifier": 3
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:render_offsets": "apple",
 			"minecraft:display_name": {
 				"value": "item.fb_cake_slice_item.name"
 			}

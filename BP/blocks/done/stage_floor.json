@@ -10,7 +10,11 @@
 			"states": {
 				"p:changer": [
 					0,
-					1
+					1,
+					2,
+					3,
+					4,
+					5
 				]
 			}
 		},
@@ -84,7 +88,7 @@
 		],
 		"components": {
 			"tag:wall": {},
-			"tag:changable": {},
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 2
 			},

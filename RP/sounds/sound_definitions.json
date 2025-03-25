@@ -7,6 +7,24 @@
 				"sounds/doors/office_door_open"
 			]
 		},
+		"fb.coins": {
+			"category": "block",
+			"sounds": [
+				"sounds/coins"
+			]
+		},
+		"fb.soda_dispenser": {
+			"category": "block",
+			"sounds": [
+				"sounds/soda_dispenser"
+			]
+		},
+		"fb.selection_machine": {
+			"category": "block",
+			"sounds": [
+				"sounds/selection_machine"
+			]
+		},
 		"fb.office_door_close": {
 			"category": "block",
 			"sounds": [

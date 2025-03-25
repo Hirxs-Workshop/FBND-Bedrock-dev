@@ -1,16 +1,16 @@
-import { world, system, MinecraftDimensionTypes, ItemStack, BlockPermutation } from '@minecraft/server';
+import { world, system, DimensionTypes, ItemStack, BlockPermutation } from '@minecraft/server';
 function dimensionToHeight(dimension) {
   const heights = [
     {
-      id: MinecraftDimensionTypes.overworld,
+      id: DimensionTypes.overworld,
       maxHeight: 320
     },
     {
-      id: MinecraftDimensionTypes.nether,
+      id: DimensionTypes.nether,
       maxHeight: 128
     },
     {
-      id: MinecraftDimensionTypes.theEnd,
+      id: DimensionTypes.theEnd,
       maxHeight: 256
     }
   ];

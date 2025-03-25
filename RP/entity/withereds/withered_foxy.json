@@ -47,8 +47,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#873535",
-				"overlay_color": "#301313"
+				"texture": "withered_foxy_statue"
 			}
 		}
 	}

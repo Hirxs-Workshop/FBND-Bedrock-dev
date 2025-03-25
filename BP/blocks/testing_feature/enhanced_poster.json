@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:poster_1",
 			"menu_category": {
-				"category": "items"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -23,24 +23,24 @@
 				"origin": [
 					-8,
 					0,
-					7.5
+					6
 				],
 				"size": [
 					16,
 					16,
-					1
+					2
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
-					7.5
+					6
 				],
 				"size": [
 					16,
 					16,
-					1
+					2
 				]
 			},
 			"minecraft:geometry": {

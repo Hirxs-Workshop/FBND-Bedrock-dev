@@ -1,0 +1,360 @@
+{ 
+   "format_version": "1.21.60",
+   "minecraft:crafting_items_catalog": {
+      "categories": [
+         {
+            "category_name": "construction",
+            "groups": [
+               {
+                  "group_identifier": {
+                     "icon": "fb:floor_5",
+                     "name": "fb:itemGroup.name.pizzeria_floors"
+                  },
+                  "items": [
+                     "fb:floor_1",
+                     "fb:floor_2",
+                     "fb:floor_3",
+                     "fb:floor_5",
+                     "fb:floor_6",
+                     "fb:floor_7",
+                     "fb:ffd_wall_floor",
+                     "fb:yellow_and_blue_floor",
+                     "fd:green_and_blue_floor",
+                     "fd:floor_2_inverted",
+                     "fb:battington_floor",
+                     "fb:fnaf3_floor",
+                     "fd:polished_white_stone",
+                     "fd:polished_white_stone_tiles",
+                     "fb:arcade_floor_red",
+                     "fb:arcade_floor_blue"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "fb:floor_5_slab",
+                     "name": "fb:itemGroup.name.pizzeria_floors_slab"
+                  },
+                  "items": [
+                     "fb:floor_1_slab",
+                     "fb:floor_2_slab",
+                     "fb:floor_3_slab",
+                     "fb:floor_5_slab",
+                     "fb:floor_6_slab",
+                     "fb:floor_7_slab",
+                     "fb:ffd_wall_floor_slab",
+                     "fb:yellow_and_blue_floor_slab",
+                     "fb:green_and_blue_floor_slab",
+                     "fd:floor_2_inverted_slab",
+                     "fb:fnaf3_floor_slab"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "fd:floor_5_stair",
+                     "name": "fb:itemGroup.name.pizzeria_floors_stair"
+                  },
+                  "items": [
+                     "fd:floor_1_stair",
+                     "fd:floor_2_stair",
+                     "fd:floor_3_stair",
+                     "fd:floor_5_stair",
+                     "fd:floor_6_stair",
+                     "fd:floor_7_stair",
+                     "fd:ffd_wall_floor_stair",
+                     "fd:yellow_and_blue_floor_stair",
+                     "fd:green_and_blue_floor_stair",
+                     "fd:floor_2_inverted_stair",
+                     "fd:fnaf3_floor_stair"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "fb:wall_block_2",
+                     "name": "fb:itemGroup.name.fnaf1_category_walls"
+                  },
+                  "items": [
+                     "fb:wall_block_2",
+                     "fb:wall_block_1",
+                     "fb:wall_middle_purple",
+                     "fb:wall_grey_block_1",
+                     "fb:wall_down_block_1",
+                     "fb:wall_down_block_2",
+                     "fb:wall_top_block_1",
+                     "fb:wall_top_block_2",
+                     "fb:wall_block_3",
+                     "fb:wall_down_block_3",
+                     "fb:wall_down_block_5",
+                     "fb:wall_down_block_6",
+                     "fb:wall_deco_1",
+                     "fb:wall_deco_2",
+                     "fd:fnaf3_floor_stair"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:fnaf2_wall_middle",
+                     "name": "fb:itemGroup.name.fnaf2_category_walls"
+                  },
+                  "items": [
+                     "fb:fnaf2_wall",
+                     "fb:fnaf2_wall_middle",
+                     "fb:fnaf2_wall_down",
+                     "fb:fnaf2_wall_top",
+                     "fb:fnaf2_stage_wall",
+                     "fb:fnaf2_stage_wall_tiles",
+                     "fb:fnaf2_stage_purple_bricks"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:fnaf3_wall_middle",
+                     "name": "fb:itemGroup.name.fnaf3_category_walls"
+                  },
+                  "items": [
+                     "fb:fnaf3_dirty_wall_2",
+                     "fb:fnaf3_dirty_wall",
+                     "fb:fnaf3_dirty_wall_tiles",
+                     "fb:fnaf3_dirty_wall_down",
+                     "fb:fnaf3_dirty_wall_up",
+                     "fb:fnaf3_wall_down",
+                     "fb:fnaf3_wall_middle",
+                     "fb:fnaf3_wall_up"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:fnaf4_house_wallpapers_middle",
+                     "name": "fb:itemGroup.name.fnaf4_category_walls"
+                  },
+                  "items": [
+                     "fb:fnaf4_house_wallpapers_upper",
+                     "fb:fnaf4_house_wallpapers_middle",
+                     "fb:fnaf4_house_wallpapers_lower",
+                     "fb:fnaf4_house_wall_upper",
+                     "fb:fnaf4_house_wall_middle",
+                     "fb:fnaf4_house_wall_lower",
+                     "fb:fnaf4_house_roof",
+                     "fb:fnaf4_house_floor"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:in_ffd_wall_middle_2",
+                     "name": "fb:itemGroup.name.ffd_category_walls"
+                  },
+                  "items": [
+                     "fb:in_ffd_wall_top",
+                     "fb:in_ffd_wall_middle_1",
+                     "fb:in_ffd_wall_middle_2",
+                     "fb:in_ffd_wall_down",
+                     "fb:ffd_wall_up",
+                     "fb:ffd_wall_middle_1",
+                     "fb:ffd_wall_middle_2",
+                     "fb:ffd_wall_down"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:ifm_wall_2",
+                     "name": "fb:itemGroup.name.fnaf_movie_walls"
+                  },
+                  "items": [
+                     "fb:ifm_wall_3",
+                     "fb:fm_wall_down",
+                     "fb:ifm_down_2",
+                     "fb:ifm_wall_4",
+                     "fb:ifm_wall_1",
+                     "fb:ifm_wall_2",
+                     "fb:ifm_down_1",
+                     "fb:fm_wall_top",
+                     "fb:fm_wall_middle_1",
+                     "fb:fm_wall_middle_2",
+                     "fb:iwfm_down_2_slab",
+                     "fb:fm_wall_middle_1_slab",
+                     "fb:ifm_stage",
+                     "fb:office_wall_tiles",
+                     "fb:polished_white_bricks",
+                     "fb:pizzeria_bricks",
+                     "fb:pizzeria_bricks_slab",
+                     "fb:chisel_metal_block_3_slab",
+		               "fb:fnaf_movie_wall_middle_1_barrier"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:hw_wall_up",
+                     "name": "fb:itemGroup.name.hw_walls"
+                  },
+                  "items": [
+                     "fb:hw_wall_up",
+                     "fb:hw_wall_middle",
+                     "fb:wall_middle_hw",
+                     "fb:fnaf2_wall_middle_hw",
+                     "fb:hw_wall_down"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:ex_wall_middle",
+                     "name": "fb:itemGroup.name.fnf_category_walls"
+                  },
+                  "items": [
+                     "fb:ex_wall_up",
+                     "fb:ex_wall_middle",
+                     "fb:ex_wall_middle_2",
+                     "fb:ex_wall_down"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:battington_middle",
+                     "name": "fb:itemGroup.name.fnf_category_walls"
+                  },
+                  "items": [
+                     "fb:battington_middle",
+                     "fb:battington_upper",
+                     "fb:battington_lower"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:stage_wall_1",
+                     "name": "fb:itemGroup.name.stage_category_walls"
+                  },
+                  "items": [
+                     "fb:stage_wall_2",
+                     "fb:stage_wall_1",
+                     "fb:stage_wall_down",
+                     "fb:stage_wall_up",
+                     "fb:wall_down_block_1",
+                     "fb:wall_down_block_2",
+                     "fb:wall_top_block_1",
+                     "fb:stage_floor"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:foxy_room_block",
+                     "name": "fb:itemGroup.name.pirate_cove_blocks"
+                  },
+                  "items": [
+                     "fb:stage_curtain_red_block",
+                     "fb:curtain",
+                     "fb:stage_curtain_purple_block",
+                     "fb:curtain_purple",
+                     "fb:stage_curtains",
+                     "fb:foxy_room_block",
+                     "fb:foxy_room_block_blue",
+                     "fb:foxy_room_block_red",
+                     "fb:pirate_cove_curtain",
+                     "fb:pirate_cove_curtain_blue",
+                     "fb:pirate_cove_curtain_red",
+                     "fb:purple_pirate_cove_curtains",
+                     "fb:blue_pirate_cove_curtains",
+                     "fb:red_pirate_cove_curtains",
+                     "fb:stage_curtain_purple_gold_block",
+                     "fb:purple_gold_pirate_cove_curtains"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:roof",
+                     "name": "fb:itemGroup.name.ceiling_blocks"
+                  },
+                  "items": [
+                     "fb:roof",
+                     "fb:gray_roof",
+                     "fb:white_roof"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:chair",
+                     "name": "fb:itemGroup.name.party_chairs"
+                  },
+                  "items": [
+                     "fb:black_party_chair",
+                     "fb:chair",
+                     "fb:blue_chair",
+                     "fb:red_chair",
+                     "fd:wooden_chair_fnaf_movie",
+                     "fd:metal_chair_fnaf_movie",
+                     "fd:kid_chair"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:freddy_plush",
+                     "name": "fb:itemGroup.name.fnaf_plushies"
+                  },
+                  "items": [
+                     "fb:freddy_plush",
+                     "fb:bonnie_plush",
+                     "fb:chica_plush",
+                     "fb:foxy_plush",
+                     "fb:spring_bonnie_plush",
+                     "fb:fredbear_plush",
+                     "fb:golden_freddy_plush"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:table",
+                     "name": "fb:itemGroup.name.tables"
+                  },
+                  "items": [
+                     "fb:table",
+                     "fb:red_party_table",
+                     "fb:dark_party_table",
+                     "fb:blue_table",
+                     "fb:red_table",
+                     "fb:green_table",
+                     "fb:pink_table",
+                     "fb:orange_table",
+                     "fb:ffd_table"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:desk",
+                     "name": "fb:itemGroup.name.desks"
+                  },
+                  "items": [
+                     "fb:desk",
+                     "fb:fnaf3_desk",
+                     "fd:sync_desk",
+                     "fb:fb2_desk"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fd:small_neon_line",
+                     "name": "fb:itemGroup.name.neons"
+                  },
+                  "items": [
+                     "fd:small_neon_line",
+                     "fd:arcade_neon_sign",
+                     "fd:neon_light"
+                  ]
+               },
+               { 
+                  "group_identifier": {
+                     "icon": "fb:poster_1",
+                     "name": "fb:itemGroup.name.posters"
+                  },
+                  "items": [
+                     "fb:poster_1",
+                     "fb:poster_2",
+                     "fb:poster_3",
+                     "fb:fnaf2_posters",
+                     "fb:ff2_poster_2",
+                     "fb:ff2_poster_1",
+                     "fb:fnaf3_posters",
+                     "fb:ffd_posters"
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}

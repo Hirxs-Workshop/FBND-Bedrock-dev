@@ -1,0 +1,167 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fd:silver_spotlight_ray",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"color:default": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"color:blue": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"color:red": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"color:green": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"color:pink": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"despawn_entity": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": "fd:silver_stage_spotlights",
+						"exited_block_event": {
+							"event": "destroy",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"book",
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"height": 0,
+				"width": 0
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"color:default"
+					]
+				}
+			},
+			"fb:color_default": {
+				"add": {
+					"component_groups": [
+						"color:default"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:blue",
+						"color:red",
+						"color:green",
+						"color:pink"
+					]
+				}
+			},
+			"fb:color_blue": {
+				"add": {
+					"component_groups": [
+						"color:blue"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:red",
+						"color:green",
+						"color:pink"
+					]
+				}
+			},
+			"fb:color_red": {
+				"add": {
+					"component_groups": [
+						"color:red"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:green",
+						"color:pink"
+					]
+				}
+			},
+			"fb:color_green": {
+				"add": {
+					"component_groups": [
+						"color:green"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:red",
+						"color:pink"
+					]
+				}
+			},
+			"fb:color_pink": {
+				"add": {
+					"component_groups": [
+						"color:pink"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"color:default",
+						"color:blue",
+						"color:green",
+						"color:red"
+					]
+				}
+			},
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"despawn_entity"
+					]
+				}
+			}
+		}
+	}
+}

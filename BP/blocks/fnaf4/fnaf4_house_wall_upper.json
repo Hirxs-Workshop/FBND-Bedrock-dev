@@ -1,15 +1,19 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:fnaf4_house_wall_upper",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				],
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
 				"p:changer": [
 					0,
 					1,
@@ -18,49 +22,96 @@
 				]
 			}
 		},
+		"components": {
+			"tag:changeable": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:geometry": "geometry.solid_block",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
 		"permutations": [
 			{
-				"condition": "q.block_property('p:facing') == 0",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 1",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 2",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 3",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -72,7 +123,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -84,7 +135,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 2",
+				"condition": "q.block_state('p:changer') == 2",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -96,7 +147,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 3",
+				"condition": "q.block_state('p:changer') == 3",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -107,68 +158,6 @@
 					}
 				}
 			}
-		],
-		"components": {
-			"tag:wall": {},
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
-			},
-			"minecraft:map_color": "#ffffff",
-			"minecraft:destroy_time": 4,
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 15,
-			"minecraft:breathability": "air",
-			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
-			},
-			"minecraft:geometry": "geometry.solid_block_2",
-			"minecraft:aim_collision": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					16,
-					16,
-					16
-				]
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					16,
-					16,
-					16
-				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
-			}
-		},
-		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
-				}
-			},
-			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==3?0:q.block_property('p:changer')+1"
-				},
-				"run_command": {
-					"command": [
-						"playsound lantern.break @p ~~~",
-						"particle foxes:texture ~~~"
-					]
-				}
-			}
-		}
+		]
 	}
 }

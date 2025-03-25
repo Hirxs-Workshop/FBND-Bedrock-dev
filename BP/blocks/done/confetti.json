@@ -41,18 +41,7 @@
 				}
 			},
 			"minecraft:geometry": "geometry.confetti",
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
+			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
 					-8,

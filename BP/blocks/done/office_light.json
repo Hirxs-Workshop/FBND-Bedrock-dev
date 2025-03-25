@@ -1,0 +1,145 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:office_light_down",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"p:is_lit": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"components": {
+			"minecraft:custom_components": [
+				"fbd:lamp_cc",
+				"fbd:lamp_tick",
+				"fbd:silver_lamp_down"
+			],
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": "geometry.light_2",
+			"minecraft:collision_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					16,
+					12
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					12,
+					16,
+					12
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('p:is_lit') == 0",
+				"components": {
+					"minecraft:light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "office_light",
+							"render_method": "alpha_test",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:is_lit') == 1",
+				"components": {
+					"minecraft:light_emission": 14,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "office_light",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						},
+						"metal": {
+							"texture": "office_light",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:is_lit') == 2",
+				"components": {
+					"minecraft:light_emission": 12,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "office_light",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						},
+						"metal": {
+							"texture": "office_light",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							3,
+							18
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:is_lit') == 3",
+				"components": {
+					"minecraft:light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "office_light",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						},
+						"metal": {
+							"texture": "office_light",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					}
+				}
+			}
+		]
+	}
+}

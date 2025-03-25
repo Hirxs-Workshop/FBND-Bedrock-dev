@@ -1533,6 +1533,514 @@
 					]
 				},
 				{
+					"name": "pot_3",
+					"parent": "double_flower_pot",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"rotation": [
+						0,
+						90,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_tiles_red"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_purple_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_tiles_purple"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_black_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_tiles_black"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_red_top_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_tiles_red_top"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_tiles_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_tiles"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_black_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_down_block_black"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_top_side_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_top_side"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "wall_down_block_2_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "wall_down_block_2"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "stage_wall_1_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "stage_wall_1"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "stage_wall_2_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "stage_wall_2"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "stage_wall_up_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "stage_wall_up"
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "stage_wall_down_3",
+					"parent": "pot_3",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								8
+							],
+							"size": [
+								16,
+								16,
+								0
+							],
+							"uv": {
+								"south": {
+									"uv": [
+										0,
+										0
+									],
+									"uv_size": [
+										16,
+										16
+									],
+									"material_instance": "stage_wall_down"
+								}
+							}
+						}
+					]
+				},
+				{
 					"name": "handle",
 					"parent": "double_flower_pot",
 					"pivot": [

@@ -1,0 +1,158 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:red_table",
+			"menu_category": {
+				"category": "construction",
+				"group": "none"
+			},
+			"states": {
+				"fbd:north_block_connection": [
+					0,
+					1
+				],
+				"fbd:south_block_connection": [
+					0,
+					1
+				],
+				"fbd:east_block_connection": [
+					0,
+					1
+				],
+				"fbd:west_block_connection": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"tag:wood": {},
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 5,
+				"catch_chance_modifier": 5
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					14,
+					-8
+				],
+				"size": [
+					16,
+					2,
+					16
+				]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "red_table",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:blocks_conection_function"
+			],
+			"minecraft:geometry": "geometry.party_table"
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.center"
+				}
+			},
+			{
+				"condition": "(q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')) || (!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection'))",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.center"
+				}
+			},
+			{
+				"condition": "(!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')) || (q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection'))",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.center"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.party_table"
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.end3"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.end1"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.end4"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.end2"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.corner2"
+				}
+			},
+			{
+				"condition": "!q.block_state('fbd:north_block_connection') && q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.corner1"
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && !q.block_state('fbd:east_block_connection') && q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.corner3"
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:north_block_connection') && !q.block_state('fbd:south_block_connection') && q.block_state('fbd:east_block_connection') && !q.block_state('fbd:west_block_connection')",
+				"components": {
+					"minecraft:geometry": "geometry.fd.party_table.corner4"
+				}
+			}
+		]
+	}
+}

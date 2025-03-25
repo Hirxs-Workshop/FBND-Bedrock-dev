@@ -10,7 +10,8 @@
 				"minecraft:placement_direction": {
 					"enabled_states": [
 						"minecraft:cardinal_direction"
-					]
+					],
+					"y_rotation_offset": 180
 				}
 			}
 		},
@@ -28,7 +29,7 @@
 			"minecraft:geometry": "geometry.bathroom_sign_new",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "bathroom_sign_man",
+					"texture": "bathroom_sign_woman",
 					"render_method": "alpha_test"
 				}
 			},
@@ -59,7 +60,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -71,7 +72,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -83,24 +84,24 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							0,
+							90,
 							0
 						]
 					}
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							90,
+							0,
 							0
 						]
 					}

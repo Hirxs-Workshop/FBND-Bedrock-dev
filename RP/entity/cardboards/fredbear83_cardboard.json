@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:fredbear83_cardboard",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "armor_stand"
+			},
+			"textures": {
+				"default": "textures/entity/cardboards/fredbear83_cardboard"
+			},
+			"geometry": {
+				"default": "geometry.fredbear_papercut83"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "fredbear83_cardboard_item"
+			}
+		}
+	}
+}

@@ -22,7 +22,7 @@
 		},
 		"components": {
 			"minecraft:custom_components": [
-				"fbd:light_function"
+				"fbd:office_light"
 			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
@@ -118,7 +118,7 @@
 			{
 				"condition": "query.block_state('fb:block_status') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.door_button"
+					"minecraft:geometry": "geometry.light_button"
 				}
 			},
 			{

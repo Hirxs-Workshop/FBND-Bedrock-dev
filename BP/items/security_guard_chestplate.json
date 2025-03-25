@@ -25,12 +25,9 @@
 					"default": "fb_security_guard_chestplate"
 				}
 			},
-			"minecraft:render_offsets": "chestplates",
-			"minecraft:armor": {
-				"protection": 6
-			},
 			"minecraft:wearable": {
-				"slot": "slot.armor.chest"
+				"slot": "slot.armor.chest",
+				"protection": 6
 			},
 			"minecraft:repairable": {
 				"repair_items": [

@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "fb:light_on",
 			"menu_category": {
-				"category": "commands"
+				"category": "none",
+				"is_hidden_in_commands": false
 			},
 			"traits": {
 				"minecraft:placement_direction": {
@@ -35,24 +36,24 @@
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
-					16,
+					12,
 					-8
 				],
 				"size": [
 					16,
-					2,
+					4,
 					16
 				]
 			},
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
-					14,
+					12,
 					-8
 				],
 				"size": [
 					16,
-					2,
+					4,
 					16
 				]
 			},

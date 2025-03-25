@@ -1,4 +1,4 @@
-	{
+{
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
@@ -22,7 +22,7 @@
 			}
 		},
 		"components": {
-						"tag:changeable":{},
+			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 1
 			},
@@ -42,7 +42,7 @@
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],
@@ -54,7 +54,7 @@
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],

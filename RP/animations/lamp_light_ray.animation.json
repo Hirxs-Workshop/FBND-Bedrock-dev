@@ -3,25 +3,14 @@
 	"animations": {
 		"animation.lamp_light_ray.camera": {
 			"loop": true,
+			"animation_length": 2.4167,
 			"bones": {
 				"bone3": {
-					"position": [
-						0,
-						-8,
-						0
-					]
+					"position": [0, -8, 0]
 				},
 				"bone": {
-					"rotation": [
-						"q.camera_rotation(0)*0",
-						"q.body_y_rotation+q.rotation_to_camera(1)",
-						0
-					],
-					"position": [
-						0,
-						-7,
-						0
-					]
+					"rotation": ["q.camera_rotation(0)*0", "q.body_y_rotation+q.rotation_to_camera(1)", 0],
+					"position": [0, -7, 0]
 				}
 			}
 		}

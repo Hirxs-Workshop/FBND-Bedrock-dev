@@ -178,7 +178,8 @@
 				},
 				"queue_command": {
 					"command": [
-						"fill ^ ^ ^ ^ ^2 ^1 air"
+						"fill ^ ^ ^ ^ ^2 ^1 air",
+						"playsound fb.office_door_close @a[r=8]"
 					],
 					"target": "self"
 				}
@@ -196,7 +197,8 @@
 				},
 				"queue_command": {
 					"command": [
-						"fill ^ ^ ^ ^ ^2 ^1 barrier[] destroy"
+						"fill ^ ^ ^ ^ ^2 ^1 fd:inv_block[] destroy",
+						"playsound fb.office_door_close @a[r=8]"
 					],
 					"target": "self"
 				}

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:nightmare_foxy",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/entity/fnaf4/nightmare_foxy"
+			},
+			"animations": {
+				"default_pose": "animation.nightmare_foxy.idle1",
+				"no_pose": "animation.nightmare_foxy.idle2",
+				"solemn_pose": "animation.nightmare_foxy.idle3",
+				"athena_pose": "animation.nightmare_foxy.idle4",
+				"brandish_pose": "animation.nightmare_foxy.idle5",
+				"honor_pose": "animation.nightmare_foxy.idle1",
+				"entertain_pose": "animation.nightmare_foxy.idle2",
+				"salute_pose": "animation.nightmare_foxy.idle3",
+				"riposte_pose": "animation.nightmare_foxy.idle4",
+				"zombie_pose": "animation.nightmare_foxy.idle5",
+				"cancan_a_pose": "animation.nightmare_foxy.idle1",
+				"cancan_b_pose": "animation.nightmare_foxy.idle2",
+				"hero_pose": "animation.nightmare_foxy.idle3",
+				"wiggle": "animation.nightmare_foxy.idle4",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			},
+			"geometry": {
+				"default": "geometry.nightmare_foxy"
+			},
+			"render_controllers": [
+				"controller.render.armor_stand"
+			],
+			"enable_attachables": true,
+			"spawn_egg": {
+				"texture": "nightmare_foxy"
+			}
+		}
+	}
+}

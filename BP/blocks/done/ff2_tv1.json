@@ -21,6 +21,22 @@
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"tag:changeable": {},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
@@ -108,7 +124,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
 					"minecraft:geometry": "geometry.monitor_stack_1",
 					"minecraft:material_instances": {
@@ -121,7 +137,7 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
 					"minecraft:geometry": "geometry.monitor_stack_2",
 					"minecraft:material_instances": {

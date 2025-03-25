@@ -19,15 +19,11 @@
 					"default": "fb:pizza_slice"
 				}
 			},
-			"minecraft:creative_category": {
-				"parent": "equipment"
-			},
 			"minecraft:food": {
 				"nutrition": 4,
 				"saturation_modifier": 3
 			},
 			"minecraft:use_animation": "eat",
-			"minecraft:render_offsets": "apple",
 			"minecraft:display_name": {
 				"value": "item.fb_pizza_slice_item.name"
 			},

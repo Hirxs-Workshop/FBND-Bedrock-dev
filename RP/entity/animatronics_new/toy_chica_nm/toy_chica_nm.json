@@ -17,8 +17,7 @@
 				"controller.render.fb_toy_chica"
 			],
 			"spawn_egg": {
-				"base_color": "#FFD934",
-				"overlay_color": "#FF8219"
+				"texture": "toy_chica_nightmode"
 			},
 			"scripts": {
 				"animate": [

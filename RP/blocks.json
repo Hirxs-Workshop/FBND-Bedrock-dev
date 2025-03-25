@@ -57,16 +57,7 @@
 	"fb:door_top": {
 		"sound": "stone"
 	},
-	"fb:pizza_1": {
-		"sound": "cloth"
-	},
-	"fb:pizza_2": {
-		"sound": "cloth"
-	},
-	"fb:pizza_mini_1": {
-		"sound": "cloth"
-	},
-	"fb:pizza_mini_2": {
+	"fb:pizzas": {
 		"sound": "cloth"
 	},
 	"fb:roof": {
@@ -84,12 +75,6 @@
 	"fb:tv_1": {
 		"sound": "glass"
 	},
-	"fb:tv_2": {
-		"sound": "glass"
-	},
-	"fb:tv_3": {
-		"sound": "glass"
-	},
 	"fb:paper_2": {
 		"sound": "cloth"
 	},
@@ -99,16 +84,10 @@
 	"fb:light_1": {
 		"sound": "glass"
 	},
-	"fb:stars_1": {
+	"fb:stars": {
 		"sound": "ladder"
 	},
-	"fb:stars_2": {
-		"sound": "ladder"
-	},
-	"fb:stars_3": {
-		"sound": "ladder"
-	},
-	"fb:cables_1": {
+	"fb:cables": {
 		"sound": "ladder"
 	},
 	"fb:bonnie_plush": {
@@ -132,10 +111,6 @@
 	"fb:freddy_plush": {
 		"sound": "cloth"
 	},
-	"fb:wall_down_4": {
-		"sound": "stone",
-		"textures": "bridge_wall_down_4"
-	},
 	"fb:wall_down_block_5": {
 		"sound": "stone",
 		"textures": "bridge_wall_down_block_5"
@@ -144,13 +119,7 @@
 		"sound": "stone",
 		"textures": "bridge_wall_down_block_6"
 	},
-	"fb:trash_1": {
-		"sound": "tuff"
-	},
-	"fb:trash_2": {
-		"sound": "tuff"
-	},
-	"fb:trash_3": {
+	"fb:trash": {
 		"sound": "tuff"
 	},
 	"fb:bathroom_letter_1": {
@@ -168,37 +137,26 @@
 	"fb:table": {
 		"sound": "wood"
 	},
-	"fb:party_hat_1": {
+	"fb:party_hat": {
 		"sound": "cloth"
-	},
-	"fb:party_hat_2": {
-		"sound": "cloth"
-	},
-	"fb:party_hat_3": {
-		"sound": "cloth"
-	},
-	"fb:party_hat_4": {
-		"sound": "cloth"
-	},
-	"fb:floor_4": {
-		"sound": "stone",
-		"textures": "bridge_floor_4"
 	},
 	"fb:cloud_1": {
 		"sound": "snow"
 	},
-	"fb:wed": {
+	"fb:cobweb": {
 		"sound": "roots"
 	},
-	"fb:windows_down": {
+	"fb:office_window_down": {
 		"sound": "glass"
 	},
-	"fb:windows_up": {
+	"fb:office_window_up": {
 		"sound": "glass"
 	},
-	"fb:party_floor": {
-		"sound": "stone",
-		"textures": "fb_party_floor"
+	"fb:arcade_floor_blue": {
+		"sound": "cloth"
+	},
+	"fb:arcade_floor_red": {
+		"sound": "cloth"
 	},
 	"fb:stage_wall_up": {
 		"sound": "stone",
@@ -219,33 +177,11 @@
 	"fb:speakers_left": {
 		"sound": "cloth"
 	},
-	"fb:speakers_right": {
-		"sound": "cloth"
-	},
-	"fb:papers_4": {
-		"sound": "stone"
-	},
 	"fb:office_tv_2": {
 		"sound": "stone"
 	},
 	"fb:light_2": {
 		"sound": "stone"
-	},
-	"fb:office_door": {
-		"textures": "office_door",
-		"sound": "metal"
-	},
-	"fb:fan": {
-		"textures": "fan",
-		"sound": "netherite"
-	},
-	"fb:hw_fan": {
-		"textures": "fan",
-		"sound": "netherite"
-	},
-	"fb:hw_fan_2": {
-		"textures": "fan",
-		"sound": "netherite"
 	},
 	"fb:vent_block": {
 		"sound": "netherite",
@@ -260,18 +196,14 @@
 	"fb:soda": {
 		"sound": "big_dripleaf"
 	},
-	"fb:window": {
-		"sound": "glass"
+	"fb:blue_soda": {
+		"sound": "big_dripleaf"
 	},
 	"fb:hirxs_plush": {
 		"sound": "cloth"
 	},
 	"fb:faz_plush": {
 		"sound": "cloth"
-	},
-	"fb:mura_plush": {
-		"sound": "cloth"
-		// New wall blocks
 	},
 	"fb:wall_middle_purple": {
 		"sound": "stone",
@@ -284,30 +216,6 @@
 	"fb:wall_grey_block_1": {
 		"sound": "stone",
 		"textures": "fnaf1_wall_side"
-	},
-	"fb:wall_top_block_1": {
-		"sound": "stone",
-		"textures": {
-			"side": "fnaf1_wall_upper_side_1",
-			"down": "fnaf1_wall_side",
-			"up": "fnaf1_wall_bottom"
-		}
-	},
-	"fb:wall_top_block_var_2": {
-		"sound": "stone",
-		"textures": {
-			"side": "fnaf1_wall_upper_side_2",
-			"down": "fnaf1_wall_side",
-			"up": "fnaf1_wall_bottom"
-		}
-	},
-	"fb:wall_top_block_var_3": {
-		"sound": "stone",
-		"textures": {
-			"side": "fnaf1_wall_upper_side_3",
-			"down": "fnaf1_wall_side",
-			"up": "fnaf1_wall_bottom"
-		}
 	},
 	"fb:stage_curtain_red_block": {
 		"sound": "cloth",
@@ -325,5 +233,13 @@
 	},
 	"fb:floor_1": {
 		"sound": "deepslate_bricks"
+	},
+	"fd:polished_white_stone_tiles": {
+		"sound": "deepslate_bricks",
+		"textures": "polished_white_stone_tile"
+	},
+	"fd:polished_white_stone": {
+		"sound": "deepslate_bricks",
+		"textures": "polished_white_stone"
 	}
 }

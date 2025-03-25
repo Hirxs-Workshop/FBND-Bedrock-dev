@@ -12,8 +12,7 @@
 				"blue": "textures/entity/fnaf2/toy_chica_night_mode"
 			},
 			"spawn_egg": {
-				"base_color": "#FFD934",
-				"overlay_color": "#FF8219"
+				"texture": "toy_chica_statue"
 			},
 			"animations": {
 				"default_pose": "animation.new_toy_chica.geo.test_pose_1",

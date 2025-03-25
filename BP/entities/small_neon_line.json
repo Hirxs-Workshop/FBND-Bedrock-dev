@@ -1,0 +1,196 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fd:small_neon_line_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"neon:default": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"neon:green": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"neon:yellow": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"neon:blue": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"neon:magenta": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"neon:purple": {
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"despawn_entity": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": "fd:small_neon_line",
+						"exited_block_event": {
+							"event": "destroy",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"book",
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"height": 0,
+				"width": 0
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"neon:default"
+					]
+				}
+			},
+			"fbnd:neon_color_default": {
+				"add": {
+					"component_groups": [
+						"neon:default"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:green",
+						"neon:yellow",
+						"neon:blue",
+						"neon:magenta",
+						"neon:purple"
+					]
+				}
+			},
+			"fbnd:neon_color_green": {
+				"add": {
+					"component_groups": [
+						"neon:green"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:default",
+						"neon:yellow",
+						"neon:blue",
+						"neon:magenta",
+						"neon:purple"
+					]
+				}
+			},
+			"fbnd:neon_color_yellow": {
+				"add": {
+					"component_groups": [
+						"neon:yellow"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:default",
+						"neon:green",
+						"neon:blue",
+						"neon:magenta",
+						"neon:purple"
+					]
+				}
+			},
+			"fbnd:neon_color_blue": {
+				"add": {
+					"component_groups": [
+						"neon:blue"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:default",
+						"neon:green",
+						"neon:yellow",
+						"neon:magenta",
+						"neon:purple"
+					]
+				}
+			},
+			"fbnd:neon_color_magenta": {
+				"add": {
+					"component_groups": [
+						"neon:magenta"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:default",
+						"neon:green",
+						"neon:blue",
+						"neon:yellow",
+						"neon:purple"
+					]
+				}
+			},
+			"fbnd:neon_color_purple": {
+				"add": {
+					"component_groups": [
+						"neon:purple"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"neon:default",
+						"neon:green",
+						"neon:blue",
+						"neon:yellow",
+						"neon:magenta"
+					]
+				}
+			},
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"despawn_entity"
+					]
+				},
+				"queue_command": {
+					"command": "setblock ~ ~ ~ air"
+				}
+			}
+		}
+	}
+}

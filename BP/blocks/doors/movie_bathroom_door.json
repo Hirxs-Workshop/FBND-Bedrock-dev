@@ -4,6 +4,7 @@
 		"description": {
 			"identifier": "fb:movie_bathroom_door",
 			"menu_category": {
+				"category": "none",
 				"is_hidden_in_commands": false
 			},
 			"states": {
@@ -39,7 +40,7 @@
 			},
 			"tag:fbd:is_this_a_door": {},
 			"minecraft:custom_components": [
-				"fbd:pizzeria_doors_cc"
+				"fbd:movie_bathroom_cc"
 			],
 			"minecraft:tick": {
 				"interval_range": [
@@ -191,7 +192,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "bathroom_door_lower",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}
@@ -202,7 +203,7 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "bathroom_door_upper",
-							"render_method": "blend"
+							"render_method": "opaque"
 						}
 					}
 				}

@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.empty",
+				"identifier": "geometry.none",
 				"texture_width": 16,
 				"texture_height": 16
 			}

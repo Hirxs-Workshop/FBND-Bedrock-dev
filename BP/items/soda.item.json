@@ -3,7 +3,6 @@
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:soda_item",
-			"category": "construction",
 			"menu_category": {
 				"category": "construction"
 			}
@@ -17,14 +16,15 @@
 				"nutrition": 3,
 				"saturation_modifier": 1
 			},
-			"minecraft:use_animation": "drink",
-			"minecraft:render_offsets": "honey_bottle",
 			"minecraft:stacked_by_data": true,
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": {
 				"textures": {
 					"default": "soda"
 				}
+			},
+			"minecraft:use_animation": {
+				"value": "drink"
 			},
 			"minecraft:display_name": {
 				"value": "item.fb_soda_item.name"

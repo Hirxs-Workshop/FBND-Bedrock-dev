@@ -19,7 +19,10 @@
 			{
 				"condition": "q.block_state('p:changer') == 0",
 				"components": {
-					"minecraft:geometry": "geometry.solid_block_2",
+					            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "new_interior_ffd_wall_middle",
@@ -31,7 +34,10 @@
 			{
 				"condition": "q.block_state('p:changer') == 1",
 				"components": {
-					"minecraft:geometry": "geometry.solid_block_2",
+					            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 					"minecraft:material_instances": {
 						"up": {
 							"texture": "new_interior_ffd_wall_middle",
@@ -51,7 +57,10 @@
 			{
 				"condition": "q.block_state('p:changer') == 2",
 				"components": {
-					"minecraft:geometry": "geometry.solid_block_2",
+					            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 					"minecraft:material_instances": {
 						"up": {
 							"texture": "new_interior_ffd_wall_middle",
@@ -71,7 +80,10 @@
 			{
 				"condition": "q.block_state('p:changer') == 3",
 				"components": {
-					"minecraft:geometry": "geometry.solid_block_2",
+					            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 					"minecraft:material_instances": {
 						"up": {
 							"texture": "new_interior_ffd_wall_middle",
@@ -103,7 +115,10 @@
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 4
 			},
-			"minecraft:geometry": "geometry.solid_block_2",
+			            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 			"minecraft:collision_box": {
 				"origin": [
 					-8,

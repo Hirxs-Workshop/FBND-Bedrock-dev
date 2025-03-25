@@ -4,8 +4,8 @@
 		"description": {
 			"identifier": "fb:electric_wires_on",
 			"menu_category": {
-				"category": "construction",
-				"group": "none"
+				"category": "none",
+				"is_hidden_in_commands": false
 			},
 			"states": {
 				"x:north_bc": [

@@ -760,7 +760,7 @@
 				}
 			},
 			"nose": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"playanimation @s animation.fb_toy_chica_nm.nose",
 						"effect @s slowness 1 2 true"

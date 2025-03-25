@@ -23,6 +23,22 @@
 			}
 		},
 		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"minecraft:custom_components": [
 				"fbd:desk_function"
 			],
@@ -77,7 +93,6 @@
 							"couch_right": false,
 							"couch_left": false,
 							"couch": true,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}
@@ -92,7 +107,6 @@
 							"couch_right": true,
 							"couch_left": false,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}
@@ -107,7 +121,6 @@
 							"couch_right": false,
 							"couch_left": false,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": true
 						}
 					}
@@ -122,7 +135,6 @@
 							"couch_right": false,
 							"couch_left": true,
 							"couch": false,
-							"couch_corner": false,
 							"couch_middle": false
 						}
 					}

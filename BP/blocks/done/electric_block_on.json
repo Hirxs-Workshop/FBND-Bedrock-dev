@@ -5,7 +5,8 @@
 			"identifier": "fb:electric_block_on",
 			"is_experimental": false,
 			"menu_category": {
-				"category": "construction"
+				"category": "none",
+				"is_hidden_in_commands": false
 			}
 		},
 		"components": {
@@ -13,7 +14,8 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "electricon",
-					"render_method": "opaque"
+					"render_method": "opaque",
+					"ambient_occlusion": true
 				}
 			},
 			"minecraft:custom_components": [

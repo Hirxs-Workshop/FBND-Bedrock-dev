@@ -71,17 +71,6 @@
 				}
 			}
 		},
-		"controller.animation.fb_chica_chicken.ded.entity": {
-			"states": {
-				"default": {
-					"transitions": [
-						{
-							"ded": "!query.is_alive"
-						}
-					]
-				}
-			}
-		},
 		"controller.animation.fb_chica_chicken.function2.entity": {
 			"states": {
 				"default": {

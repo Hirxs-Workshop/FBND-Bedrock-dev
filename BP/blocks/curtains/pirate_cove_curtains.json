@@ -55,18 +55,7 @@
 					16
 				]
 			},
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					14,
-					-8
-				],
-				"size": [
-					16,
-					2,
-					16
-				]
-			},
+			"minecraft:collision_box": false,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "sparkles_curtain_purple",
@@ -74,7 +63,7 @@
 				}
 			},
 			"minecraft:custom_components": [
-				"fbd:blocks_conection_function"
+				"fbd:curtain_connection"
 			],
 			"minecraft:geometry": {
 				"identifier": "geometry.panel_block",

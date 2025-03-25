@@ -42,8 +42,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#F6F0EC",
-				"overlay_color": "#937E83"
+				"texture": "mangle_statue"
 			}
 		}
 	}

@@ -2,7 +2,6 @@
 	"format_version": "1.20.0",
 	"minecraft:entity": {
 		"description": {
-			"runtime_identifier": "minecraft:armor_stand",
 			"identifier": "fd:spotlight_green_light",
 			"is_spawnable": false,
 			"is_summonable": true,

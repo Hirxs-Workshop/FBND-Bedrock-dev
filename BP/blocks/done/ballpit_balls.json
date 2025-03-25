@@ -1,276 +1,203 @@
 {
-    "format_version": "1.20.80",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fb:ball_pit",
-            "menu_category": {
-                "category": "construction"
-            },
-            "states": {
-                "fd:layer_level": [
-                    0,
-                    1,
-                    2,
-                    3,
-                    4,
-                    5,
-                    6,
-                    7
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "query.block_state('fd:layer_level') == 0",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            2,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 1",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            4,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            2,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 2",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            6,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            4,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 3",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            6,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 4",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            10,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 5",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            12,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            10,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 6",
-                "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            14,
-                            16
-                        ]
-                    },
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            12,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "query.block_state('fd:layer_level') == 7",
-                "components": {
-                    "minecraft:geometry": "minecraft:geometry.full_block",
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            14,
-                            16
-                        ]
-                    }
-                }
-            }
-        ],
-        "components": {
-            "minecraft:geometry": {
-                "identifier": "geometry.ballpit_layer",
-                "bone_visibility": {
-                    "layer_one": "query.block_state('fd:layer_level') >= 0",
-                    "layer_two": "query.block_state('fd:layer_level') >= 1",
-                    "layer_three": "query.block_state('fd:layer_level') >= 2",
-                    "layer_four": "query.block_state('fd:layer_level') >= 3",
-                    "layer_five": "query.block_state('fd:layer_level') >= 4",
-                    "layer_six": "query.block_state('fd:layer_level') >= 5",
-                    "layer_seven": "query.block_state('fd:layer_level') >= 6"
-                }
-            },
-            "minecraft:collision_box": {
-                "origin": [
-                    -8,
-                    0,
-                    -8
-                ],
-                "size": [
-                    16,
-                    0,
-                    16
-                ]
-            },
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 0.3
-            },
-            "minecraft:custom_components": [
-                "fd:on_interact",
-                "fd:on_place"
-            ],
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 0.1
-            },
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "ball_pit",
-                    "render_method": "alpha_test"
-                }
-            }
-        }
-    }
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:ball_pit",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"fd:layer_level": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('fd:layer_level') == 0",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							2,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							4,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 2",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							6,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 3",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 4",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 5",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							12,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 6",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							14,
+							16
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "query.block_state('fd:layer_level') == 7",
+				"components": {
+					"minecraft:geometry": "minecraft:geometry.full_block",
+					"minecraft:collision_box": false
+				}
+			}
+		],
+		"components": {
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.ballpit_layer",
+				"bone_visibility": {
+					"layer_one": "query.block_state('fd:layer_level') >= 0",
+					"layer_two": "query.block_state('fd:layer_level') >= 1",
+					"layer_three": "query.block_state('fd:layer_level') >= 2",
+					"layer_four": "query.block_state('fd:layer_level') >= 3",
+					"layer_five": "query.block_state('fd:layer_level') >= 4",
+					"layer_six": "query.block_state('fd:layer_level') >= 5",
+					"layer_seven": "query.block_state('fd:layer_level') >= 6"
+				}
+			},
+			"minecraft:collision_box": false,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.3
+			},
+			"minecraft:custom_components": [
+				"fd:on_interact"
+			],
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.1
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ball_pit",
+					"render_method": "alpha_test"
+				}
+			}
+		}
+	}
 }

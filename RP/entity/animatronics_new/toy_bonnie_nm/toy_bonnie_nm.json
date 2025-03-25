@@ -33,12 +33,11 @@
 				"default": "geometry.new_toy_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#53C7FF",
-				"overlay_color": "#1E1D1B"
+				"texture": "toy_bonnie_night_mode"
 			}
 		}
 	}

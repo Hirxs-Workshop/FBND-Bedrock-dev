@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "fb:vent_light_on",
 			"menu_category": {
-				"category": "commands"
+				"category": "none",
+				"is_hidden_in_commands": false
 			}
 		},
 		"components": {
@@ -18,13 +19,24 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
+			"minecraft:light_dampening": 15,
 			"minecraft:light_emission": 15,
-			"minecraft:geometry": "geometry.light_vent_on",
+			"minecraft:geometry": "geometry.solid_block_2",
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "vent_light",
-					"render_method": "alpha_test",
-					"face_dimming": false
+					"texture": "texture_vent_block",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				},
+				"up": {
+					"texture": "texture_vent_block_on",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				},
+				"down": {
+					"texture": "texture_vent_block_on",
+					"render_method": "opaque",
+					"ambient_occlusion": true
 				}
 			},
 			"minecraft:collision_box": {

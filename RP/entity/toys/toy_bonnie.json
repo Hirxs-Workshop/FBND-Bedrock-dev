@@ -12,8 +12,7 @@
 				"blue": "textures/entity/fnaf2/shadow_toy_bonnie"
 			},
 			"spawn_egg": {
-				"base_color": "#53C7FF",
-				"overlay_color": "#E5F6FF"
+				"texture": "toy_bonnie_statue"
 			},
 			"animations": {
 				"default_pose": "animation.new_toy_bonnie.test_idle_1",

@@ -80,7 +80,7 @@
 								"minecraft:dead_"
 							]
 						},
-						"run_command": {
+						"queue_command": {
 							"command": [
 								"event entity @e[type=fb:stage_plate_chica_chicken] despawn",
 								"event entity @e[type=fb:stage_plate_mark_chica_chicken2] despawn",
@@ -93,7 +93,7 @@
 				]
 			},
 			"despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [],
 					"target": "self"
 				},

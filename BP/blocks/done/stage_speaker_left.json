@@ -1,0 +1,413 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:speakers_left",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			},
+			"states": {
+				"fb:rotation": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				},
+				"fbd:music": {
+					"values": {
+						"min": 0,
+						"max": 13
+					}
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('fb:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			},
+			{
+				"condition": "q.block_state('fbd:music') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_speakers_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
+					},
+					"minecraft:custom_components": [
+						"fbd:song_selector",
+						"fbd:notes"
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_speakers",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.stage_speakers_display",
+				"bone_visibility": {
+					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation'), 4)",
+					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 1, 4)",
+					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 2, 4)",
+					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('fb:rotation') - 3, 4)",
+					"side": "q.block_state('minecraft:block_face') != 'up'"
+				}
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 100
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:custom_components": [
+				"fd:advanced_rotation_v1",
+				"fbd:song_selector"
+			]
+		}
+	}
+}

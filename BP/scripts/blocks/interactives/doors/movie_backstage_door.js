@@ -1,16 +1,16 @@
-import { world, system, MinecraftDimensionTypes, ItemStack, BlockPermutation } from '@minecraft/server';
+import { world, system, DimensionTypes, ItemStack, BlockPermutation } from '@minecraft/server';
 function dimensionToHeight(dimension) {
   const heights = [
     {
-      id: MinecraftDimensionTypes.overworld,
+      id: DimensionTypes.overworld,
       maxHeight: 320
     },
     {
-      id: MinecraftDimensionTypes.nether,
+      id: DimensionTypes.nether,
       maxHeight: 128
     },
     {
-      id: MinecraftDimensionTypes.theEnd,
+      id: DimensionTypes.theEnd,
       maxHeight: 256
     }
   ];
@@ -21,7 +21,7 @@ function dimensionToHeight(dimension) {
 }
 const blockComps = [
   {
-    id: "fbd:pizzeria_doors_cc",
+    id: "fbd:movie_office_cc",
     code: {
       onTick: (data) => {
         redstoneManager.redstonePowerAfterEvent(data.block, {

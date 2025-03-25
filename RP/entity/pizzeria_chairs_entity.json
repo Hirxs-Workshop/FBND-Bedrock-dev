@@ -1,0 +1,37 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fb:pizzeria_chairs_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_white",
+				"orange": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_orange",
+				"magenta": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_magenta",
+				"light_blue": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_blue",
+				"yellow": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_yellow",
+				"lime": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_lime",
+				"pink": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_pink",
+				"gray": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_gray",
+				"light_gray": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_gray",
+				"cyan": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_cyan",
+				"purple": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_purple",
+				"blue": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_blue",
+				"brown": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_brown",
+				"green": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_green",
+				"red": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_red",
+				"black": "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_black"
+			},
+			"geometry": {
+				"default": "geometry.pizzeria_chairs_entity"
+			},
+			"render_controllers": [
+				"controller.render.pizzeria_chairs_entity"
+			]
+		}
+	}
+}

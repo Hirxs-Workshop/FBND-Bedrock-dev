@@ -1,5 +1,5 @@
 import { system, world, BlockPermutation, ItemStack } from "@minecraft/server";
-world.beforeEvents.worldInitialize.subscribe(initEvent => {
+system.beforeEvents.startup.subscribe(initEvent => {
     initEvent.blockComponentRegistry.registerCustomComponent('fbd:desk_function', {
         onPlace: (e) => {
             let block = e.block;

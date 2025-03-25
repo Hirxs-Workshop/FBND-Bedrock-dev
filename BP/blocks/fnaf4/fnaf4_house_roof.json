@@ -1,27 +1,41 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:fnaf4_house_roof",
-			"is_experimental": false,
-			"properties": {
-				"bridge:block_rotation": [
-					2,
-					3,
-					4,
-					5
-				]
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
 			}
 		},
 		"components": {
-			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "fnaf4_house_roof",
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:pick_collision": {
+			"minecraft:collision_box": {
 				"origin": [
 					-8,
 					0,
@@ -33,7 +47,7 @@
 					16
 				]
 			},
-			"minecraft:entity_collision": {
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -45,64 +59,57 @@
 					16
 				]
 			},
-			"minecraft:block_light_absorption": 15,
-			"minecraft:on_player_placing": {
-				"event": "bridge:update_rotation"
-			},
-			"minecraft:creative_category": {
-				"group": "construction",
-				"category": "construction"
-			},
-			"tag:wall": {}
+			"minecraft:light_dampening": 15
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 2",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 3",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 4",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "query.block_property('bridge:block_rotation') == 5",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
 				}
 			}
-		],
-		"events": {
-			"bridge:update_rotation": {
-				"set_block_property": {
-					"bridge:block_rotation": "query.cardinal_facing_2d"
-				}
-			}
-		}
+		]
 	}
 }

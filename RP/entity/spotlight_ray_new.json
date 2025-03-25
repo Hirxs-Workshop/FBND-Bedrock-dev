@@ -5,26 +5,18 @@
 			"identifier": "fd:spotlight_ray_new",
 			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "charged_creeper"
+				"default": "fbnd_light"
 			},
 			"textures": {
-				"default": "textures/entity/lamp_light_ray_2"
+				"default": "textures/entity/spotlight_colors/yellow",
+				"blue": "textures/entity/spotlight_colors/blue",
+				"red": "textures/entity/spotlight_colors/red",
+				"purple": "textures/entity/spotlight_colors/purple",
+				"orange": "textures/entity/spotlight_colors/orange",
+				"green": "textures/entity/spotlight_colors/green"
 			},
 			"animations": {
 				"default_pose": "animation.lamp_light_ray.camera",
-				"no_pose": "animation.balloon_boy.pose2",
-				"solemn_pose": "animation.balloon_boy.showtime",
-				"athena_pose": "animation.balloon_boy.pose1",
-				"brandish_pose": "animation.balloon_boy.pose2",
-				"honor_pose": "animation.balloon_boy.showtime",
-				"entertain_pose": "animation.balloon_boy.pose1",
-				"salute_pose": "animation.balloon_boy.pose2",
-				"riposte_pose": "animation.balloon_boy.showtime",
-				"zombie_pose": "animation.balloon_boy.pose1",
-				"cancan_a_pose": "animation.balloon_boy.pose2",
-				"cancan_b_pose": "animation.balloon_boy.showtime",
-				"hero_pose": "animation.balloon_boy.pose1",
-				"wiggle": "animation.armor_stand.wiggle",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -32,18 +24,8 @@
 				"default": "geometry.spotlight_ray_new"
 			},
 			"render_controllers": [
-				"controller.render.light_emit"
-			],
-			"scripts": {
-				"initialize": [
-					"variable.armor_stand.pose_index = 0;",
-					"variable.armor_stand.hurt_time = 0;"
-				],
-				"animate": [
-					"controller.pose",
-					"controller.wiggling"
-				]
-			}
+				"controller.render.spotlight_ray"
+			]
 		}
 	}
 }

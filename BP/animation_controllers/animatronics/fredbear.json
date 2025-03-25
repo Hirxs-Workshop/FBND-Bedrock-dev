@@ -71,17 +71,6 @@
 				}
 			}
 		},
-		"controller.animation.fb_possed_fredbear.ded.entity": {
-			"states": {
-				"default": {
-					"transitions": [
-						{
-							"ded": "!query.is_alive"
-						}
-					]
-				}
-			}
-		},
 		"controller.animation.fb_possed_fredbear.function2.entity": {
 			"states": {
 				"default": {

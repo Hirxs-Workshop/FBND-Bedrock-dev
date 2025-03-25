@@ -26,9 +26,7 @@
 				}
 			},
 			"minecraft:wearable": {
-				"slot": "slot.armor.head"
-			},
-			"minecraft:armor": {
+				"slot": "slot.armor.head",
 				"protection": 4
 			},
 			"minecraft:display_name": {

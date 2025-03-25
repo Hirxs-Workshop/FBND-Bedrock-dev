@@ -26,8 +26,7 @@
 				"controller.render.nothing"
 			],
 			"spawn_egg": {
-				"base_color": "#DEA600",
-				"overlay_color": "#9B35E9"
+				"texture": "fredbear_showtime"
 			}
 		}
 	}

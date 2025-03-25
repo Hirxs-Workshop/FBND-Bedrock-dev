@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.neon_place_entity": {
+			"geometry": "geometry.default",
+			"materials": [
+				{
+					"*": "material.entity_beam_additive"
+				}
+			],
+			"textures": [
+				"texture.default"
+			],
+			"light_color_multiplier": 1.5,
+			"ignore_lighting": true
+		}
+	}
+}

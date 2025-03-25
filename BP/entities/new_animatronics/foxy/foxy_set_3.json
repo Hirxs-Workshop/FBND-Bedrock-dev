@@ -80,7 +80,7 @@
 								"minecraft:dead_"
 							]
 						},
-						"run_command": {
+						"queue_command": {
 							"command": [],
 							"target": "self"
 						}
@@ -88,7 +88,7 @@
 				]
 			},
 			"despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"effect @e[type=fb:foxy,r=4] slowness 5 20 true",
 						"particle fb:explosion ~ ~ ~",

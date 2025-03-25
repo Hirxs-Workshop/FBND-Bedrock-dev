@@ -46,8 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#4C77E3",
-				"overlay_color": "#E66060"
+				"texture": "balloon_boy_statue"
 			}
 		}
 	}

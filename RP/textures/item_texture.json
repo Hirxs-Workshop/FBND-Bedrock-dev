@@ -1,448 +1,1774 @@
 {
-	"resource_pack_name": "atlas.items",
-	"texture_data": {
-		"fb_item": {
-			"textures": "textures/items/changer_tool"
-		},
-		"freddy_icon": {
-			"textures": "textures/items/freddy_icon"
-		},
-		"bonno_icon": {
-			"textures": "textures/items/bonno_icon"
-		},
-		"fredbear_icon": {
-			"textures": "textures/items/fredbear_icon"
-		},
-		"springtrap_icon": {
-			"textures": "textures/items/springtrap_icon"
-		},
-		"bonnie_icon": {
-			"textures": "textures/items/bonnie_icon"
-		},
-		"spring_bonnie_icon": {
-			"textures": "textures/items/spring_bonnie_icon"
-		},
-		"chica_icon": {
-			"textures": "textures/items/chica_icon"
-		},
-		"foxy_icon": {
-			"textures": "textures/items/foxy_icon"
-		},
-		"fb_chisel": {
-			"textures": "textures/items/chisel"
-		},
-		"golden_freddy_icon": {
-			"textures": "textures/items/golden_freddy_icon"
-		},
-		"microphone": {
-			"textures": "textures/items/microphone"
-		},
-		"guitar": {
-			"textures": "textures/items/guitar"
-		},
-		"purple_guitar": {
-			"textures": "textures/items/purple_guitar"
-		},
-		"cupcake": {
-			"textures": "textures/items/cupcake"
-		},
-		"cupcake_golden": {
-			"textures": "textures/items/cupcake_golden"
-		},
-		"black_golden": {
-			"textures": "textures/items/cupcake_black"
-		},
-		"test_icon_room": {
-			"textures": "textures/items/door_icon"
-		},
-		"fb_freddy_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_freddy_suit"
-			]
-		},
-		"fb_bonnie_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_bonnie_suit"
-			]
-		},
-		"fb_chica_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_chica_suit"
-			]
-		},
-		"fb_fixed_foxy_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_fixed_foxy_suit"
-			]
-		},
-		"fb_golden_freddy_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_golden_freddy_suit"
-			]
-		},
-		"fb_foxy_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_foxy_suit"
-			]
-		},
-		"fb_springbonnie_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_springbonnie_suit"
-			]
-		},
-		"fb_fredbear_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_fredbear_suit"
-			]
-		},
-		"fb_bloody_fredbear_suit": {
-			"textures": [
-				"textures/items/pamobile/fb_bloody_fredbear_suit"
-			]
-		},
-		"fb:lightbulb": {
-			"textures": "textures/items/lightbulb"
-		},
-		"fb:office_light": {
-			"textures": "textures/items/office_light"
-		},
-		"test_icon": {
-			"textures": "textures/items/office_door_icon"
-		},
-		"jr_cat_icon": {
-			"textures": "textures/items/jr-cat"
-		},
-		"pizzeria_door": {
-			"textures": "textures/items/pizzeria_door"
-		},
-		"shadow_bonnie": {
-			"textures": "textures/items/shadow_bonnie"
-		},
-		"vent_door": {
-			"textures": "textures/items/vent_door"
-		},
-		"fb:pizza_slice": {
-			"textures": "textures/items/pizza"
-		},
-		"fb:pizza_slice_2": {
-			"textures": "textures/items/pizza_2"
-		},
-		"fd:cake_slice": {
-			"textures": "textures/items/cake_slice"
-		},
-		"soda": {
-			"textures": "textures/items/soda"
-		},
-		"blue_soda": {
-			"textures": "textures/items/blue_soda"
-		},
-		"pizzeria_sign": {
-			"textures": "textures/items/pizzaria_sign"
-		},
-		"pizzeria_sign_2": {
-			"textures": "textures/items/pizzeria_sign_2"
-		},
-		"pizzeria_sign_3": {
-			"textures": "textures/items/pizzeria_sign_3"
-		},
-		"endo": {
-			"textures": "textures/items/endo"
-		},
-		"itp": {
-			"textures": "textures/items/itp_springbonnie_icon"
-		},
-		"only_door": {
-			"textures": "textures/items/only_icon"
-		},
-		"toy_chica_icon": {
-			"textures": "textures/items/toy_chica_icon"
-		},
-		"toy_chica_alt_icon": {
-			"textures": "textures/items/toy_chica_alt_icon"
-		},
-		"toy_bonnie_icon": {
-			"textures": "textures/items/toy_bonnie"
-		},
-		"toy_freddy_icon": {
-			"textures": "textures/items/toy_freddy"
-		},
-		"toy_foxy_icon": {
-			"textures": "textures/items/toy_foxy"
-		},
-		"toy_freddy_alt_icon": {
-			"textures": "textures/items/toy_freddy_alt"
-		},
-		"w_chica": {
-			"textures": "textures/items/withered_chica"
-		},
-		"w_bonnie": {
-			"textures": "textures/items/withered_bonnie"
-		},
-		"w_freddy": {
-			"textures": "textures/items/withered_freddy"
-		},
-		"w_foxy": {
-			"textures": "textures/items/withered_foxy"
-		},
-		"puppet": {
-			"textures": "textures/items/puppet"
-		},
-		"cyrus": {
-			"textures": "textures/items/cyrus"
-		},
-		"ex_door": {
-			"textures": "textures/items/ex_door_icon"
-		},
-		"balloons": {
-			"textures": "textures/items/balloons_1"
-		},
-		"bday": {
-			"textures": "textures/items/birthday_banner"
-		},
-		"fb:rotate": {
-			"textures": "textures/items/rotate"
-		},
-		"fb:leave_suit": {
-			"textures": "textures/items/leave_suit"
-		},
-		"endo02": {
-			"textures": "textures/items/endo02"
-		},
-		"trimer": {
-			"textures": "textures/items/trimer"
-		},
-		"mangle": {
-			"textures": "textures/items/mangle"
-		},
-		"banjo": {
-			"textures": "textures/items/banjo"
-		},
-		"w_gfreddy": {
-			"textures": "textures/items/withered_golden_freddy"
-		},
-		"flashlight": {
-			"textures": "textures/items/flashlight"
-		},
-		"off_flashlight": {
-			"textures": "textures/items/off_flashlight"
-		},
-		"bridge_freddy_fazbear_egg": {
-			"textures": "textures/items/freddy_icon"
-		},
-		"bridge_freddy_fazbear_test_egg": {
-			"textures": "textures/items/freddy_icon"
-		},
-		"shadow_freddy": {
-			"textures": "textures/items/shadow_freddy"
-		},
-		"faz_coin": {
-			"textures": "textures/items/faz_coin"
-		},
-		"bb": {
-			"textures": "textures/items/bb_icon"
-		},
-		"jj": {
-			"textures": "textures/items/jj_icon"
-		},
-		"movie": {
-			"textures": "textures/items/fnaf_movie"
-		},
-		"lets": {
-			"textures": "textures/items/lets_party"
-		},
-		"dust": {
-			"textures": "textures/items/dust"
-		},
-		"broom": {
-			"textures": "textures/items/broom"
-		},
-		"confetti_bag": {
-			"textures": "textures/items/confetti"
-		},
-		"placeholder": {
-			"textures": "textures/items/placeholder"
-		},
-		"stars1": {
-			"textures": "textures/items/stars_item"
-		},
-		"invalid_texture": {
-			"textures": "textures/items/invalid_texture"
-		},
-		"faztab": {
-			"textures": "textures/items/tablet"
-		},
-		"purple_guy_vehicle_item": {
-			"textures": "textures/items/purple_guy_vehicle_item"
-		},
-		"parts_box_item": {
-			"textures": "textures/items/parts_box_item"
-		},
-		"phantom_freddy_icon": {
-			"textures": "textures/items/phantom_freddy_icon"
-		},
-		"jippy_jumper_icon": {
-			"textures": "textures/items/jippy_jumper_icon"
-		},
-		"office_chair": {
-			"textures": "textures/items/office_chair_item"
-		},
-		"remover_tool": {
-			"textures": "textures/items/remover_tool"
-		},
-		"purple_man": {
-			"textures": "textures/items/purple_man"
-		},
-		"freddy_mask": {
-			"textures": "textures/items/freddy_mask"
-		},
-		"freddy_mask_disable": {
-			"textures": "textures/items/freddy_mask_disable"
-		},
-		"fb_security_guard_helmet": {
-			"textures": "textures/items/security_guard_helmet"
-		},
-		"fb_security_guard_chestplate": {
-			"textures": "textures/items/security_guard_chestplate"
-		},
-		"fb_security_guard_leggings": {
-			"textures": "textures/items/security_guard_leggings"
-		},
-		"fb_security_guard_boots": {
-			"textures": "textures/items/security_guard_boots"
-		},
-		"red_door_item": {
-			"textures": "textures/items/red_door"
-		},
-		"black_door_item": {
-			"textures": "textures/items/black_door"
-		},
-		"wires_item": {
-			"textures": "textures/items/wires_item"
-		},
-		"office_door_item": {
-			"textures": "textures/items/office_door"
-		},
-		"new_item2": {
-			"textures": "textures/items/new_item2"
-		},
-		"closed_doors": {
-			"textures": "textures/items/closed_doors"
-		},
-		"fnaf4_drawer_1": {
-			"textures": "textures/items/ffnaf4_drawers"
-		},
-		"fd_pirate_sword": {
-			"textures": "textures/items/pirate_sword"
-		},
-		"fd_knife": {
-			"textures": "textures/items/knife"
-		},
-		"spring_bonnie_chest_dirty": {
-			"textures": "textures/items/spring_bonnie_chest_dirty"
-		},
-		"spring_bonnie_chest": {
-			"textures": "textures/items/spring_bonnie_chest"
-		},
-		"spring_bonnie_legs_dirty": {
-			"textures": "textures/items/spring_bonnie_legs_dirty"
-		},
-		"spring_bonnie_legs": {
-			"textures": "textures/items/spring_bonnie_legs"
-		},
-		"spring_bonnie_head_dirty": {
-			"textures": "textures/items/spring_bonnie_head_dirty"
-		},
-		"spring_bonnie_head": {
-			"textures": "textures/items/spring_bonnie_head"
-		},
-		"bathroom_door": {
-			"textures": "textures/items/bathroom_door"
-		},
-		"office_movie_door": {
-			"textures": "textures/items/office_movie_door"
-		},
-		"carousel": {
-			"textures": "textures/items/carousel"
-		},
-		"security_manual": {
-			"textures": "textures/items/security_manual"
-		},
-		"pizza_on_plate": {
-			"textures": "textures/items/pizza_on_plate"
-		},
-		"foxy_mask": {
-			"textures": "textures/items/foxy_mask"
-		},
-		"party_hat_1": {
-			"textures": "textures/items/party_hats/party_hat_1"
-		},
-		"party_hat_2": {
-			"textures": "textures/items/party_hats/party_hat_2"
-		},
-		"party_hat_3": {
-			"textures": "textures/items/party_hats/party_hat_3"
-		},
-		"party_hat_4": {
-			"textures": "textures/items/party_hats/party_hat_4"
-		},
-		"party_hat_5": {
-			"textures": "textures/items/party_hats/party_hat_5"
-		},
-		"party_hat_6": {
-			"textures": "textures/items/party_hats/party_hat_6"
-		},
-		"party_hat_7": {
-			"textures": "textures/items/party_hats/party_hat_7"
-		},
-		"party_hat_8": {
-			"textures": "textures/items/party_hats/party_hat_8"
-		},
-		///// FNAF1 Icons v2
-		"freddy_icon_normal": {
-			"textures": "textures/items/fnaf1/freddy"
-		},
-		"freddy_icon_showtime": {
-			"textures": "textures/items/fnaf1/freddy_showtime"
-		},
-		"freddy_icon_soul": {
-			"textures": "textures/items/fnaf1/freddy_soul"
-		},
-		"bonnie_icon_normal": {
-			"textures": "textures/items/fnaf1/bonnie"
-		},
-		"bonnie_icon_showtime": {
-			"textures": "textures/items/fnaf1/bonnie_showtime"
-		},
-		"bonnie_icon_soul": {
-			"textures": "textures/items/fnaf1/bonnie_soul"
-		},
-		"chica_icon_normal": {
-			"textures": "textures/items/fnaf1/chica"
-		},
-		"chica_icon_showtime": {
-			"textures": "textures/items/fnaf1/chica_showtime"
-		},
-		"chica_icon_soul": {
-			"textures": "textures/items/fnaf1/chica_soul"
-		},
-		"foxy_icon_normal": {
-			"textures": "textures/items/fnaf1/foxy"
-		},
-		"foxy_icon_showtime": {
-			"textures": "textures/items/fnaf1/foxy_showtime"
-		},
-		"foxy_icon_soul": {
-			"textures": "textures/items/fnaf1/foxy_soul"
-		},
-		"golden_freddy_icon_normal": {
-			"textures": "textures/items/fnaf1/golden_freddy"
-		},
-		"golden_freddy_icon_soul": {
-			"textures": "textures/items/fnaf1/golden_freddy_soul"
-		},
-		"fredbear_cardboard_icon": {
-			"textures": "textures/items/fredbear_cardboard_icon"
-		}
-	},
-	"texture_name": "atlas.items"
+    "resource_pack_name": "atlas.items",
+    "texture_data": {
+        "fb_item": {
+            "textures": "textures/items/changer_tool"
+        },
+        "fb_chisel": {
+            "textures": "textures/items/chisel"
+        },
+        "black_golden": {
+            "textures": "textures/items/cupcake_black"
+        },
+        "test_icon_room": {
+            "textures": "textures/items/door_icon"
+        },
+        "fb:lightbulb": {
+            "textures": "textures/items/lightbulb"
+        },
+        "fb:office_light": {
+            "textures": "textures/items/office_light"
+        },
+        "test_icon": {
+            "textures": "textures/items/office_door_icon"
+        },
+        "jr_cat_icon": {
+            "textures": "textures/items/jr-cat"
+        },
+        "jippy_jumper_statue": {
+            "textures": "textures/items/icons/OCs/jippy_jumper_statue"
+        },
+        "fb:pizza_slice": {
+            "textures": "textures/items/pizza"
+        },
+        "fb:pizza_slice_2": {
+            "textures": "textures/items/pizza_2"
+        },
+        "fd:cake_slice": {
+            "textures": "textures/items/cake_slice"
+        },
+        "pizzeria_sign": {
+            "textures": "textures/items/pizzaria_sign"
+        },
+        "itp": {
+            "textures": "textures/items/itp_springbonnie_icon"
+        },
+        "only_door": {
+            "textures": "textures/items/only_icon"
+        },
+        "toy_bonnie_icon": {
+            "textures": "textures/items/toy_bonnie"
+        },
+        "toy_freddy_icon": {
+            "textures": "textures/items/toy_freddy"
+        },
+        "toy_foxy_icon": {
+            "textures": "textures/items/toy_foxy"
+        },
+        "toy_freddy_alt_icon": {
+            "textures": "textures/items/toy_freddy_alt"
+        },
+        "w_chica": {
+            "textures": "textures/items/withered_chica"
+        },
+        "w_bonnie": {
+            "textures": "textures/items/withered_bonnie"
+        },
+        "w_freddy": {
+            "textures": "textures/items/withered_freddy"
+        },
+        "w_foxy": {
+            "textures": "textures/items/withered_foxy"
+        },
+        "ex_door": {
+            "textures": "textures/items/ex_door_icon"
+        },
+        "balloons": {
+            "textures": "textures/items/balloons_1"
+        },
+        "bday": {
+            "textures": "textures/items/birthday_banner"
+        },
+        "fb:rotate": {
+            "textures": "textures/items/rotate"
+        },
+        "fb:leave_suit": {
+            "textures": "textures/items/leave_suit"
+        },
+        "w_gfreddy": {
+            "textures": "textures/items/withered_golden_freddy"
+        },
+        "bridge_freddy_fazbear_egg": {
+            "textures": "textures/items/freddy_icon"
+        },
+        "bridge_freddy_fazbear_test_egg": {
+            "textures": "textures/items/freddy_icon"
+        },
+        "bb": {
+            "textures": "textures/items/bb_icon"
+        },
+        "jj": {
+            "textures": "textures/items/jj_icon"
+        },
+        "movie": {
+            "textures": "textures/items/fnaf_movie"
+        },
+        "lets": {
+            "textures": "textures/items/lets_party"
+        },
+        "confetti_bag": {
+            "textures": "textures/items/confetti"
+        },
+        "stars1": {
+            "textures": "textures/items/stars_item"
+        },
+        "faztab": {
+            "textures": "textures/items/tablet"
+        },
+        "office_chair": {
+            "textures": "textures/items/office_chair_item"
+        },
+        "fb_security_guard_helmet": {
+            "textures": "textures/items/security_guard_helmet"
+        },
+        "fb_security_guard_chestplate": {
+            "textures": "textures/items/security_guard_chestplate"
+        },
+        "fb_security_guard_leggings": {
+            "textures": "textures/items/security_guard_leggings"
+        },
+        "fb_security_guard_boots": {
+            "textures": "textures/items/security_guard_boots"
+        },
+        "red_door_item": {
+            "textures": "textures/items/red_door"
+        },
+        "black_door_item": {
+            "textures": "textures/items/black_door"
+        },
+        "office_door_item": {
+            "textures": "textures/items/office_door"
+        },
+        "fnaf4_drawer_1": {
+            "textures": "textures/items/ffnaf4_drawers"
+        },
+        "fd_pirate_sword": {
+            "textures": "textures/items/pirate_sword"
+        },
+        "fd_knife": {
+            "textures": "textures/items/knife"
+        },
+        "freddy_icon_normal": {
+            "textures": "textures/items/fnaf1/freddy"
+        },
+        "freddy_icon_showtime": {
+            "textures": "textures/items/fnaf1/freddy_showtime"
+        },
+        "freddy_icon_soul": {
+            "textures": "textures/items/fnaf1/freddy_soul"
+        },
+        "bonnie_icon_normal": {
+            "textures": "textures/items/fnaf1/bonnie"
+        },
+        "bonnie_icon_showtime": {
+            "textures": "textures/items/fnaf1/bonnie_showtime"
+        },
+        "bonnie_icon_soul": {
+            "textures": "textures/items/fnaf1/bonnie_soul"
+        },
+        "chica_icon_normal": {
+            "textures": "textures/items/fnaf1/chica"
+        },
+        "chica_icon_showtime": {
+            "textures": "textures/items/fnaf1/chica_showtime"
+        },
+        "chica_icon_soul": {
+            "textures": "textures/items/fnaf1/chica_soul"
+        },
+        "foxy_icon_normal": {
+            "textures": "textures/items/fnaf1/foxy"
+        },
+        "foxy_icon_showtime": {
+            "textures": "textures/items/fnaf1/foxy_showtime"
+        },
+        "foxy_icon_soul": {
+            "textures": "textures/items/fnaf1/foxy_soul"
+        },
+        "golden_freddy_icon_normal": {
+            "textures": "textures/items/fnaf1/golden_freddy"
+        },
+        "golden_freddy_icon_soul": {
+            "textures": "textures/items/fnaf1/golden_freddy_soul"
+        },
+        "balloons_1": {
+            "textures": [
+                "textures/items/balloons_1"
+            ]
+        },
+        "balloons_2": {
+            "textures": [
+                "textures/items/balloons_2"
+            ]
+        },
+        "balloons_3": {
+            "textures": [
+                "textures/items/balloons_3"
+            ]
+        },
+        "balloons_4": {
+            "textures": [
+                "textures/items/balloons_4"
+            ]
+        },
+        "balloon_string": {
+            "textures": [
+                "textures/items/balloon_string"
+            ]
+        },
+        "banjo": {
+            "textures": [
+                "textures/items/banjo"
+            ]
+        },
+        "banjo_model": {
+            "textures": [
+                "textures/items/banjo_model"
+            ]
+        },
+        "bathroom_door": {
+            "textures": [
+                "textures/items/bathroom_door"
+            ]
+        },
+        "bb_icon": {
+            "textures": [
+                "textures/items/bb_icon"
+            ]
+        },
+        "birthday_banner": {
+            "textures": [
+                "textures/items/birthday_banner"
+            ]
+        },
+        "black_door": {
+            "textures": [
+                "textures/items/black_door"
+            ]
+        },
+        "blue_soda": {
+            "textures": [
+                "textures/items/blue_soda"
+            ]
+        },
+        "bonnie_cardboard_item": {
+            "textures": [
+                "textures/items/bonnie_cardboard_item"
+            ]
+        },
+        "bonnie_icon": {
+            "textures": [
+                "textures/items/bonnie_icon"
+            ]
+        },
+        "bonno_icon": {
+            "textures": [
+                "textures/items/bonno_icon"
+            ]
+        },
+        "broom": {
+            "textures": [
+                "textures/items/broom"
+            ]
+        },
+        "bush_cardboard_item": {
+            "textures": [
+                "textures/items/bush_cardboard_item"
+            ]
+        },
+        "cake_slice": {
+            "textures": [
+                "textures/items/cake_slice"
+            ]
+        },
+        "carousel": {
+            "textures": [
+                "textures/items/carousel"
+            ]
+        },
+        "changer_tool": {
+            "textures": [
+                "textures/items/changer_tool"
+            ]
+        },
+        "chica_cardboard_item": {
+            "textures": [
+                "textures/items/chica_cardboard_item"
+            ]
+        },
+        "chica_icon": {
+            "textures": [
+                "textures/items/chica_icon"
+            ]
+        },
+        "chisel": {
+            "textures": [
+                "textures/items/chisel"
+            ]
+        },
+        "closed_doors": {
+            "textures": [
+                "textures/items/closed_doors"
+            ]
+        },
+        "confetti": {
+            "textures": [
+                "textures/items/confetti"
+            ]
+        },
+        "cupcake": {
+            "textures": [
+                "textures/items/cupcake"
+            ]
+        },
+        "cupcake_black": {
+            "textures": [
+                "textures/items/cupcake_black"
+            ]
+        },
+        "cupcake_golden": {
+            "textures": [
+                "textures/items/cupcake_golden"
+            ]
+        },
+        "cyrus": {
+            "textures": [
+                "textures/items/cyrus"
+            ]
+        },
+        "dffnaf4_drawers": {
+            "textures": [
+                "textures/items/dffnaf4_drawers"
+            ]
+        },
+        "door_icon": {
+            "textures": [
+                "textures/items/door_icon"
+            ]
+        },
+        "dust": {
+            "textures": [
+                "textures/items/dust"
+            ]
+        },
+        "endo": {
+            "textures": [
+                "textures/items/endo"
+            ]
+        },
+        "endo02": {
+            "textures": [
+                "textures/items/endo02"
+            ]
+        },
+        "ex_door_icon": {
+            "textures": [
+                "textures/items/ex_door_icon"
+            ]
+        },
+        "faz_coin": {
+            "textures": [
+                "textures/items/faz_coin"
+            ]
+        },
+        "ffnaf4_drawers": {
+            "textures": [
+                "textures/items/ffnaf4_drawers"
+            ]
+        },
+        "flashlight": {
+            "textures": [
+                "textures/items/flashlight"
+            ]
+        },
+        "fnaf_movie": {
+            "textures": [
+                "textures/items/fnaf_movie"
+            ]
+        },
+        "foxy_icon": {
+            "textures": [
+                "textures/items/foxy_icon"
+            ]
+        },
+        "foxy_mask": {
+            "textures": [
+                "textures/items/foxy_mask"
+            ]
+        },
+        "fredbear83_cardboard_item": {
+            "textures": [
+                "textures/items/fredbear83_cardboard_item"
+            ]
+        },
+        "fredbear83_minigame_cardboard_item": {
+            "textures": [
+                "textures/items/fredbear83_minigame_cardboard_item"
+            ]
+        },
+        "fredbear_cardboard": {
+            "textures": [
+                "textures/items/fredbear_cardboard"
+            ]
+        },
+        "fredbear_cardboard_icon": {
+            "textures": [
+                "textures/items/fredbear_cardboard_icon"
+            ]
+        },
+        "fredbear_icon": {
+            "textures": [
+                "textures/items/fredbear_icon"
+            ]
+        },
+        "freddy_cardboard_item": {
+            "textures": [
+                "textures/items/freddy_cardboard_item"
+            ]
+        },
+        "freddy_icon": {
+            "textures": [
+                "textures/items/freddy_icon"
+            ]
+        },
+        "freddy_mask": {
+            "textures": [
+                "textures/items/freddy_mask"
+            ]
+        },
+        "freddy_mask_disable": {
+            "textures": [
+                "textures/items/freddy_mask_disable"
+            ]
+        },
+        "golden_freddy_icon": {
+            "textures": [
+                "textures/items/golden_freddy_icon"
+            ]
+        },
+        "guitar": {
+            "textures": [
+                "textures/items/guitar"
+            ]
+        },
+        "idk": {
+            "textures": [
+                "textures/items/idk"
+            ]
+        },
+        "industrial_fan": {
+            "textures": [
+                "textures/items/industrial_fan"
+            ]
+        },
+        "invalid_texture": {
+            "textures": [
+                "textures/items/invalid_texture"
+            ]
+        },
+        "itp_springbonnie_icon": {
+            "textures": [
+                "textures/items/itp_springbonnie_icon"
+            ]
+        },
+        "jippy_jumper_icon": {
+            "textures": [
+                "textures/items/jippy_jumper_icon"
+            ]
+        },
+        "jj_icon": {
+            "textures": [
+                "textures/items/jj_icon"
+            ]
+        },
+        "jr-cat": {
+            "textures": [
+                "textures/items/jr-cat"
+            ]
+        },
+        "knife": {
+            "textures": [
+                "textures/items/knife"
+            ]
+        },
+        "lets_party": {
+            "textures": [
+                "textures/items/lets_party"
+            ]
+        },
+        "lightbulb": {
+            "textures": [
+                "textures/items/lightbulb"
+            ]
+        },
+        "mangle": {
+            "textures": [
+                "textures/items/mangle"
+            ]
+        },
+        "microphone": {
+            "textures": [
+                "textures/items/microphone"
+            ]
+        },
+        "model_faztab": {
+            "textures": [
+                "textures/items/model_faztab"
+            ]
+        },
+        "model_guitar": {
+            "textures": [
+                "textures/items/model_guitar"
+            ]
+        },
+        "model_microphone": {
+            "textures": [
+                "textures/items/model_microphone"
+            ]
+        },
+        "new_item2": {
+            "textures": [
+                "textures/items/new_item2"
+            ]
+        },
+        "office_chair_item": {
+            "textures": [
+                "textures/items/office_chair_item"
+            ]
+        },
+        "office_door": {
+            "textures": [
+                "textures/items/office_door"
+            ]
+        },
+        "office_door_icon": {
+            "textures": [
+                "textures/items/office_door_icon"
+            ]
+        },
+        "office_light": {
+            "textures": [
+                "textures/items/office_light"
+            ]
+        },
+        "office_movie_door": {
+            "textures": [
+                "textures/items/office_movie_door"
+            ]
+        },
+        "off_flashlight": {
+            "textures": [
+                "textures/items/off_flashlight"
+            ]
+        },
+        "only_icon": {
+            "textures": [
+                "textures/items/only_icon"
+            ]
+        },
+        "palm_tree_cardboard_item": {
+            "textures": [
+                "textures/items/palm_tree_cardboard_item"
+            ]
+        },
+        "parts_box_item": {
+            "textures": [
+                "textures/items/parts_box_item"
+            ]
+        },
+        "phantom_freddy_icon": {
+            "textures": [
+                "textures/items/phantom_freddy_icon"
+            ]
+        },
+        "pirate_sword": {
+            "textures": [
+                "textures/items/pirate_sword"
+            ]
+        },
+        "pizza": {
+            "textures": [
+                "textures/items/pizza"
+            ]
+        },
+        "pizzaria_sign": {
+            "textures": [
+                "textures/items/pizzaria_sign"
+            ]
+        },
+        "pizza_2": {
+            "textures": [
+                "textures/items/pizza_2"
+            ]
+        },
+        "pizza_on_plate": {
+            "textures": [
+                "textures/items/pizza_on_plate"
+            ]
+        },
+        "pizzeria_door": {
+            "textures": [
+                "textures/items/pizzeria_door"
+            ]
+        },
+        "pizzeria_sign_2": {
+            "textures": [
+                "textures/items/pizzeria_sign_2"
+            ]
+        },
+        "pizzeria_sign_3": {
+            "textures": [
+                "textures/items/pizzeria_sign_3"
+            ]
+        },
+        "placeholder": {
+            "textures": [
+                "textures/items/placeholder"
+            ]
+        },
+        "puppet": {
+            "textures": [
+                "textures/items/puppet"
+            ]
+        },
+        "purple_guitar": {
+            "textures": [
+                "textures/items/purple_guitar"
+            ]
+        },
+        "purple_guy_vehicle_item": {
+            "textures": [
+                "textures/items/purple_guy_vehicle_item"
+            ]
+        },
+        "purple_man": {
+            "textures": [
+                "textures/items/purple_man"
+            ]
+        },
+        "purple_model_guitar": {
+            "textures": [
+                "textures/items/purple_model_guitar"
+            ]
+        },
+        "red_door": {
+            "textures": [
+                "textures/items/red_door"
+            ]
+        },
+        "remover_tool": {
+            "textures": [
+                "textures/items/remover_tool"
+            ]
+        },
+        "rotate": {
+            "textures": [
+                "textures/items/rotate"
+            ]
+        },
+        "security_guard_boots": {
+            "textures": [
+                "textures/items/security_guard_boots"
+            ]
+        },
+        "security_guard_chestplate": {
+            "textures": [
+                "textures/items/security_guard_chestplate"
+            ]
+        },
+        "security_guard_leggings": {
+            "textures": [
+                "textures/items/security_guard_leggings"
+            ]
+        },
+        "security_manual": {
+            "textures": [
+                "textures/items/security_manual"
+            ]
+        },
+        "shadow_bonnie": {
+            "textures": [
+                "textures/items/shadow_bonnie"
+            ]
+        },
+        "shadow_freddy": {
+            "textures": [
+                "textures/items/shadow_freddy"
+            ]
+        },
+        "soda": {
+            "textures": [
+                "textures/items/soda"
+            ]
+        },
+        "springtrap_icon": {
+            "textures": [
+                "textures/items/springtrap_icon"
+            ]
+        },
+        "spring_bonnie_chest": {
+            "textures": [
+                "textures/items/spring_bonnie_chest"
+            ]
+        },
+        "spring_bonnie_chest_dirty": {
+            "textures": [
+                "textures/items/spring_bonnie_chest_dirty"
+            ]
+        },
+        "spring_bonnie_head": {
+            "textures": [
+                "textures/items/spring_bonnie_head"
+            ]
+        },
+        "spring_bonnie_head_dirty": {
+            "textures": [
+                "textures/items/spring_bonnie_head_dirty"
+            ]
+        },
+        "spring_bonnie_icon": {
+            "textures": [
+                "textures/items/spring_bonnie_icon"
+            ]
+        },
+        "spring_bonnie_legs": {
+            "textures": [
+                "textures/items/spring_bonnie_legs"
+            ]
+        },
+        "spring_bonnie_legs_dirty": {
+            "textures": [
+                "textures/items/spring_bonnie_legs_dirty"
+            ]
+        },
+        "stars_item": {
+            "textures": [
+                "textures/items/stars_item"
+            ]
+        },
+        "tablet": {
+            "textures": [
+                "textures/items/tablet"
+            ]
+        },
+        "toy_bonnie": {
+            "textures": [
+                "textures/items/toy_bonnie"
+            ]
+        },
+        "toy_chica_alt_icon": {
+            "textures": [
+                "textures/items/toy_chica_alt_icon"
+            ]
+        },
+        "toy_chica_icon": {
+            "textures": [
+                "textures/items/toy_chica_icon"
+            ]
+        },
+        "toy_foxy": {
+            "textures": [
+                "textures/items/toy_foxy"
+            ]
+        },
+        "toy_freddy": {
+            "textures": [
+                "textures/items/toy_freddy"
+            ]
+        },
+        "toy_freddy_alt": {
+            "textures": [
+                "textures/items/toy_freddy_alt"
+            ]
+        },
+        "tree_cardboard_item": {
+            "textures": [
+                "textures/items/tree_cardboard_item"
+            ]
+        },
+        "trimer": {
+            "textures": [
+                "textures/items/trimer"
+            ]
+        },
+        "vent_door": {
+            "textures": [
+                "textures/items/vent_door"
+            ]
+        },
+        "wires_item": {
+            "textures": [
+                "textures/items/wires_item"
+            ]
+        },
+        "withered_bonnie": {
+            "textures": [
+                "textures/items/withered_bonnie"
+            ]
+        },
+        "withered_chica": {
+            "textures": [
+                "textures/items/withered_chica"
+            ]
+        },
+        "withered_foxy": {
+            "textures": [
+                "textures/items/withered_foxy"
+            ]
+        },
+        "withered_freddy": {
+            "textures": [
+                "textures/items/withered_freddy"
+            ]
+        },
+        "withered_golden_freddy": {
+            "textures": [
+                "textures/items/withered_golden_freddy"
+            ]
+        },
+        "bonnie": {
+            "textures": [
+                "textures/items/fnaf1/bonnie"
+            ]
+        },
+        "bonnie_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf1/bonnie_showtime"
+            ]
+        },
+        "bonnie_soul": {
+            "textures": [
+                "textures/items/fnaf1/bonnie_soul"
+            ]
+        },
+        "chica": {
+            "textures": [
+                "textures/items/fnaf1/chica"
+            ]
+        },
+        "chica_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf1/chica_showtime"
+            ]
+        },
+        "chica_soul": {
+            "textures": [
+                "textures/items/fnaf1/chica_soul"
+            ]
+        },
+        "foxy": {
+            "textures": [
+                "textures/items/fnaf1/foxy"
+            ]
+        },
+        "foxy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf1/foxy_showtime"
+            ]
+        },
+        "foxy_soul": {
+            "textures": [
+                "textures/items/fnaf1/foxy_soul"
+            ]
+        },
+        "freddy": {
+            "textures": [
+                "textures/items/fnaf1/freddy"
+            ]
+        },
+        "freddy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf1/freddy_showtime"
+            ]
+        },
+        "freddy_soul": {
+            "textures": [
+                "textures/items/fnaf1/freddy_soul"
+            ]
+        },
+        "golden_freddy": {
+            "textures": [
+                "textures/items/fnaf1/golden_freddy"
+            ]
+        },
+        "golden_freddy_soul": {
+            "textures": [
+                "textures/items/fnaf1/golden_freddy_soul"
+            ]
+        },
+        "crying_kid": {
+            "textures": [
+                "textures/items/icons/crying_kid"
+            ]
+        },
+        "fredbear_showtime": {
+            "textures": [
+                "textures/items/icons/ffd/fredbear_showtime"
+            ]
+        },
+        "fredbear_souled": {
+            "textures": [
+                "textures/items/icons/ffd/fredbear_souled"
+            ]
+        },
+        "fredbear_statue": {
+            "textures": [
+                "textures/items/icons/ffd/fredbear_statue"
+            ]
+        },
+        "springbonnie_showtime": {
+            "textures": [
+                "textures/items/icons/ffd/springbonnie_showtime"
+            ]
+        },
+        "springbonnie_souled": {
+            "textures": [
+                "textures/items/icons/ffd/springbonnie_souled"
+            ]
+        },
+        "springbonnie_statue": {
+            "textures": [
+                "textures/items/icons/ffd/springbonnie_statue"
+            ]
+        },
+        "bonnie_souled": {
+            "textures": [
+                "textures/items/icons/fnaf1/bonnie_souled"
+            ]
+        },
+        "bonnie_statue": {
+            "textures": [
+                "textures/items/icons/fnaf1/bonnie_statue"
+            ]
+        },
+        "chica_souled": {
+            "textures": [
+                "textures/items/icons/fnaf1/chica_souled"
+            ]
+        },
+        "chica_statue": {
+            "textures": [
+                "textures/items/icons/fnaf1/chica_statue"
+            ]
+        },
+        "foxy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf1/foxy_souled"
+            ]
+        },
+        "foxy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf1/foxy_statue"
+            ]
+        },
+        "freddy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf1/freddy_souled"
+            ]
+        },
+        "freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf1/freddy_statue"
+            ]
+        },
+        "golden_freddy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf1/golden_freddy_souled"
+            ]
+        },
+        "golden_freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf1/golden_freddy_statue"
+            ]
+        },
+        "balloon_boy_night_mode": {
+            "textures": [
+                "textures/items/icons/fnaf2/balloon_boy_night_mode"
+            ]
+        },
+        "balloon_boy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/balloon_boy_showtime"
+            ]
+        },
+        "balloon_boy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/balloon_boy_statue"
+            ]
+        },
+        "endo_02_night_mode": {
+            "textures": [
+                "textures/items/icons/fnaf2/endo_02_night_mode"
+            ]
+        },
+        "endo_02_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/endo_02_souled"
+            ]
+        },
+        "endo_02_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/endo_02_statue"
+            ]
+        },
+        "mangle_night_mode": {
+            "textures": [
+                "textures/items/icons/fnaf2/mangle_night_mode"
+            ]
+        },
+        "mangle_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/mangle_showtime"
+            ]
+        },
+        "mangle_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/mangle_statue"
+            ]
+        },
+        "stiched_texture (70) (1) (1)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (70) (1) (1)"
+            ]
+        },
+        "stiched_texture (71) (2)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (71) (2)"
+            ]
+        },
+        "stiched_texture (75)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (75)"
+            ]
+        },
+        "stiched_texture (79)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (79)"
+            ]
+        },
+        "stiched_texture (80)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (80)"
+            ]
+        },
+        "stiched_texture (81)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (81)"
+            ]
+        },
+        "stiched_texture (82) (1)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (82) (1)"
+            ]
+        },
+        "stiched_texture (83) (1)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (83) (1)"
+            ]
+        },
+        "stiched_texture (85)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (85)"
+            ]
+        },
+        "stiched_texture (86)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (86)"
+            ]
+        },
+        "stiched_texture (89) (1)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (89) (1)"
+            ]
+        },
+        "stiched_texture (90) (1)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (90) (1)"
+            ]
+        },
+        "stiched_texture (92)": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture (92)"
+            ]
+        },
+        "stiched_texture - 2024-04-05T030448.899": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-05T030448.899"
+            ]
+        },
+        "stiched_texture - 2024-04-06T174554.750": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-06T174554.750"
+            ]
+        },
+        "stiched_texture - 2024-04-06T174800.028": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-06T174800.028"
+            ]
+        },
+        "stiched_texture - 2024-04-06T174927.210": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-06T174927.210"
+            ]
+        },
+        "stiched_texture - 2024-04-07T060638.230": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T060638.230"
+            ]
+        },
+        "stiched_texture - 2024-04-07T061301.275": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T061301.275"
+            ]
+        },
+        "stiched_texture - 2024-04-07T061305.581": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T061305.581"
+            ]
+        },
+        "stiched_texture - 2024-04-07T161046.002": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T161046.002"
+            ]
+        },
+        "stiched_texture - 2024-04-07T161110.149": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T161110.149"
+            ]
+        },
+        "stiched_texture - 2024-04-07T161251.210": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T161251.210"
+            ]
+        },
+        "stiched_texture - 2024-04-07T164708.230": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T164708.230"
+            ]
+        },
+        "stiched_texture - 2024-04-07T164918.709": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T164918.709"
+            ]
+        },
+        "stiched_texture - 2024-04-07T164930.232": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T164930.232"
+            ]
+        },
+        "stiched_texture - 2024-04-07T194834.313": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T194834.313"
+            ]
+        },
+        "stiched_texture - 2024-04-07T200803.336": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T200803.336"
+            ]
+        },
+        "stiched_texture - 2024-04-07T200815.526": {
+            "textures": [
+                "textures/items/icons/fnaf2/stiched_texture - 2024-04-07T200815.526"
+            ]
+        },
+        "toy_bonnie_nightmode": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_bonnie_nightmode"
+            ]
+        },
+        "toy_bonnie_night_mode": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_bonnie_night_mode"
+            ]
+        },
+        "toy_bonnie_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_bonnie_showtime"
+            ]
+        },
+        "toy_bonnie_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_bonnie_statue"
+            ]
+        },
+        "toy_chica_nightmode": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_chica_nightmode"
+            ]
+        },
+        "toy_chica_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_chica_showtime"
+            ]
+        },
+        "toy_chica_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_chica_statue"
+            ]
+        },
+        "toy_foxy_night_mode": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_foxy_night_mode"
+            ]
+        },
+        "toy_foxy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_foxy_showtime"
+            ]
+        },
+        "toy_foxy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_foxy_statue"
+            ]
+        },
+        "toy_freddy_nightmode": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_freddy_nightmode"
+            ]
+        },
+        "toy_freddy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_freddy_showtime"
+            ]
+        },
+        "toy_freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/toy_freddy_statue"
+            ]
+        },
+        "withered_bonnie_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_bonnie_showtime"
+            ]
+        },
+        "withered_bonnie_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_bonnie_souled"
+            ]
+        },
+        "withered_bonnie_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_bonnie_statue"
+            ]
+        },
+        "withered_chica_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_chica_showtime"
+            ]
+        },
+        "withered_chica_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_chica_souled"
+            ]
+        },
+        "withered_chica_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_chica_statue"
+            ]
+        },
+        "withered_foxy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_foxy_showtime"
+            ]
+        },
+        "withered_foxy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_foxy_souled"
+            ]
+        },
+        "withered_foxy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_foxy_statue"
+            ]
+        },
+        "withered_freddy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_freddy_showtime"
+            ]
+        },
+        "withered_freddy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_freddy_souled"
+            ]
+        },
+        "withered_freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_freddy_statue"
+            ]
+        },
+        "withered_golden_freddy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_golden_freddy_showtime"
+            ]
+        },
+        "withered_golden_freddy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_golden_freddy_souled"
+            ]
+        },
+        "withered_golden_freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf2/withered_golden_freddy_statue"
+            ]
+        },
+        "phantom_bonnie_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_bonnie_showtime"
+            ]
+        },
+        "phantom_bonnie_souled": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_bonnie_souled"
+            ]
+        },
+        "phantom_bonnie_statue": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_bonnie_statue"
+            ]
+        },
+        "phantom_chica_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_chica_showtime"
+            ]
+        },
+        "phantom_chica_souled": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_chica_souled"
+            ]
+        },
+        "phantom_chica_statue": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_chica_statue"
+            ]
+        },
+        "phantom_foxy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_foxy_showtime"
+            ]
+        },
+        "phantom_foxy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_foxy_souled"
+            ]
+        },
+        "phantom_foxy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_foxy_statue"
+            ]
+        },
+        "phantom_freddy_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_freddy_showtime"
+            ]
+        },
+        "phantom_freddy_souled": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_freddy_souled"
+            ]
+        },
+        "phantom_freddy_statue": {
+            "textures": [
+                "textures/items/icons/fnaf3/phantom_freddy_statue"
+            ]
+        },
+        "springtrap_showtime": {
+            "textures": [
+                "textures/items/icons/fnaf3/springtrap_showtime"
+            ]
+        },
+        "springtrap_souled": {
+            "textures": [
+                "textures/items/icons/fnaf3/springtrap_souled"
+            ]
+        },
+        "springtrap_statue": {
+            "textures": [
+                "textures/items/icons/fnaf3/springtrap_statue"
+            ]
+        },
+        "itp_springbonnie_showtime": {
+            "textures": [
+                "textures/items/icons/itp/itp_springbonnie_showtime"
+            ]
+        },
+        "itp_springbonnie_souled": {
+            "textures": [
+                "textures/items/icons/itp/itp_springbonnie_souled"
+            ]
+        },
+        "itp_springbonnie_statue": {
+            "textures": [
+                "textures/items/icons/itp/itp_springbonnie_statue"
+            ]
+        },
+        "bob": {
+            "textures": [
+                "textures/items/icons/OCs/bob"
+            ]
+        },
+        "cyrus_showtime": {
+            "textures": [
+                "textures/items/icons/OCs/cyrus_showtime"
+            ]
+        },
+        "cyrus_souled": {
+            "textures": [
+                "textures/items/icons/OCs/cyrus_souled"
+            ]
+        },
+        "cyrus_statue": {
+            "textures": [
+                "textures/items/icons/OCs/cyrus_statue"
+            ]
+        },
+        "jr_cat_showtime": {
+            "textures": [
+                "textures/items/icons/OCs/jr_cat_showtime"
+            ]
+        },
+        "jr_cat_souled": {
+            "textures": [
+                "textures/items/icons/OCs/jr_cat_souled"
+            ]
+        },
+        "jr_cat_statue": {
+            "textures": [
+                "textures/items/icons/OCs/jr_cat_statue"
+            ]
+        },
+        "kagaroo_showtime": {
+            "textures": [
+                "textures/items/icons/OCs/kagaroo_showtime"
+            ]
+        },
+        "kagaroo_souled": {
+            "textures": [
+                "textures/items/icons/OCs/kagaroo_souled"
+            ]
+        },
+        "kagaroo_statue": {
+            "textures": [
+                "textures/items/icons/OCs/kagaroo_statue"
+            ]
+        },
+        "trimmer_showtime": {
+            "textures": [
+                "textures/items/icons/OCs/trimmer_showtime"
+            ]
+        },
+        "trimmer_souled": {
+            "textures": [
+                "textures/items/icons/OCs/trimmer_souled"
+            ]
+        },
+        "trimmer_statue": {
+            "textures": [
+                "textures/items/icons/OCs/trimmer_statue"
+            ]
+        },
+        "fb_bloody_fredbear_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_bloody_fredbear_suit"
+            ]
+        },
+        "fb_bonnie_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_bonnie_suit"
+            ]
+        },
+        "fb_chica_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_chica_suit"
+            ]
+        },
+        "fb_fixed_foxy_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_fixed_foxy_suit"
+            ]
+        },
+        "fb_foxy_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_foxy_suit"
+            ]
+        },
+        "fb_fredbear_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_fredbear_suit"
+            ]
+        },
+        "fb_freddy_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_freddy_suit"
+            ]
+        },
+        "fb_golden_freddy_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_golden_freddy_suit"
+            ]
+        },
+        "fb_springbonnie_suit": {
+            "textures": [
+                "textures/items/pamobile/fb_springbonnie_suit"
+            ]
+        },
+        "party_hat_1": {
+            "textures": [
+                "textures/items/party_hats/party_hat_1"
+            ]
+        },
+        "party_hat_2": {
+            "textures": [
+                "textures/items/party_hats/party_hat_2"
+            ]
+        },
+        "party_hat_3": {
+            "textures": [
+                "textures/items/party_hats/party_hat_3"
+            ]
+        },
+        "party_hat_4": {
+            "textures": [
+                "textures/items/party_hats/party_hat_4"
+            ]
+        },
+        "party_hat_5": {
+            "textures": [
+                "textures/items/party_hats/party_hat_5"
+            ]
+        },
+        "party_hat_6": {
+            "textures": [
+                "textures/items/party_hats/party_hat_6"
+            ]
+        },
+        "party_hat_7": {
+            "textures": [
+                "textures/items/party_hats/party_hat_7"
+            ]
+        },
+        "party_hat_8": {
+            "textures": [
+                "textures/items/party_hats/party_hat_8"
+            ]
+        },
+        "butter_soda_item": {
+            "textures": [
+                "textures/items/butter_soda_item"
+            ]
+        },
+        "exotic_beverage_soda_item": {
+            "textures": [
+                "textures/items/exotic_beverage_soda_item"
+            ]
+        },
+        "foxys_fruity_cove_coole_bottle_item": {
+            "textures": [
+                "textures/items/foxys_fruity_cove_coole_bottle_item"
+            ]
+        },
+        "nightmare_chica": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_chica"
+            ]
+        },
+        "nightmare_bb": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_bb"
+            ]
+        },
+        "nightmare_foxy": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_foxy"
+            ]
+        },
+        "jack_o_bonnie": {
+            "textures": [
+                "textures/items/icons/fnaf4/jack_o_bonnie"
+            ]
+        },
+        "jack_o_chica": {
+            "textures": [
+                "textures/items/icons/fnaf4/jack_o_chica"
+            ]
+        },
+        "nightmare": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare"
+            ]
+        },
+        "nightmare_fredbear": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_fredbear"
+            ]
+        },
+        "nightmare_bonnie": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_bonnie"
+            ]
+        },
+        "nightmare_freddy": {
+            "textures": [
+                "textures/items/icons/fnaf4/nightmare_freddy"
+            ]
+        },
+        "pizzeria_booth_black": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_black"
+            ]
+        },
+        "pizzeria_booth_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_blue"
+            ]
+        },
+        "pizzeria_booth_brown": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_brown"
+            ]
+        },
+        "pizzeria_booth_cyan": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_cyan"
+            ]
+        },
+        "pizzeria_booth_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_gray"
+            ]
+        },
+        "pizzeria_booth_green": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_green"
+            ]
+        },
+        "pizzeria_booth_light_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_light_blue"
+            ]
+        },
+        "pizzeria_booth_light_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_light_gray"
+            ]
+        },
+        "pizzeria_booth_lime": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_lime"
+            ]
+        },
+        "pizzeria_booth_magenta": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_magenta"
+            ]
+        },
+        "pizzeria_booth_orange": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_orange"
+            ]
+        },
+        "pizzeria_booth_pink": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_pink"
+            ]
+        },
+        "pizzeria_booth_purple": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_purple"
+            ]
+        },
+        "pizzeria_booth_red": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_red"
+            ]
+        },
+        "pizzeria_booth_white": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_white"
+            ]
+        },
+        "pizzeria_booth_yellow": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_yellow"
+            ]
+        },
+        "pizzeria_booth_lines_black": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_black"
+            ]
+        },
+        "pizzeria_booth_lines_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_blue"
+            ]
+        },
+        "pizzeria_booth_lines_brown": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_brown"
+            ]
+        },
+        "pizzeria_booth_lines_cyan": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_cyan"
+            ]
+        },
+        "pizzeria_booth_lines_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_gray"
+            ]
+        },
+        "pizzeria_booth_lines_green": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_green"
+            ]
+        },
+        "pizzeria_booth_lines_light_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_blue"
+            ]
+        },
+        "pizzeria_booth_lines_light_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_gray"
+            ]
+        },
+        "pizzeria_booth_lines_lime": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_lime"
+            ]
+        },
+        "pizzeria_booth_lines_magenta": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_magenta"
+            ]
+        },
+        "pizzeria_booth_lines_orange": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_orange"
+            ]
+        },
+        "pizzeria_booth_lines_pink": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_pink"
+            ]
+        },
+        "pizzeria_booth_lines_purple": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_purple"
+            ]
+        },
+        "pizzeria_booth_lines_red": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_red"
+            ]
+        },
+        "pizzeria_booth_lines_white": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_white"
+            ]
+        },
+        "pizzeria_booth_lines_yellow": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_yellow"
+            ]
+        }
+    }
 }

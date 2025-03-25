@@ -1,0 +1,169 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:pizza_box",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"fb:box": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_pepperoni_pizza",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.pepperoni_pizza_box_1",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					4,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					4,
+					16
+				]
+			},
+			"minecraft:custom_components": [
+				"fbd:pizza_box_cc"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_1"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_2"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_3"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_4"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_5"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_6",
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "q.block_state('fb:box') == 6",
+				"components": {
+					"minecraft:geometry": "geometry.pepperoni_pizza_box_6",
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			}
+		]
+	}
+}

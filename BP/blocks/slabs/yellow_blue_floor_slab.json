@@ -93,7 +93,23 @@
 					"minecraft:geometry": "minecraft:geometry.full_block",
 					"minecraft:custom_components": [
 						"fbd:on_player_destroy"
-					]
+					],
+					"minecraft:liquid_detection": {
+                		"detection_rules": [
+                    			{
+                       				"liquid_type": "water",
+                        			"can_contain_liquid": false,
+                        			"stops_liquid_flowing_out_from_direction": [
+                           				"up",
+                            				"down",
+                            				"north",
+                            				"south",
+                            				"east",
+                            				"west"
+                        			]
+                    			}
+                		]
+            		}
 				}
 			},
 			{
@@ -121,6 +137,22 @@
 		],
 		"components": {
 			"tag:changeable": {},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 7
 			},

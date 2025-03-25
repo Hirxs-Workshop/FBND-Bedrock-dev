@@ -90,7 +90,7 @@ tile.fb:toilet.name=Toilet  
 tile.fb:arcades.name=Pizzeria arcades & 
 tile.fb:plates.name=Party table props (dishes)  
 tile.fb:dark_party_table.name=Dark party table  
-tile.fb:locker.name=Office lockers  
+tile.fb:lockers.name=Office lockers  
 tile.fb:trashcan.name=Trashcan  
 tile.fb:boxes.name=Cardboard boxes  
 tile.fb:phone.name=Office phone  
@@ -306,7 +306,7 @@ tile.fb:ceiling_large_light.name=Ceiling Large Light , &  
 tile.fb:large_ceiling_wires.name=Large Ceiling Wires , &  
 tile.fb:large_hanging_wires.name=Large Hanging Wires , &  
 tile.fb:wall_banners.name=Wall Banners ,, &  
-tile.fb:pizzeria_chairs.name=Pizzeria Chairs ,, &  
+tile.fb:pizzeria_chairs.name=Pizzeria booths ,, &  
 tile.fb:ffd_posters.name=FFD Posters  
 item.fb:black_door_item=Black Door Item , &  
 item.fb:red_door_item=Red Door Item , & 
@@ -380,7 +380,7 @@ tile.fd:floor_3_stair.name=Pizzeria Floor Stair (Blue & black)  &  
 tile.fd:floor_5_stair.name=Pizzeria Floor Stair (Red & black)  &  
 tile.fd:floor_6_stair.name=Pizzeria Floor Stair (Red & white)  &  
 tile.fd:floor_7_stair.name=Pizzeria Floor Stair (Blue & white)  &  
-tile.fb:fnaf3_floor_stair.name=Office Floor Stair  
+tile.fd:fnaf3_floor_stair.name=Office Floor Stair  
 tile.fd:yellow_and_blue_floor_stair.name=Pizzeria Floor Stair (Yellow & Blue)  
 tile.fb:yellow_and_blue_floor_slab.name=Pizzeria Floor Slab (Yellow & Blue)  
 tile.fb:green_and_blue_floor_slab.name=Pizzeria Floor Slab (Green & Blue)  
@@ -397,6 +397,7 @@ tile.fb:prize_corner_shelf.name=Prize Corner Shelf  
 tile.fb:prize_corner_counter.name=Prize Corner Counter  
 tile.fb:soda_machine.name=Soda Machine  &   
 tile.fb:battington_shelves.name=Battington Shelves  
+tile.fbnd:rainbow_wall.name=Rainbow wall tiles
 tile.fb:metal_structure.name=Metal Structure  &  
 tile.fb:dev_plush_bob.name=The FantasticBOB Plushy 
 tile.fb:dev_plush_chypdo.name=Chipdo's Plushy 
@@ -405,7 +406,54 @@ tile.fb:dev_plush_kris.name=Kristoffer1976 Plushy 
 tile.fb:dev_plush_mrforbidden.name=Mr.Forbidden Plushy 
 tile.fb:dev_plush_cameraman.name=Cameraman27 Plushy 
 tile.fb:dev_plush_guyy.name=Guiy Plushy 
-tile.fb:dev_plush_polar.name=Polar Fredrick Plushy 
+tile.fb:dev_plush_polar.name=Polar Fredrick Plushy  
+tile.fb:blue_pirate_cove_curtains.name=Blue pirate cove curtains ,,, &  
+tile.fb:red_pirate_cove_curtains.name=Red pirate cove curtains ,,, &  
+tile.fb:purple_pirate_cove_curtains.name=Purple pirate cove curtains ,,, &  
+tile.fb:purple_gold_pirate_cove_curtains.name=Purple gold cove curtains ,,, &  
+tile.fb:stage_curtains.name=Stage curtains ,,, &  
+tile.fd:butter_soda.name=Butter soda  
+tile.fd:exotic_beverage_soda.name=Exotic beverage soda  
+tile.fd:foxys_fruity_cove_coole_hw.name=Foxys fruity cove coole  
+tile.fd:height_scale.name=Height scale  
+tile.fd:snacks.name=Snacks  
+tile.fd:sync_desk.name=Sync desk  
+tile.fd:polished_white_stone.name=Polished white stone ,,, & 
+tile.fd:polished_white_stone_tiles.name=Polished white stone (Tiles) ,,, & 
+tile.fd:sync_desk_props.name=Sync desk props , &  
+tile.fbd:mansam_plush.name=Mansam Plush 
+tile.fb:cobweb.name=Cobweb , &  
+tile.fb:rusty_vent.name=Rusty vent  
+tile.fd:fnaf4_box.name=The box  
+tile.fd:wooden_chair_fnaf_movie.name=Wooden chair  
+tile.fd:metal_chair_fnaf_movie.name=Metal chair  
+tile.fb:metal_chains.name=Metal chains ,,, &  
+tile.fb:lever_wires_off.name=Lever wires (Off) ,, &  
+
+##  
+
+item.fb:stars_item=Stars item
+item.fb:flashlight_off.name=Flashlight (Off)
+item.fd_butter_soda_item.name=Butter soda
+item.fd_exotic_beverage_item.name=Exotic beverage soda
+item.fd_foxys_fruity_cove_coole_hw_item.name=Foxys fruity cove coole
+item.spawn_egg.entity.fb:tree_cardboard.name=Tree cardboard
+entity.fb:tree_cardboard.name=Tree cardboard
+item.spawn_egg.entity.fb:bush_cardboard.name=Bush cardboard
+entity.fb:bush_cardboard.name=Bush cardboard
+item.spawn_egg.entity.fb:palm_tree_cardboard.name=Palm cardboard
+entity.fb:palm_tree_cardboard.name=Plam cardboard
+item.spawn_egg.entity.fb:freddy_cardboard.name=Freddy cardboard
+entity.fb:freddy_cardboard.name=Freddy cardboard
+item.spawn_egg.entity.fb:bonnie_cardboard.name=Bonnie cardboard
+entity.fb:bonnie_cardboard.name=Bonnie cardboard
+item.spawn_egg.entity.fb:chica_cardboard.name=Chica cardboard
+entity.fb:chica_cardboard.name=Chica cardboard
+item.spawn_egg.entity.fb:fredbear83_cardboard.name=Fredbear 83 cardboard
+entity.fb:fredbear83_cardboard.name=Fredbear 83 cardboard
+item.spawn_egg.entity.fb:fredbear83_minigame_cardboard.name=Fredbear 83 minigame cardboard
+entity.fb:fredbear83_minigame_cardboard.name=Fredbear 83 minigame cardboard
+
 
 ##More blocks ffd hw
 
@@ -550,6 +598,18 @@ item.spawn_egg.entity.fb:nightmare_chica.name= Nightmare Chica
 entity.fb:nightmare_chica.name= Nightmare Chica
 item.spawn_egg.entity.fb:nightmare_freddy.name= Nightmare Freddy
 entity.fb:nightmare_freddy.name= Nightmare Freddy
+item.spawn_egg.entity.fb:nightmare_bonnie.name= Nightmare bonnie
+entity.fb:nightmare_bonnie.name= Nightmare bonnie
+item.spawn_egg.entity.fb:nightmare_foxy.name= Nightmare foxy
+entity.fb:nightmare_foxy.name= Nightmare foxy
+item.spawn_egg.entity.fb:nightmare_foxy.name= Nightmare foxy
+entity.fb:nightmare_foxy.name= Nightmare foxy
+item.spawn_egg.entity.fb:nightmare_bbname= Nightmare balloon boy
+entity.fb:nightmare_bb.name= Nightmare balloon boy
+item.spawn_egg.entity.fb:nightmare_jack-o-bonnie.name= Nightmare Jack-O-Bonnie
+entity.fb:nightmare_jack-o-bonnie.name= Nightmare Jack-O-Bonnie
+item.spawn_egg.entity.fb:nightmare_jack-o-chica.name= Nightmare Jack-O-Chica
+entity.fb:nightmare_jack-o-chica.name= Nightmare Jack-O-Chica
 
 
 ##Items & outfits
@@ -623,6 +683,8 @@ action.interact.color=Change - Animatronic Suit
 action.interact.rotate=Rotate - Animatronic
 action.interact.move=Move - Animatronic
 action.hint.exit.fb:sit=Jump to Exit!  
+action.hint.exit.fbd:seat_2=Jump to Exit!  
+action.hint.exit.fbd:seat=Jump to Exit!  
 action.hint.exit.fb:office_chair=Jump to Exit!  
 action.hint.exit.fb:purple_guy_car=Jump to Exit!  
 fb_rotate:door=Rotate Door  
@@ -639,7 +701,7 @@ menu.howToPlay.generalMessage=§7(?) §Here you will find some interesting categ
 pack.description=Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?
 
 ## Unicodes (for map makers)
-
+ 
 ## fnaf 1 
 ## fnaf 2 
 ## fnaf 3 
@@ -653,3 +715,26 @@ pack.description=Have you ever wanted to replicate a restaurant from FNAF but in
 ##Showtime 
 ##Statue 
 ##Souled 
+
+## Groups
+fb:itemGroup.name.pizzeria_floors=Pizzeria floors
+fb:itemGroup.name.pizzeria_floors_slab=Pizzeria floors slabs
+fb:itemGroup.name.pizzeria_floors_stair=Pizzeria floors stairs
+fb:itemGroup.name.fnaf1_category_walls=FNaF1 Walls
+fb:itemGroup.name.fnaf2_category_walls=FNaF2 Walls
+fb:itemGroup.name.fnaf3_category_walls=FNaF3 Walls
+fb:itemGroup.name.fnaf4_category_walls=FNaF4 Walls
+fb:itemGroup.name.ffd_category_walls=FFD Walls
+fb:itemGroup.name.fnf_category_walls=Fazbear's & Friends Walls
+fb:itemGroup.name.fnaf_movie_walls=FNaF Movie Walls
+fb:itemGroup.name.hw_walls=Help Wanted Walls
+fb:itemGroup.name.bt_category_walls=Battington Walls
+fb:itemGroup.name.stage_category_walls=Stage Blocks
+fb:itemGroup.name.ceiling_blocks=Ceiling Blocks
+fb:itemGroup.name.pirate_cove_blocks=Stage curtains & pirate cove
+fb:itemGroup.name.party_chairs=Party chairs
+fb:itemGroup.name.fnaf_plushies=Plushies
+fb:itemGroup.name.tables=Party tables
+fb:itemGroup.name.neons=Neon signs & lines
+fb:itemGroup.name.desks=Desks
+fb:itemGroup.name.posters=Posters

@@ -1,103 +1,27 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "1.21.20 - FNaF's Build & Decor | Rotting Dreams - Official Release v4.4",
+		"name": "RP | FB&D v4.12.2",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
-			20,
-			80
+			21,
+			60
 		],
-		"uuid": "3878e804-61de-46af-a31e-549e3c6d76f7",
-		"version": [
-			4,
-			6,
-			5
-		]
+		"uuid": "eaf1146e-e5f0-44ae-b2e0-26748c04254c",
+		"version": "4.12.2"
 	},
 	"modules": [
 		{
 			"type": "resources",
-			"uuid": "e14f36eb-f25e-4df3-a809-07297e5235ff",
-			"version": [
-				4,
-				6,
-				5
-			]
+			"uuid": "e6460e02-aefd-4ce1-ba21-e219a2c11e30",
+			"version": "4.12.2"
 		}
 	],
 	"dependencies": [
 		{
-			"uuid": "0976ac8b-f368-4ae1-93c8-2520f79a2137",
-			"version": [
-				4,
-				6,
-				5
-			]
+			"uuid": "aa451e6f-d46a-418e-978e-bd81e76e87c9",
+			"version": "4.12.2"
 		}
-	],
-	"settings": [
-		{
-			"type": "label",
-			"text": "§l§6Developers:"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- Hirx's\n- JennyF\n- fantasticbob_mc\n- .cameraman27\n- chypdo\n- theforbiddenblock\n- abcbutter0609\n- polarfredrick\n- kristoffer1976\n- Cheez\n- guiy_bonnie"
-		},
-		{
-			"type": "label",
-			"text": "§l§eSpecial Thanks:"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- HyruArt\n- Murasaki"
-		},
-		{
-			"type": "label",
-			"text": "§l§8Insiders/Testers:"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- Xeno Neo\n- ButterM|BM\n- Bh11us\n- croaked\n- doortame\n- Elias\n- MR Forbidden\n- Thomas York\n- YellowRabit\n- Darkgui\n- Springdom\n- ZachDoesGames\n- The FantasticBOB\n- Dargelixt Gamer\n- ManSam\n- Claus"
-		},
-		{
-			"type": "label",
-			"text": "§l§8Supporters:"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- Stilla\n- Big Randy"
-		},
-		{
-			"type": "label",
-			"text": "-------------------------------------------------------"
-		},
-		{
-			"type": "label",
-			"text": "§l§8Community Server:"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- https://discord.gg/hirxs"
-		},
-		{
-			"type": "label",
-			"text": "§8§lSupport (Bugs & Suggestions):"
-		},
-		{
-			"type": "label",
-			"text": "§r§f- https://hirxs-website.net/community-forums"
-		}
-	],
-	"metadata": {
-		"generated_with": {
-			"bridge": [
-				"2.7.34"
-			],
-			"dash": [
-				"0.11.7"
-			]
-		}
-	}
+	]
 }

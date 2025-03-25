@@ -19,6 +19,9 @@
 		"bathroom_sign_man": {
 			"textures": "textures/blocks/bathroom_sign_man"
 		},
+		"new_foxy": {
+			"textures": "textures/blocks/new_foxy"
+		},
 		"celebrate_fun_icon": {
 			"textures": "textures/blocks/celebrate_fun_icon"
 		},
@@ -73,6 +76,9 @@
 		"5": {
 			"textures": "textures/blocks/shelf/5"
 		},
+		"6": {
+			"textures": "textures/blocks/shelf/6"
+		},
 		"bridge_door_left_corner": {
 			"textures": "textures/blocks/door_border_1"
 		},
@@ -93,9 +99,6 @@
 		},
 		"bridge_wall_down_block_3": {
 			"textures": "textures/blocks/wall_block7"
-		},
-		"bridge_wall_grey_block_1": {
-			"textures": "textures/blocks/blocks (3)"
 		},
 		"bridge_wall_deco_1": {
 			"textures": "textures/blocks/wall_block5"
@@ -138,9 +141,6 @@
 		},
 		"bridge_wall_down_4": {
 			"textures": "textures/blocks/wall_7"
-		},
-		"bridge_wall_down_block_5": {
-			"textures": "textures/blocks/blocks (5)"
 		},
 		"bridge_wall_down_block_6": {
 			"textures": "textures/blocks/wall_block11"
@@ -214,14 +214,8 @@
 		"fb:single_fan": {
 			"textures": "textures/blocks/fan_off"
 		},
-		"fb_office_tv_1": {
-			"textures": "textures/blocks/fb_office_tv_1"
-		},
 		"fb_papers_4": {
 			"textures": "textures/blocks/paper_2"
-		},
-		"fb_office_tv_2": {
-			"textures": "textures/blocks/fb_office_tv_1"
 		},
 		"fb_light_2": {
 			"textures": "textures/blocks/light_2"
@@ -523,7 +517,6 @@
 		"light_on": {
 			"textures": "textures/blocks/light_on"
 		},
-		///////////////////////////////// - floors
 		"red1": {
 			"textures": "textures/blocks/floors/red_and_black_floor/0"
 		},
@@ -577,16 +570,6 @@
 		},
 		"green_and_blue_floor_2": {
 			"textures": "textures/blocks/floors/green_and_blue_floor/1"
-		},
-		///////////////////////////////// - floors
-		"ff2white1": {
-			"textures": "textures/blocks/ff2_white/0"
-		},
-		"ff2white2": {
-			"textures": "textures/blocks/ff2_white/1"
-		},
-		"ff2white3": {
-			"textures": "textures/blocks/ff2_white/2"
 		},
 		"switch_on": {
 			"textures": "textures/blocks/switch_on"
@@ -1333,6 +1316,9 @@
 		"b1": {
 			"textures": "textures/blocks/battington/1"
 		},
+		"rainbow_wall": {
+			"textures": "textures/blocks/battington/rainbow_wall"
+		},
 		"b2": {
 			"textures": "textures/blocks/battington/2"
 		},
@@ -1510,7 +1496,6 @@
 		"pirate_cove_block_purple": {
 			"textures": "textures/blocks/pirate_cove/purple"
 		},
-		// FNAF 4 
 		"fnaf4_alarm": {
 			"textures": "textures/blocks/fnaf4/alarm"
 		},
@@ -1591,6 +1576,9 @@
 		},
 		"fnaf4_house_window": {
 			"textures": "textures/blocks/fnaf4/house_window"
+		},
+		"fnaf4_house_window_top": {
+			"textures": "textures/blocks/fnaf4/house_window_top"
 		},
 		"fnaf4_floor_x": {
 			"textures": "textures/blocks/fnaf4/x"
@@ -1962,6 +1950,10 @@
 		},
 		"fnaf1_wall_tiles_purple": {
 			"textures": "textures/blocks/new_walls/wall_block3"
+		},
+		
+		"fnaf1_wall_black_light": {
+			"textures": "textures/blocks/new_walls/wall_block_black_light"
 		},
 		"fnaf1_wall_tiles_black": {
 			"textures": "textures/blocks/new_walls/wall_block9"
@@ -2464,7 +2456,16 @@
 			"textures": "textures/blocks/bubblegum_machine"
 		},
 		"soda_machine": {
-			"textures": "textures/blocks/Soda_3"
+			"textures": "textures/blocks/soda_machine/soda_machine_empty"
+		},
+		"soda_machine_op1": {
+			"textures": "textures/blocks/soda_machine/soda_machine_op1"
+		},
+		"soda_machine_op2": {
+			"textures": "textures/blocks/soda_machine/soda_machine_op2"
+		},
+		"soda_machine_op3": {
+			"textures": "textures/blocks/soda_machine/soda_machine_op3"
 		},
 		"another_block_test_1": {
 			"textures": "textures/blocks/another_block_test_1"
@@ -2513,6 +2514,261 @@
 		},
 		"dev_plush_butter": {
 			"textures": "textures/blocks/plush/11"
-		}
+		},
+		"texture_vent_block": {
+			"textures": "textures/blocks/vent_block"
+		},
+		"texture_vent_block_off": {
+			"textures": "textures/blocks/vent_block_off"
+		},
+		"1x1_vent_beta": {
+			"textures": "textures/blocks/1x1_vent_beta"
+		},
+		"height_scale": {
+			"textures": "textures/blocks/height_scale"
+		},
+		"metal_chair_fnaf_movie": {
+			"textures": "textures/blocks/metal_chair_fnaf_movie"
+		},
+		"wooden_chair_fnaf_movie": {
+			"textures": "textures/blocks/wooden_chair_fnaf_movie"
+		},
+		"texture_vent_block_on": {
+			"textures": "textures/blocks/vent_block_on"
+		},
+		"fnaf4_box": {
+			"textures": "textures/blocks/fnaf4_box"
+		},
+		"polished_white_stone": {
+			"textures": "textures/blocks/polished_white_stone"
+		},
+		"polished_white_stone_tile": {
+			"textures": "textures/blocks/polished_white_stone_tile"
+		},
+		"butter_soda": {
+			"textures": [
+				"textures/blocks/butter_soda"
+			]
+		},
+		"exotic_beverage": {
+			"textures": [
+				"textures/blocks/exotic_beverage"
+			]
+		},
+		"foxys_fruity_cove_coole_hw": {
+			"textures": [
+				"textures/blocks/foxys_fruity_cove_coole_hw"
+			]
+		},
+		"red_neon_light_yellow": {
+			"textures": [
+				"textures/blocks/red_neon_light_yellow"
+			]
+		},
+		"red_neon_light_green": {
+			"textures": [
+				"textures/blocks/red_neon_light_green"
+			]
+		},
+		"red_neon_light_blue": {
+			"textures": [
+				"textures/blocks/red_neon_light_blue"
+			]
+		},
+		"red_neon_light_magenta": {
+			"textures": [
+				"textures/blocks/red_neon_light_magenta"
+			]
+		},
+		"red_neon_light_purple": {
+			"textures": [
+				"textures/blocks/red_neon_light_purple"
+			]
+		},
+		"arcade_neon_sign_yellow": {
+			"textures": [
+				"textures/blocks/arcade_neon_sign_yellow"
+			]
+		},
+		"arcade_neon_sign_green": {
+			"textures": [
+				"textures/blocks/arcade_neon_sign_green"
+			]
+		},
+		"arcade_neon_sign_blue": {
+			"textures": [
+				"textures/blocks/arcade_neon_sign_blue"
+			]
+		},
+		"arcade_neon_sign_magenta": {
+			"textures": [
+				"textures/blocks/arcade_neon_sign_magenta"
+			]
+		},
+		"arcade_neon_sign_purple": {
+			"textures": [
+				"textures/blocks/arcade_neon_sign_purple"
+			]
+		},
+		"pizzeria_booth_black": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_black"
+            ]
+        },
+        "pizzeria_booth_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_blue"
+            ]
+        },
+        "pizzeria_booth_brown": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_brown"
+            ]
+        },
+        "pizzeria_booth_cyan": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_cyan"
+            ]
+        },
+        "pizzeria_booth_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_gray"
+            ]
+        },
+        "pizzeria_booth_green": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_green"
+            ]
+        },
+        "pizzeria_booth_light_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_light_blue"
+            ]
+        },
+        "pizzeria_booth_light_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_light_gray"
+            ]
+        },
+        "pizzeria_booth_lime": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_lime"
+            ]
+        },
+        "pizzeria_booth_magenta": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_magenta"
+            ]
+        },
+        "pizzeria_booth_orange": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_orange"
+            ]
+        },
+        "pizzeria_booth_pink": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_pink"
+            ]
+        },
+        "pizzeria_booth_purple": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_purple"
+            ]
+        },
+        "pizzeria_booth_red": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_red"
+            ]
+        },
+        "pizzeria_booth_white": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_white"
+            ]
+        },
+        "pizzeria_booth_yellow": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/pizzeria_booth_yellow"
+            ]
+        },
+		"pizzeria_booth_lines_black": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_black"
+            ]
+        },
+        "pizzeria_booth_lines_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_blue"
+            ]
+        },
+        "pizzeria_booth_lines_brown": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_brown"
+            ]
+        },
+        "pizzeria_booth_lines_cyan": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_cyan"
+            ]
+        },
+        "pizzeria_booth_lines_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_gray"
+            ]
+        },
+        "pizzeria_booth_lines_green": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_green"
+            ]
+        },
+        "pizzeria_booth_lines_light_blue": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_blue"
+            ]
+        },
+        "pizzeria_booth_lines_light_gray": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_light_gray"
+            ]
+        },
+        "pizzeria_booth_lines_lime": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_lime"
+            ]
+        },
+        "pizzeria_booth_lines_magenta": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_magenta"
+            ]
+        },
+        "pizzeria_booth_lines_orange": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_orange"
+            ]
+        },
+        "pizzeria_booth_lines_pink": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_pink"
+            ]
+        },
+        "pizzeria_booth_lines_purple": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_purple"
+            ]
+        },
+        "pizzeria_booth_lines_red": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_red"
+            ]
+        },
+        "pizzeria_booth_lines_white": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_white"
+            ]
+        },
+        "pizzeria_booth_lines_yellow": {
+            "textures": [
+                "textures/blocks/pizzeria_booths/lines/pizzeria_booth_lines_yellow"
+            ]
+        }
 	}
 }

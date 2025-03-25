@@ -38,12 +38,11 @@
 				"default": "geometry.the_new_fredbear"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#DEA600",
-				"overlay_color": "#1E1D1B"
+				"texture": "fredbear_souled"
 			}
 		}
 	}

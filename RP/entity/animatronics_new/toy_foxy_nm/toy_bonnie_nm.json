@@ -33,12 +33,11 @@
 				"default": "geometry.new_toy_foxy"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#F6F0EC",
-				"overlay_color": "#401925"
+				"texture": "toy_foxy_night_mode"
 			}
 		}
 	}

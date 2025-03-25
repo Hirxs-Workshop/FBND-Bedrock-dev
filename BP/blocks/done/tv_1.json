@@ -34,6 +34,12 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_monitors",
+					"render_method": "alpha_test"
+				}
+			},
 			"minecraft:geometry": "geometry.new_monitors_1",
 			"minecraft:collision_box": {
 				"origin": [

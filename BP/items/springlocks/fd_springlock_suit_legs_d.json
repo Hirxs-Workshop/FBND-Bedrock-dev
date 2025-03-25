@@ -31,7 +31,8 @@
 			},
 			"minecraft:mining_speed": 5,
 			"minecraft:wearable": {
-				"slot": "slot.armor.legs"
+				"slot": "slot.armor.legs",
+				"protection": 7
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -43,9 +44,6 @@
 						"repair_amount": 10
 					}
 				]
-			},
-			"minecraft:armor": {
-				"protection": 7
 			},
 			"minecraft:display_name": {
 				"value": "Springlocks legs (damaged)"

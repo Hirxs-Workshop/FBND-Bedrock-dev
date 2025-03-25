@@ -46,8 +46,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#ABF4EC",
-				"overlay_color": "#F091B2"
+				"texture": "kagaroo_statue"
 			}
 		}
 	}

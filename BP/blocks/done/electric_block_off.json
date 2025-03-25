@@ -13,7 +13,8 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "electricoff",
-					"render_method": "opaque"
+					"render_method": "opaque",
+					"ambient_occlusion": true
 				}
 			},
 			"minecraft:custom_components": [

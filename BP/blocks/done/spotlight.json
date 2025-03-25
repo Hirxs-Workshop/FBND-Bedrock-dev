@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "fb:spotlight",
 			"menu_category": {
-				"category": "nature"
+				"category": "construction"
 			},
 			"traits": {
 				"minecraft:placement_position": {
@@ -18,6 +18,12 @@
 					"values": {
 						"min": 0,
 						"max": 15
+					}
+				},
+				"light:colors": {
+					"values": {
+						"min": 0,
+						"max": 5
 					}
 				}
 			}
@@ -61,15 +67,17 @@
 				"conditions": [
 					{
 						"allowed_faces": [
-							"down",
-							"side"
+							"down"
 						]
 					}
 				]
 			},
 			"minecraft:custom_components": [
-				"fbd:ar_for_ceiling_blocks"
+				"fbd:ar_for_ceiling_blocks",
+				"fbd:spotlight_ray",
+				"fbd:spotlight_ray_colors_change"
 			],
+			"minecraft:light_emission": 14,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "sp1",
@@ -140,6 +148,72 @@
 							13,
 							6
 						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp1",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp2",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp3",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp4",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp5",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('light:colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "sp6",
+							"render_method": "alpha_test"
+						}
 					}
 				}
 			}

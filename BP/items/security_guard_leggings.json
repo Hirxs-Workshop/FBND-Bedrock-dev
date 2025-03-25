@@ -25,12 +25,9 @@
 					"default": "fb_security_guard_leggings"
 				}
 			},
-			"minecraft:render_offsets": "leggings",
-			"minecraft:armor": {
-				"protection": 5
-			},
 			"minecraft:wearable": {
-				"slot": "slot.armor.legs"
+				"slot": "slot.armor.legs",
+				"protection": 5
 			},
 			"minecraft:repairable": {
 				"repair_items": [

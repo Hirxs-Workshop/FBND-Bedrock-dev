@@ -1,0 +1,4286 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:pizzeria_chairs",
+			"states": {
+				"ef:colors": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				},
+				"ef:lines_colors": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				},
+				"ef:mode": {
+					"values": {
+						"min": 0,
+						"max": 1
+					}
+				},
+				"fbnd:right": [
+					0,
+					1
+				],
+				"fbnd:left": [
+					0,
+					1
+				],
+				"fbnd:facing": [
+					0,
+					1
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.pizzeria_chairs",
+				"bone_visibility": {
+					"single": true,
+					"outer": false,
+					"inter": false
+				}
+			},
+			"minecraft:custom_components": [
+				"fbd:seat_function",
+				"fbnd:color_n_entity",
+				"fbnd:connection_sides"
+			],
+			"minecraft:map_color": "#00ff00",
+			
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pizzeria_booth_white",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 5
+			},
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					9,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					9,
+					16
+				]
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:light_dampening": 1
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('fbnd:right') == 1 && q.block_state('fbnd:left') == 0 && q.block_state('fbnd:facing') == 0",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pizzeria_chairs",
+						"bone_visibility": {
+							"single": true,
+							"outer": false,
+							"inter": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:right') == 0 && q.block_state('fbnd:left') == 0 && q.block_state('fbnd:facing') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pizzeria_chairs",
+						"bone_visibility": {
+							"single": true,
+							"outer": false,
+							"inter": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:right') == 1 && q.block_state('fbnd:left') == 0 && q.block_state('fbnd:facing') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pizzeria_chairs",
+						"bone_visibility": {
+							"single": false,
+							"outer": true,
+							"inter": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:right') == 0 && q.block_state('fbnd:left') == 1 && q.block_state('fbnd:facing') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pizzeria_chairs",
+						"bone_visibility": {
+							"single": false,
+							"outer": false,
+							"inter": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"tag:fbnd.black_sofa_n": {}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:fbnd.black_sofa_s": {}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"tag:fbnd.black_sofa_w": {}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"tag:fbnd.black_sofa_e": {}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_white",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_orange",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_magenta",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_yellow",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_lime",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_pink",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_light_gray",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_cyan",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_purple",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_blue",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_brown",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_green",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_red",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ef:lines_colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pizzeria_booth_black",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pizzeria_booth_lines_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

@@ -47,8 +47,7 @@
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#6f5713",
-				"overlay_color": "#B28B1F"
+				"texture": "withered_chica_statue"
 			}
 		}
 	}

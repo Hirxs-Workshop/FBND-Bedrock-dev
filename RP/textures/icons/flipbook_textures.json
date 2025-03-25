@@ -1,0 +1,228 @@
+[
+  {
+    "flipbook_texture": "textures/blocks/fan",
+    "atlas_tile": "fb:fan",
+    "ticks_per_frame": 0.1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/help-wanted/hw_fan",
+    "atlas_tile": "fb:hw_fan",
+    "ticks_per_frame": 0.1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/fnaf2/deco2_1",
+    "atlas_tile": "fb:fb2_deco2_1",
+    "ticks_per_frame": 0.01,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/arcade_room_on_1",
+    "atlas_tile": "ar_on1",
+    "ticks_per_frame": 3,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/electric_block_off2",
+    "atlas_tile": "electricoff",
+    "ticks_per_frame": 6,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/arcade_room_on_2",
+    "atlas_tile": "ar_on2",
+    "ticks_per_frame": 3,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/rules_paper",
+    "atlas_tile": "rules_paper",
+    "ticks_per_frame": 40,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/old_pc_2",
+    "atlas_tile": "old_pc_2",
+    "ticks_per_frame": 1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/old_pc_3",
+    "atlas_tile": "old_pc_3",
+    "ticks_per_frame": 1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/old_pc_4",
+    "atlas_tile": "old_pc_4",
+    "ticks_per_frame": 1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/old_pc_5",
+    "atlas_tile": "old_pc_5",
+    "ticks_per_frame": 1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/speakers_2",
+    "atlas_tile": "new_speakers_2",
+    "ticks_per_frame": 4,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/fnaf_movie/wall_clock_big_stick",
+    "atlas_tile": "wall_clock_big_tick",
+    "ticks_per_frame": 320,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/fnaf_movie/wall_clock",
+    "atlas_tile": "wall_clock",
+    "ticks_per_frame": 20.5,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/emergency_light_on",
+    "atlas_tile": "emergency_light_on",
+    "ticks_per_frame": 0.1,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+]

@@ -23,43 +23,8 @@
 			"minecraft:icon": {
 				"texture": ""
 			},
-			"minecraft:render_offsets": {
-				"main_hand": {
-					"first_person": {
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"third_person": {
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				},
-				"off_hand": {
-					"first_person": {
-						"scale": [
-							0,
-							0,
-							0
-						]
-					},
-					"third_person": {
-						"scale": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
 			"minecraft:damage": 4,
 			"minecraft:hand_equipped": true
-		},
-		"events": {}
+		}
 	}
 }

@@ -18,11 +18,6 @@
 			}
 		},
 		"component_groups": {
-			"minecraft:item_controllable": {
-				"control_items": [
-					"fb:rotate"
-				]
-			},
 			"fb:toy_freddy_nm_normal": {
 				"minecraft:transformation": {
 					"into": "fb:toy_freddy_nm"
@@ -211,7 +206,7 @@
 		},
 		"events": {
 			"nose": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"playanimation @s animation.fb_toy_freddy_nm.nose",
 						"effect @s slowness 1 2 true"
@@ -226,7 +221,7 @@
 				}
 			},
 			"fb:working": {
-				"run_command": {
+				"queue_command": {
 					"command": [],
 					"target": "self"
 				},
@@ -242,7 +237,7 @@
 				}
 			},
 			"fb:stop_working": {
-				"run_command": {
+				"queue_command": {
 					"command": [],
 					"target": "self"
 				},
@@ -265,7 +260,7 @@
 				}
 			},
 			"fb:rotate": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tp @s ~ ~ ~ ~45 ~",
 						"particle fb:rotate ~ ~1 ~",
@@ -280,7 +275,7 @@
 						"despawn"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": []
 				}
 			},

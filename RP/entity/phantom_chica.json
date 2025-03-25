@@ -11,8 +11,7 @@
 				"default": "textures/entity/fnaf3/phantom_chica"
 			},
 			"spawn_egg": {
-				"base_color": "#403A1C",
-				"overlay_color": "#757541"
+				"texture": "phantom_chica_statue"
 			},
 			"animations": {
 				"default_pose": "animation.phantom_chica.idle",

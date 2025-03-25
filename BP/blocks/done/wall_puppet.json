@@ -34,18 +34,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": "geometry.new_wall_puppet",
-			"minecraft:collision_box": {
-				"origin": [
-					-8,
-					0,
-					6
-				],
-				"size": [
-					16,
-					16,
-					2
-				]
-			},
+			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
 					-8,
@@ -127,7 +116,8 @@
 							"texture": "wp1",
 							"render_method": "alpha_test"
 						}
-					}
+					},
+					"minecraft:geometry": "geometry.new_wall_puppet_2"
 				}
 			},
 			{
@@ -138,7 +128,8 @@
 							"texture": "wp2",
 							"render_method": "alpha_test"
 						}
-					}
+					},
+					"minecraft:geometry": "geometry.new_wall_puppet_3"
 				}
 			}
 		]

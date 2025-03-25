@@ -1,15 +1,19 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:curtain_purple",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				],
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
 				"p:changer": [
 					0,
 					1,
@@ -19,125 +23,20 @@
 				]
 			}
 		},
-		"permutations": [
-			{
-				"condition": "q.block_property('p:facing') == 0",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 1",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 2",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:facing') == 3",
-				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 0",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "curtain_purple_1",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 1",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "curtain_purple_2",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 2",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "curtain_purple_3",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 3",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "curtain_purple_4",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			},
-			{
-				"condition": "q.block_property('p:changer') == 4",
-				"components": {
-					"minecraft:material_instances": {
-						"*": {
-							"texture": "curtain_purple_5",
-							"render_method": "alpha_test",
-							"ambient_occlusion": false
-						}
-					}
-				}
-			}
-		],
 		"components": {
-			"minecraft:display_name": "fb:curtain_purple",
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.Construction"
+			"tag:changeable": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
 			},
-			"minecraft:map_color": "#ffffff",
-			"minecraft:destroy_time": 4,
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:breathability": "air",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
 			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
+				"destroy_chance_modifier": 5,
+				"catch_chance_modifier": 5
 			},
-			"minecraft:geometry": "geometry.curtains",
-			"minecraft:aim_collision": {
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -149,39 +48,120 @@
 					2
 				]
 			},
-			"minecraft:entity_collision": {
-				"origin": [
-					0,
-					0,
-					0
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
+			"minecraft:collision_box": false,
+			"minecraft:geometry": {
+				"identifier": "geometry.curtains"
 			}
 		},
-		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
 				}
 			},
-			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==4?0:q.block_property('p:changer')+1"
-				},
-				"run_command": {
-					"command": [
-						"playsound block.lantern.break @p ~~~",
-						"particle foxes:texture ~~~"
-					]
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "curtain_purple_1",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "curtain_purple_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "curtain_purple_3",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "curtain_purple_4",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "curtain_purple_5",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
 				}
 			}
-		}
+		]
 	}
 }

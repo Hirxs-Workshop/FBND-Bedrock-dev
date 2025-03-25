@@ -34,7 +34,7 @@
 			},
 			"minecraft:collision_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],
@@ -46,7 +46,7 @@
 			},
 			"minecraft:selection_box": {
 				"origin": [
-					-7,
+					-8,
 					0,
 					6
 				],

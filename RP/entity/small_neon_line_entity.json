@@ -1,0 +1,27 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fd:small_neon_line_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "fbnd_light"
+			},
+			"textures": {
+				"default": "textures/blocks/red_neon_light_entity",
+				"blue": "textures/blocks/red_neon_light_green_entity",
+				"red": "textures/blocks/red_neon_light_yellow_entity",
+				"green": "textures/blocks/red_neon_light_blue_entity",
+				"pink": "textures/blocks/red_neon_light_magenta_entity",
+				"purple": "textures/blocks/red_neon_light_purple_entity"
+			},
+			"geometry": {
+				"default": "geometry.small_neon_line_entity"
+			},
+			"render_controllers": [
+				"controller.render.neon_effect"
+			]
+		}
+	}
+}

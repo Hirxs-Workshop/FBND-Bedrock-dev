@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.celling_large_light_entity",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4, -6, -14],
+							"size": [8, 15, 28],
+							"uv": {
+								"north": {"uv": [6.8, 0], "uv_size": [2.4, 16], "material_instance": "light"},
+								"east": {"uv": [6.8, 0], "uv_size": [2.4, 16], "material_instance": "light"},
+								"south": {"uv": [6.8, 0], "uv_size": [2.4, 16], "material_instance": "light"},
+								"west": {"uv": [6.8, 0], "uv_size": [2.4, 16], "material_instance": "light"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

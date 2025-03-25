@@ -224,5 +224,41 @@
       14,
       15
     ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/soda_machine/soda_machine_op1",
+    "atlas_tile": "soda_machine_op1",
+    "ticks_per_frame": 4,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/soda_machine/soda_machine_op2",
+    "atlas_tile": "soda_machine_op2",
+    "ticks_per_frame": 4,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "flipbook_texture": "textures/blocks/soda_machine/soda_machine_op3",
+    "atlas_tile": "soda_machine_op3",
+    "ticks_per_frame": 4,
+    "blend_frames": false,
+    "frames": [
+      0,
+      1,
+      2,
+      3
+    ]
   }
 ]

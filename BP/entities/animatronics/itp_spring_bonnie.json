@@ -38,9 +38,6 @@
 					}
 				]
 			},
-			"minecraft:loot": {
-				"table": "loot_tables/entities/armor_stand_acacia.json"
-			},
 			"minecraft:nameable": {},
 			"minecraft:persistent": {},
 			"minecraft:physics": {},

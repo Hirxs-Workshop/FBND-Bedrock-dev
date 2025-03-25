@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.nightmare_eyes": {
+			"geometry": "geometry.charged",
+			"part_visibility": [
+				{
+					"*": "query.is_powered"
+				}
+			],
+			"materials": [
+				{
+					"*": "material.charged"
+				}
+			],
+			"textures": [
+				"texture.charged"
+			]
+		}
+	}
+}

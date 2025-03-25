@@ -12,11 +12,10 @@
 				"blue": "textures/entity/fnaf1/vars/tv_springbonnie",
 				"red": "textures/entity/fnaf1/vars/insane_bonnie_fn4",
 				"purple": "textures/entity/fnaf1/vars/SilverEyesYellowBonnie",
-				"orange": "textures/entity/fnaf1/vars/springbonnie"
+				"orange": "textures/entity/fnaf1/vars/springbonnief"
 			},
 			"spawn_egg": {
-				"base_color": "#DEBB64",
-				"overlay_color": "#AE8532"
+				"texture": "springbonnie_statue"
 			},
 			"animations": {
 				"default_pose": "animation.new_bonnie_bunny.stage",
@@ -50,7 +49,7 @@
 				"default": "geometry.spring_bonnie"
 			},
 			"render_controllers": [
-				"controller.render.four_variants"
+				"controller.render.five_variants"
 			],
 			"enable_attachables": true
 		}

@@ -11,7 +11,7 @@
 				"default": "textures/entity/itp_springbonnie"
 			},
 			"spawn_egg": {
-				"texture": "itp"
+				"texture": "itp_springbonnie_statue"
 			},
 			"animations": {
 				"default_pose": "animation.itp_spring_bonnie.new_idle_4",

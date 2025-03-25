@@ -168,6 +168,18 @@
 							"render_method": "alpha_test",
 							"ambient_occlusion": false
 						}
+					},
+					"minecraft:custom_components": [
+						"fd:advanced_rotation_v1",
+						"fbd:fan_interactive",
+						"fbd:fan_sound"
+					],
+					"minecraft:tick": {
+						"interval_range": [
+							35,
+							35
+						],
+						"looping": true
 					}
 				}
 			}

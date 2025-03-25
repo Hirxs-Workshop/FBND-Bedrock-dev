@@ -2,7 +2,6 @@
 	"format_version": "1.20.80",
 	"minecraft:entity": {
 		"description": {
-			"runtime_identifier": "minecraft:armor_stand",
 			"identifier": "fd:lamp_light_ray",
 			"is_spawnable": false,
 			"is_summonable": true,
@@ -18,6 +17,13 @@
 				"block_list": [
 					{
 						"block": "fb:light_2",
+						"exited_block_event": {
+							"event": "destroy",
+							"target": "self"
+						}
+					},
+					{
+						"block": "fb:office_light_down",
 						"exited_block_event": {
 							"event": "destroy",
 							"target": "self"

@@ -11,6 +11,7 @@
 		"permutations": [],
 		"components": {
 			"tag:wall": {},
+			"tag:pipes_connectable": {},
 			"minecraft:material_instances": {
 				"up": {
 					"texture": "fb_stage_wall_1",

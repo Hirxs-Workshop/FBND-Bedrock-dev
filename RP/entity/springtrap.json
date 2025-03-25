@@ -12,8 +12,7 @@
 				"blue": "textures/entity/fnaf3/springtrap"
 			},
 			"spawn_egg": {
-				"base_color": "#4A4C26",
-				"overlay_color": "#2A2F15"
+				"texture": "springtrap_statue"
 			},
 			"animations": {
 				"default_pose": "animation.springtrap.idle_1",

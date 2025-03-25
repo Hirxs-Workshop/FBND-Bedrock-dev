@@ -35,10 +35,27 @@
 			}
 		},
 		"components": {
+			"tag:pipes_connectable": {},
 			"minecraft:tick": {
 				"interval_range": [
 					3,
 					3
+				]
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
 				]
 			},
 			"minecraft:destructible_by_mining": {
@@ -542,7 +559,6 @@
 					}
 				}
 			},
-			// Above and sides
 			{
 				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
 				"components": {
@@ -623,7 +639,6 @@
 					}
 				}
 			},
-			// Pipe sides (two connections)
 			{
 				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
 				"components": {
@@ -684,7 +699,6 @@
 					}
 				}
 			},
-			// Sides with below and without above
 			{
 				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && q.block_state('x:below_bc')",
 				"components": {
@@ -725,7 +739,6 @@
 					}
 				}
 			},
-			// Above and below vertical
 			{
 				"condition": "!q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && q.block_state('x:below_bc')",
 				"components": {
@@ -746,7 +759,6 @@
 					}
 				}
 			},
-			// Sides with above and without below
 			{
 				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
 				"components": {
@@ -787,7 +799,6 @@
 					}
 				}
 			},
-			// Sides without above and below
 			{
 				"condition": "q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
 				"components": {
@@ -828,7 +839,6 @@
 					}
 				}
 			},
-			// Sides without below
 			{
 				"condition": "q.block_state('x:north_bc') && !q.block_state('x:south_bc') && !q.block_state('x:east_bc') && !q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')",
 				"components": {
@@ -1512,4 +1522,3 @@
 		]
 	}
 }
-// "!q.block_state('x:north_bc') && q.block_state('x:south_bc') && !q.block_state('x:east_bc') && q.block_state('x:west_bc') && !q.block_state('x:above_bc') && !q.block_state('x:below_bc')"

@@ -1,0 +1,98 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.silver_spotlight_ray",
+				"texture_width": 40,
+				"texture_height": 66,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [
+					0,
+					0.75,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [
+						0,
+						0,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								7,
+								-25
+							],
+							"size": [
+								4,
+								4,
+								25
+							],
+							"pivot": [
+								0,
+								9,
+								0
+							],
+							"rotation": [
+								25,
+								0,
+								0
+							],
+							"uv": {
+								"east": {
+									"uv": [
+										17,
+										0
+									],
+									"uv_size": [
+										6,
+										66
+									],
+									"uv_rotation": 270
+								},
+								"west": {
+									"uv": [
+										17,
+										0
+									],
+									"uv_size": [
+										6,
+										66
+									],
+									"uv_rotation": 90
+								},
+								"up": {
+									"uv": [
+										23,
+										66
+									],
+									"uv_size": [
+										-6,
+										-66
+									],
+									"uv_rotation": 180
+								},
+								"down": {
+									"uv": [
+										23,
+										66
+									],
+									"uv_size": [
+										-6,
+										-66
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -33,12 +33,11 @@
 				"default": "geometry.new_toy_freddy"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#C3521E",
-				"overlay_color": "#1E1D1B"
+				"texture": "toy_freddy_nightmode"
 			}
 		}
 	}

@@ -11,22 +11,23 @@
 				"default": "textures/entity/endo"
 			},
 			"spawn_egg": {
-				"texture": "endo"
+				"base_color": "#696969",
+				"overlay_color": "#3f3f3f"
 			},
 			"animations": {
-				"default_pose": "animation.endo.idle",
-				"no_pose": "animation.endo.seat",
-				"solemn_pose": "animation.endo.idle2",
-				"athena_pose": "animation.endo.seat",
-				"brandish_pose": "animation.endo.idle",
-				"honor_pose": "animation.endo.seat",
-				"entertain_pose": "animation.endo.idle2",
-				"salute_pose": "animation.endo.seat",
-				"riposte_pose": "animation.endo.idle",
-				"zombie_pose": "animation.endo.seat",
-				"cancan_a_pose": "animation.endo.idle2",
-				"cancan_b_pose": "animation.endo.seat",
-				"hero_pose": "animation.endo.idle",
+				"default_pose": "animation.new_endo01_.pose1",
+				"no_pose": "animation.new_endo01_.pose2",
+				"solemn_pose": "animation.new_endo01.pose3",
+				"athena_pose": "animation.new_endo01.pose2",
+				"brandish_pose": "animation.new_endo01.new",
+				"honor_pose": "animation.new_endo01_.pose1",
+				"entertain_pose": "animation.new_endo01_.pose2",
+				"salute_pose": "animation.new_endo01.pose3",
+				"riposte_pose": "animation.new_endo01.pose2",
+				"zombie_pose": "animation.new_endo01.new",
+				"cancan_a_pose": "animation.new_endo01_.pose1",
+				"cancan_b_pose": "animation.new_endo01_.pose2",
+				"hero_pose": "animation.new_endo01.pose3",
 				"wiggle": "animation.endo.seat",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
@@ -42,7 +43,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.endo"
+				"default": "geometry.fbnd_endo01"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

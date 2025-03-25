@@ -38,12 +38,11 @@
 				"default": "geometry.new_withered_chica"
 			},
 			"render_controllers": [
-				"controller.render.freddy"
+				"controller.render.possed"
 			],
 			"enable_attachables": true,
 			"spawn_egg": {
-				"base_color": "#6f5713",
-				"overlay_color": "#1E1D1B"
+				"texture": "withered_chica_souled"
 			}
 		}
 	}

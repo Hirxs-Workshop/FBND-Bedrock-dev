@@ -110,9 +110,9 @@
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 1",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
-					"minecraft:block_light_emission": 0,
+					"minecraft:light_emission": 0,
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "f3wall_light_off",
@@ -122,9 +122,9 @@
 				}
 			},
 			{
-				"condition": "query.block_state('fb:block_status') == 2",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
-					"minecraft:block_light_emission": 0.9,
+					"minecraft:light_emission": 13,
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "f3wall_light",

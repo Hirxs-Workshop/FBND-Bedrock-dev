@@ -11,20 +11,20 @@
 				"default": "textures/entity/jippy_jumper"
 			},
 			"animations": {
-				"default_pose": "animation.jippy.idle1",
-				"no_pose": "animation.bonnie.dinning_area_pose1",
-				"solemn_pose": "animation.bonnie.backstage_pose1",
-				"athena_pose": "animation.bonnie.facereveal",
-				"brandish_pose": "animation.bonnie.west_hall_pose1",
-				"honor_pose": "animation.bonnie.west_hall_pose2",
-				"entertain_pose": "animation.bonnie.door_pose",
-				"salute_pose": "animation.bonnie.stage_1",
-				"riposte_pose": "animation.bonnie.stage_2",
-				"zombie_pose": "animation.bonnie.new_showtime_2",
-				"cancan_a_pose": "animation.bonnie.dinning_area_pose1",
-				"cancan_b_pose": "animation.bonnie.backstage_pose1",
-				"hero_pose": "animation.bonnie.facereveal",
-				"wiggle": "animation.bonnie.west_hall_pose1",
+				"default_pose": "animation.bonnie_bunny.geo.CAM1Astare",
+				"no_pose": "animation.bonnie_bunny.geo.CAM1Astare",
+				"solemn_pose": "animation.new_bonnie_bunny.stage",
+				"athena_pose": "animation.springtrap.idle_2",
+				"brandish_pose": "animation.new_bonnie_bunny.CAM3",
+				"honor_pose": "animation.new_bonnie_bunny.CAM5",
+				"entertain_pose": "animation.new_bonnie_bunny.CAM2B",
+				"salute_pose": "animation.new_bonnie_bunny.CAM1B",
+				"riposte_pose": "animation.new_bonnie_bunny.leftdoor",
+				"zombie_pose": "animation.springtrap.idle_1",
+				"cancan_a_pose": "animation.bonnie_bunny.geo.CAM1Astare",
+				"cancan_b_pose": "animation.bonnie_bunny.geo.CAM1Astare",
+				"hero_pose": "animation.new_bonnie_bunny.stage",
+				"wiggle": "animation.springtrap.idle_2",
 				"controller.pose": "controller.animation.armor_stand.pose",
 				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
@@ -39,10 +39,10 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.jippy_jumper"
+				"default": "geometry.new_jippy_jumper"
 			},
 			"spawn_egg": {
-				"texture": "jippy_jumper_icon"
+				"texture": "jippy_jumper_statue"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

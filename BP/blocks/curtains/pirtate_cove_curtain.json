@@ -49,9 +49,6 @@
 				]
 			},
 			"minecraft:collision_box": false,
-			"minecraft:custom_components": [
-				"fbd:blocks_conection_function"
-			],
 			"minecraft:geometry": {
 				"identifier": "geometry.curtains"
 			}

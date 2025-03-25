@@ -33,18 +33,7 @@
 				"destroy_chance_modifier": 30
 			},
 			"minecraft:geometry": "geometry.floor_wires_model",
-			"minecraft:collision_box": {
-				"origin": [
-					0,
-					0,
-					0
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
-			},
+			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
 					-8,

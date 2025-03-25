@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"render_controllers": {
-		"controller.render.two_variants": {
+		"controller.render.pizzeria_chairs_entity": {
 			"geometry": "geometry.default",
 			"materials": [
 				{
@@ -15,7 +15,21 @@
 				"textures": {
 					"Array.variants": [
 						"Texture.default",
-						"Texture.blue"
+						"Texture.orange",
+						"Texture.magenta",
+						"Texture.light_blue",
+						"Texture.yellow",
+						"Texture.lime",
+						"Texture.pink",
+						"Texture.gray",
+						"Texture.light_gray",
+						"Texture.cyan",
+						"Texture.purple",
+						"Texture.blue",
+						"Texture.brown",
+						"Texture.green",
+						"Texture.red",
+						"Texture.black"
 					]
 				}
 			}

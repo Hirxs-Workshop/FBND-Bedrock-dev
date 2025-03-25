@@ -127,7 +127,7 @@
 		},
 		"events": {
 			"despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"setblock ~~~ air"
 					],
@@ -140,7 +140,7 @@
 				}
 			},
 			"fb:day_execute": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon fb:stage_plate_mark_withered_foxy_nm2 ~ ~ ~"
 					],
@@ -148,7 +148,7 @@
 				}
 			},
 			"fb:night_execute": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"summon fb:stage_plate_mark_withered_foxy_nm3 ~ ~ ~"
 					],
@@ -156,7 +156,7 @@
 				}
 			},
 			"fb:rotate": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tp @s ~ ~ ~ ~45 ~",
 						"particle fb:rotate ~ ~1 ~",
@@ -171,7 +171,7 @@
 						"despawn"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"setblock ~~~ air",
 						"event entity @e[type=fb:stage_plate_withered_foxy_nm] despawn",

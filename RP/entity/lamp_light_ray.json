@@ -5,7 +5,7 @@
 			"identifier": "fd:lamp_light_ray",
 			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "charged_creeper"
+				"default": "fbnd_light"
 			},
 			"textures": {
 				"default": "textures/entity/lamp_light_ray_2"

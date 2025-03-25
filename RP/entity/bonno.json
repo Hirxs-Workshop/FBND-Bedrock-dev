@@ -14,18 +14,18 @@
 				"texture": "bonno_icon"
 			},
 			"animations": {
-				"default_pose": "animation.bonnie.off",
-				"no_pose": "animation.bonnie.showtime",
-				"solemn_pose": "animation.bonnie.showtime2",
-				"athena_pose": "animation.bonnie.attack",
-				"brandish_pose": "animation.bonno.idle1",
-				"honor_pose": "animation.bonno.idle2",
-				"entertain_pose": "animation.bonnie.off",
-				"salute_pose": "animation.bonnie.showtime",
-				"riposte_pose": "animation.bonnie.showtime2",
-				"zombie_pose": "animation.bonnie.attack",
-				"cancan_a_pose": "animation.bonno.idle1",
-				"cancan_b_pose": "animation.bonno.idle2",
+				"default_pose": "animation.new_bonno.idle1",
+				"no_pose": "animation.new_bonno.idle2",
+				"solemn_pose": "animation.new_bonno.idle3",
+				"athena_pose": "animation.new_bonno.idle4",
+				"brandish_pose": "animation.new_bonno.idle5",
+				"honor_pose": "animation.new_bonno.idle6",
+				"entertain_pose": "animation.new_bonno.idle1",
+				"salute_pose": "animation.new_bonno.idle2",
+				"riposte_pose": "animation.new_bonno.idle3",
+				"zombie_pose": "animation.new_bonno.idle4",
+				"cancan_a_pose": "animation.new_bonno.idle5",
+				"cancan_b_pose": "animation.new_bonno.idle6",
 				"hero_pose": "animation.bonnie.off",
 				"wiggle": "animation.armor_stand.wiggle",
 				"controller.pose": "controller.animation.armor_stand.pose",
@@ -42,7 +42,7 @@
 				]
 			},
 			"geometry": {
-				"default": "geometry.bonno"
+				"default": "geometry.new_bonno_model"
 			},
 			"render_controllers": [
 				"controller.render.armor_stand"

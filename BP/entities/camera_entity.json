@@ -110,7 +110,7 @@
 		},
 		"events": {
 			"fb:despawn": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"setblock ~ ~ ~ air"
 					]
@@ -136,7 +136,7 @@
 				}
 			},
 			"fb:interact_camera": {
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"tag @p[r=3] add new_form_execute"
 					]
@@ -148,7 +148,7 @@
 						"despawn"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"playsound random.orb @p",
 						"setblock ~ ~ ~ air"

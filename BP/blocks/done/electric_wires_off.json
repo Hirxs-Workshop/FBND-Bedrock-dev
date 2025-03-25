@@ -4,8 +4,7 @@
 		"description": {
 			"identifier": "fb:electric_wires_off",
 			"menu_category": {
-				"category": "construction",
-				"group": "none"
+				"category": "construction"
 			},
 			"states": {
 				"x:north_bc": [

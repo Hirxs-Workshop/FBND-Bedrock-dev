@@ -4,7 +4,8 @@
 		"description": {
 			"identifier": "fb:roof_light_on",
 			"menu_category": {
-				"category": "construction"
+				"category": "none",
+				"is_hidden_in_commands": false
 			},
 			"traits": {
 				"minecraft:placement_direction": {

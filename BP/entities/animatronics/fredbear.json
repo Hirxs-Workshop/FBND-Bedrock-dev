@@ -422,7 +422,7 @@
 						"color:default"
 					]
 				},
-				"run_command": {
+				"queue_command": {
 					"command": [
 						"playanimation @e[r=1] animation.fredbear.geo.CAM1A2",
 						"replaceitem entity @p slot.weapon.mainhand 0 air"

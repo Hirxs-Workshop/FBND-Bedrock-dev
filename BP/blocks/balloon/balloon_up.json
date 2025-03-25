@@ -1,70 +1,117 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "fb:balloons_up",
-			"properties": {
-				"p:facing": [
-					0,
-					1,
-					2,
-					3
-				],
+			"menu_category": {
+				"category": "none"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"states": {
 				"p:changer": [
 					0,
 					1
 				]
 			}
 		},
+		"components": {
+			"tag:changeable": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-6,
+					0,
+					-6
+				],
+				"size": [
+					14,
+					14,
+					14
+				]
+			},
+			"minecraft:geometry": "geometry.balloons_2",
+			"minecraft:custom_components": [
+				"fbd:balloons_up"
+			]
+		},
 		"permutations": [
 			{
-				"condition": "q.block_property('p:facing') == 0",
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						180,
-						0
-					]
+					"tag:north": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 1",
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						0,
-						0
-					]
+					"tag:east": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 2",
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						270,
-						0
-					]
+					"tag:south": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:facing') == 3",
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
-					"minecraft:rotation": [
-						0,
-						90,
-						0
-					]
+					"tag:west": {},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 0",
+				"condition": "q.block_state('p:changer') == 0",
 				"components": {
+					"minecraft:geometry": "geometry.balloons_2",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "enhanced_balloons_1",
 							"render_method": "alpha_test",
-							"geometry": "trash_1",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
@@ -72,113 +119,19 @@
 				}
 			},
 			{
-				"condition": "q.block_property('p:changer') == 1",
+				"condition": "q.block_state('p:changer') == 1",
 				"components": {
+					"minecraft:geometry": "geometry.balloons_2",
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "enhanced_balloons_2",
 							"render_method": "alpha_test",
-							"geometry": "trash_2",
 							"ambient_occlusion": false,
 							"face_dimming": false
 						}
 					}
 				}
 			}
-		],
-		"components": {
-			"minecraft:map_color": "#ffffff",
-			"minecraft:destroy_time": 4,
-			"minecraft:ticking": {
-				"range": [
-					0,
-					0
-				],
-				"looping": true,
-				"on_tick": {
-					"event": "destroy",
-					"target": "self"
-				}
-			},
-			"minecraft:explosion_resistance": 4,
-			"minecraft:block_light_absorption": 0,
-			"minecraft:breathability": "air",
-			"minecraft:flammable": {
-				"flame_odds": 30,
-				"burn_odds": 30
-			},
-			"minecraft:geometry": "geometry.balloons",
-			"minecraft:aim_collision": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					16,
-					16,
-					16
-				]
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					-8,
-					0,
-					-8
-				],
-				"size": [
-					0,
-					0,
-					0
-				]
-			},
-			"minecraft:on_player_placing": {
-				"event": "e:set.facing"
-			},
-			"minecraft:placement_filter": {
-				"conditions": [
-					{
-						"block_filter": [
-							"fb:balloons_middle"
-						],
-						"allowed_faces": [
-							"up"
-						]
-					}
-				]
-			},
-			"minecraft:loot": "loot_tables/empty.json"
-		},
-		"events": {
-			"e:set.facing": {
-				"set_block_property": {
-					"p:facing": "q.cardinal_facing_2d-2"
-				}
-			},
-			"e:cycle_changer": {
-				"set_block_property": {
-					"p:changer": "q.block_property('p:changer')==1?0:q.block_property('p:changer')+1"
-				},
-				"run_command": {
-					"command": [
-						"playsound block.lantern.break @p ~~~",
-						"particle foxes:texture ~~~"
-					]
-				}
-			},
-			"destroy": {
-				"set_block_at_pos": {
-					"block_type": "minecraft:air",
-					"block_offset": [
-						0,
-						0,
-						0
-					]
-				},
-				"spawn_loot": {
-					"table": "loot_tables/empty.json"
-				}
-			}
-		}
+		]
 	}
 }

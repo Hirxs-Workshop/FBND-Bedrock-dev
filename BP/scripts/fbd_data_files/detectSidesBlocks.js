@@ -1,29 +1,3 @@
-
-export function switchBlockFaces(event, Direction) {
-    let targetBlock
-    switch (event.blockFace) {
-        case Direction.East:
-            targetBlock = event.block.east()
-            break
-        case Direction.West:
-            targetBlock = event.block.west()
-            break
-        case Direction.South:
-            targetBlock = event.block.south()
-            break
-        case Direction.North:
-            targetBlock = event.block.north()
-            break
-        case Direction.Up:
-            targetBlock = event.block.above()
-            break
-        case Direction.Down:
-            targetBlock = event.block.below()
-            break
-    }
-    return targetBlock
-}
-
 export function getPlayerYRot(originEntity) {
     const y = originEntity.getRotation().y
 
@@ -44,3 +18,23 @@ export function getPlayerYRot(originEntity) {
     }
     return facingDirectionCardinal
 }
+
+export function switchBlockFaces(event, Direction) {
+    let targetBlock
+    switch (event.blockFace) {
+        case Direction.East:
+            targetBlock = event.block.east()
+            break
+        case Direction.West:
+            targetBlock = event.block.west()
+            break
+        case Direction.South:
+            targetBlock = event.block.south()
+            break
+        case Direction.North:
+            targetBlock = event.block.north()
+            break
+    }
+    return targetBlock
+}
+

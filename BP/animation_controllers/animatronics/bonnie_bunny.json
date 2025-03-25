@@ -71,17 +71,6 @@
 				}
 			}
 		},
-		"controller.animation.fb_bonnie_bunny.ded.entity": {
-			"states": {
-				"default": {
-					"transitions": [
-						{
-							"ded": "!query.is_alive"
-						}
-					]
-				}
-			}
-		},
 		"controller.animation.fb_bonnie_bunny.function2.entity": {
 			"states": {
 				"default": {

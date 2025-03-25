@@ -1,5 +1,5 @@
 {
-	"format_version": "1.20.80",
+	"format_version": "1.20.80", 
 	"minecraft:block": {
 		"description": {
 			"identifier": "fd:arcade_neon_sign",
@@ -7,11 +7,22 @@
 				"minecraft:placement_direction": {
 					"enabled_states": [
 						"minecraft:cardinal_direction"
-					]
+					],
+					"y_rotation_offset": 180
 				}
 			},
 			"menu_category": {
 				"category": "construction"
+			},
+			"states": {
+				"fbnd:neon_colors": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				]
 			}
 		},
 		"permutations": [
@@ -21,7 +32,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							0,
+							180,
 							0
 						]
 					}
@@ -33,7 +44,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							90,
+							-90,
 							0
 						]
 					}
@@ -45,7 +56,7 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							-90,
+							90,
 							0
 						]
 					}
@@ -57,22 +68,109 @@
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							180,
+							0,
 							0
 						]
 					}
 				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 0",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 1",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 2",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 3",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 4",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('fbnd:neon_colors') == 5",
+				"components": {
+					"minecraft:light_emission": 6,
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "arcade_neon_sign_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
 			}
-		],
+		], 
 		"components": {
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "arcade_neon_sign",
-					"render_method": "blend",
+					"render_method": "alpha_test",
 					"ambient_occlusion": false,
 					"face_dimming": false
 				}
 			},
+			"minecraft:custom_components": [
+				"fbd:neon_place_sign_entity"
+			],
 			"minecraft:map_color": "#ffffff",
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 4
@@ -81,7 +179,7 @@
 				"explosion_resistance": 1
 			},
 			"minecraft:light_dampening": 0,
-			"minecraft:light_emission": 9,
+			"minecraft:light_emission": 6,
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30

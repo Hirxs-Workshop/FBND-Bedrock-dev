@@ -1,0 +1,42 @@
+
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fd:arcade_neon_sign_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "charged_creeper"
+			},
+			"textures": {
+				"default": "textures/blocks/arcade_neon_sign_entity",
+				"blue": "textures/blocks/arcade_neon_sign_green_entity",
+				"red": "textures/blocks/arcade_neon_sign_yellow_entity",
+				"green": "textures/blocks/arcade_neon_sign_blue_entity",
+				"pink": "textures/blocks/arcade_neon_sign_magenta_entity",
+				"purple": "textures/blocks/arcade_neon_sign_purple_entity"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.arcade_neon_sign_entity"
+			},
+			"render_controllers": [
+				"controller.render.neon_effect"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

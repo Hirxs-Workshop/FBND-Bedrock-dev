@@ -13,15 +13,15 @@
 			"tag:wall": {},
 			"minecraft:material_instances": {
 				"up": {
-					"texture": "bridge_wall_down_block_5",
+					"texture": "fnaf1_wall_bottom",
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "bridge_wall_down_block_5",
+					"texture": "fnaf1_wall_bottom",
 					"render_method": "opaque"
 				},
 				"*": {
-					"texture": "bridge_wall_down_block_5",
+					"texture": "fnaf1_wall_black_light",
 					"render_method": "opaque"
 				}
 			},
@@ -36,9 +36,10 @@
 				"catch_chance_modifier": 30,
 				"destroy_chance_modifier": 30
 			},
-			"minecraft:geometry": {
-				"identifier": "geometry.wall_blocks"
-			},
+            "minecraft:geometry": {
+                "culling": "fbdr:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
 			"minecraft:collision_box": {
 				"origin": [
 					-8,

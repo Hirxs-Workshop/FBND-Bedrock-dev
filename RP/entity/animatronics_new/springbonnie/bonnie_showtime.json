@@ -26,8 +26,7 @@
 				"controller.render.nothing"
 			],
 			"spawn_egg": {
-				"base_color": "#B88A00",
-				"overlay_color": "#FCBD00"
+				"texture": "springbonnie_showtime"
 			}
 		}
 	}

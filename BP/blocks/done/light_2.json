@@ -6,23 +6,19 @@
 			"menu_category": {
 				"category": "construction"
 			},
-			"traits": {
-				"minecraft:placement_direction": {
-					"enabled_states": [
-						"minecraft:cardinal_direction"
-					]
-				}
-			},
 			"states": {
 				"p:is_lit": [
 					0,
-					1
+					1,
+					2,
+					3
 				]
 			}
 		},
 		"components": {
 			"minecraft:custom_components": [
-				"fbd:lamp_cc"
+				"fbd:lamp_cc",
+				"fbd:lamp_tick"
 			],
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.5
@@ -62,54 +58,6 @@
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							0,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							90,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							180,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							-90,
-							0
-						]
-					}
-				}
-			},
-			{
 				"condition": "q.block_state('p:is_lit') == 0",
 				"components": {
 					"minecraft:light_emission": 0,
@@ -124,6 +72,28 @@
 			{
 				"condition": "q.block_state('p:is_lit') == 1",
 				"components": {
+					"minecraft:light_emission": 14,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb_light_2",
+							"render_method": "alpha_test"
+						},
+						"metal": {
+							"texture": "fb_light_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							15,
+							21
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:is_lit') == 2",
+				"components": {
 					"minecraft:light_emission": 12,
 					"minecraft:material_instances": {
 						"*": {
@@ -134,6 +104,30 @@
 							"texture": "fb_light_2",
 							"render_method": "alpha_test"
 						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							3,
+							18
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:is_lit') == 3",
+				"components": {
+					"minecraft:light_emission": 0,
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "fb_light_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							7,
+							21
+						]
 					}
 				}
 			}

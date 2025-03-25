@@ -1,19 +1,20 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:balloons_item",
-			"category": "construction"
+			"menu_category": {
+				"category": "construction"
+			}
 		},
 		"components": {
 			"minecraft:hand_equipped": false,
 			"minecraft:stacked_by_data": true,
 			"minecraft:max_stack_size": 64,
 			"minecraft:icon": {
-				"texture": "balloons"
-			},
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.items"
+				"textures": {
+					"default": "balloons"
+				}
 			},
 			"minecraft:display_name": {
 				"value": "item.fb_balloons_item.name"
@@ -21,7 +22,6 @@
 			"minecraft:block_placer": {
 				"block": "fb:balloons_down"
 			}
-		},
-		"events": {}
+		}
 	}
 }

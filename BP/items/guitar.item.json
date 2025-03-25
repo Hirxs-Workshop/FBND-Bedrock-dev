@@ -1,9 +1,11 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "fb:guitar",
-			"category": "equipment"
+			"menu_category": {
+				"category": "equipment"
+			}
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -11,50 +13,16 @@
 				"value": "item.fb_guitar.name"
 			},
 			"minecraft:icon": {
-				"texture": "guitar"
-			},
-			"minecraft:creative_category": {
-				"parent": "equipment"
-			},
-			"minecraft:allow_off_hand": true,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "switch_mode"
+				"textures": {
+					"default": "guitar"
 				}
 			},
+			"minecraft:allow_off_hand": false,
+			"minecraft:custom_components": [
+				"fbd:guitar_sound"
+			],
 			"minecraft:durability": {
 				"max_durability": 3
-			}
-		},
-		"events": {
-			"switch_mode": {
-				"sequence": [
-					{
-						"run_command": {
-							"command": [
-								"playsound note.guitar @a[r=10] ~~~",
-								"playsound note.bass @a[r=10] ~~~",
-								"playanimation @p[r=2] animation.humanoid.guitar_use"
-							],
-							"target": "holder"
-						},
-						"damage": {
-							"type": "durability",
-							"amount": 1,
-							"target": "self"
-						},
-						"condition": "query.remaining_durability!=0"
-					},
-					{
-						"run_command": {
-							"command": [
-								"replaceitem entity @s slot.weapon.mainhand 0 fb:off_flashlight"
-							],
-							"target": "holder"
-						},
-						"condition": "query.remaining_durability==0"
-					}
-				]
 			}
 		}
 	}

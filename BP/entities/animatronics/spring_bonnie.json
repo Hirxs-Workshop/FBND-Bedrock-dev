@@ -369,7 +369,7 @@
 			},
 			"color:orange": {
 				"minecraft:variant": {
-					"value": 3
+					"value": 4
 				},
 				"minecraft:interact": {
 					"interactions": [

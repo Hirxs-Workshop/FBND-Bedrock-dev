@@ -5,45 +5,17 @@
 			"identifier": "fd:spotlight_green_light",
 			"min_engine_version": "1.8.0",
 			"materials": {
-				"default": "charged_creeper"
+				"default": "fbnd_light"
 			},
 			"textures": {
 				"default": "textures/blocks/spotlights/yellow_spotlight_ray"
-			},
-			"animations": {
-				"default_pose": "animation.",
-				"no_pose": "animation.balloon_boy.pose2",
-				"solemn_pose": "animation.balloon_boy.showtime",
-				"athena_pose": "animation.balloon_boy.pose1",
-				"brandish_pose": "animation.balloon_boy.pose2",
-				"honor_pose": "animation.balloon_boy.showtime",
-				"entertain_pose": "animation.balloon_boy.pose1",
-				"salute_pose": "animation.balloon_boy.pose2",
-				"riposte_pose": "animation.balloon_boy.showtime",
-				"zombie_pose": "animation.balloon_boy.pose1",
-				"cancan_a_pose": "animation.balloon_boy.pose2",
-				"cancan_b_pose": "animation.balloon_boy.showtime",
-				"hero_pose": "animation.balloon_boy.pose1",
-				"wiggle": "animation.armor_stand.wiggle",
-				"controller.pose": "controller.animation.armor_stand.pose",
-				"controller.wiggling": "controller.animation.armor_stand.wiggle"
 			},
 			"geometry": {
 				"default": "geometry.spotlight_green_light"
 			},
 			"render_controllers": [
 				"controller.render.spotlight_green_light"
-			],
-			"scripts": {
-				"initialize": [
-					"variable.armor_stand.pose_index = 0;",
-					"variable.armor_stand.hurt_time = 0;"
-				],
-				"animate": [
-					"controller.pose",
-					"controller.wiggling"
-				]
-			}
+			]
 		}
 	}
 }

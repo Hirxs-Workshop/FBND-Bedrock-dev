@@ -1,0 +1,37 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "fd:butter_soda_item",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:use_modifiers": {
+				"use_duration": 1,
+				"movement_modifier": 1
+			},
+			"minecraft:food": {
+				"nutrition": 3,
+				"saturation_modifier": 1
+			},
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"textures": {
+					"default": "butter_soda_item"
+				}
+			},
+			"minecraft:use_animation": {
+				"value": "drink"
+			},
+			"minecraft:display_name": {
+				"value": "item.fd_butter_soda_item.name"
+			},
+			"minecraft:block_placer": {
+				"block": "fd:butter_soda"
+			}
+		}
+	}
+}
