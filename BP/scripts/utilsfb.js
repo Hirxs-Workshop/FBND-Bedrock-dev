@@ -14,7 +14,7 @@ class Utilities {
 
   async runCommand(player, command) {
     try {
-      return await player.runCommandAsync(command);
+      return await player.runCommand(command);
     } catch (e) {
       return { error: true };
     }

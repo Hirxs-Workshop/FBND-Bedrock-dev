@@ -26,7 +26,7 @@ export class ElectricSystemFBD {
         `fill ${x} ${y} ${z} ${x} ${y - 2} ${z} fb:light_on [] replace fb:light_off`
       ];
       for (const cmd of commands) {
-        await block.dimension.runCommandAsync(cmd);
+        await block.dimension.runCommand(cmd);
       }
     }
     if (block.hasTag('electric_off')) {
@@ -47,7 +47,7 @@ export class ElectricSystemFBD {
         `fill ${x} ${y} ${z} ${x} ${y - 2} ${z} fb:light_2["p:is_lit"=0] replace fb:light_2["p:is_lit"=1]`
       ];
       for (const cmd of commands) {
-        await block.dimension.runCommandAsync(cmd);
+        await block.dimension.runCommand(cmd);
       }
     }
   }
@@ -65,9 +65,9 @@ export class ElectricSystemFBD {
         `fill ${x + 1} ${y + 1} ${z - 1} ${x - 1} ${y - 1} ${z + 1} fb:electric_block_off[] replace fb:electric_block_on`
       ];
       for (const cmd of commands) {
-        await block.dimension.runCommandAsync(cmd);
+        await block.dimension.runCommand(cmd);
       }
-      await player.runCommandAsync('title @s actionbar §2WARNING! §cWait for all the lights/wires to turn (off) correctly');
+      await player.runCommand('title @s actionbar §2WARNING! §cWait for all the lights/wires to turn (off) correctly');
       return;
     }
     if (block.permutation.getState("fb:block_status") === 2) {
@@ -79,9 +79,9 @@ export class ElectricSystemFBD {
         `fill ${x + 1} ${y + 1} ${z - 1} ${x - 1} ${y - 1} ${z + 1} fb:electric_block_on[] replace fb:electric_block_off`
       ];
       for (const cmd of commands) {
-        await block.dimension.runCommandAsync(cmd);
+        await block.dimension.runCommand(cmd);
       }
-      await player.runCommandAsync('title @s actionbar §2WARNING! §cWait for all the lights/wires to turn (on) correctly');
+      await player.runCommand('title @s actionbar §2WARNING! §cWait for all the lights/wires to turn (on) correctly');
       return;
     }
   }

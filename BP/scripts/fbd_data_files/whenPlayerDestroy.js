@@ -11,5 +11,5 @@ export function destroyMultiBlock(block, size) {
     const fillSize = [block.x + size[0] - 1, block.y + size[1] - 1, block.z + size[2] - 1]
     const dimension = block.dimension
 
-    dimension.runCommandAsync(`fill ${fillPosition.join(` `)} ${fillSize.join(` `)} air[]`)
+    dimension.runCommand(`fill ${fillPosition.join(` `)} ${fillSize.join(` `)} air[]`)
 }

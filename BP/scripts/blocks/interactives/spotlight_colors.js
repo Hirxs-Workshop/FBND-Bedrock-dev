@@ -22,7 +22,7 @@ const runColors = (e, permutationKey, eventMapping, updateState = false) => {
     if (updateState) {
       block.setPermutation(block.permutation.withState(permutationKey, state + 1));
     }
-    block.dimension.runCommandAsync(
+    block.dimension.runCommand(
       `execute positioned ${x} ${y} ${z} run event entity @e[r=0.5] ${commandSuffix}`
     );
   }
@@ -33,7 +33,7 @@ const runDirection = (e, entity) => {
   const { x, y, z } = block.location;
   const rotation = directionMapping[block.permutation.getState("minecraft:cardinal_direction")];
   if (rotation) {
-    block.dimension.runCommandAsync(`summon ${entity} ${x} ${y} ${z} ${rotation}`);
+    block.dimension.runCommand(`summon ${entity} ${x} ${y} ${z} ${rotation}`);
   }
 };
 

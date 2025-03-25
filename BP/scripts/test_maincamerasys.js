@@ -31,12 +31,12 @@ world.beforeEvents.itemUse.subscribe((data) => {
                                     let cameraname = cameraList[result.formValues];
                                     try {
                                         system.run(async () => {
-                                            await player.runCommandAsync(`summon fb:camera_entity_testing`);
-                                            await player.runCommandAsync(`tag @e[r=2,type=fb:camera_entity_testing] add "executing: ${player.nameTag}"`);
+                                            await player.runCommand(`summon fb:camera_entity_testing`);
+                                            await player.runCommand(`tag @e[r=2,type=fb:camera_entity_testing] add "executing: ${player.nameTag}"`);
                                             player.addTag("fb_tablet_camera");
-                                            await player.runCommandAsync(`tp @s @e[tag="cameras:${player.nameTag}${cameraname}"]`);
-                                            await player.runCommandAsync(`event entity @e[tag="cameras:${player.nameTag}${cameraname}"] ride_fb`);
-                                            await player.runCommandAsync(`ride @s start_riding @e[tag="cameras:${player.nameTag}${cameraname}"]`);
+                                            await player.runCommand(`tp @s @e[tag="cameras:${player.nameTag}${cameraname}"]`);
+                                            await player.runCommand(`event entity @e[tag="cameras:${player.nameTag}${cameraname}"] ride_fb`);
+                                            await player.runCommand(`ride @s start_riding @e[tag="cameras:${player.nameTag}${cameraname}"]`);
                                         });
                                     } catch (e) {
                                         console.warn(e)
@@ -56,7 +56,7 @@ world.beforeEvents.itemUse.subscribe((data) => {
                                     let cameraname = cameraList[result.formValues];
                                     try {
                                         system.run(async () => {
-                                            await player.runCommandAsync(`event entity @e[tag="cameras:${player.nameTag}${cameraname}"] fb:despawn`)
+                                            await player.runCommand(`event entity @e[tag="cameras:${player.nameTag}${cameraname}"] fb:despawn`)
                                         });
                                     } catch (e) {
                                         system.run(async () => {
@@ -68,7 +68,7 @@ world.beforeEvents.itemUse.subscribe((data) => {
                         }
                         else if (response.selection === 2) {
                             system.run(async () => {
-                                player.runCommandAsync(`tellraw @a[m=1] {"rawtext":[{"text":"§l§g- §eCamera Setup | Help §g-§r\n§f(!) Add a connection with a security camera\n- By establishing a connection with a camera\nyou can monitor the area\n\n§gHow can I add a camera?\n§7- Just type the name of your camera and be within \na 3 block radius of the camera\n§8(this is mandatory otherwise the camera will not adjust correctly)\n\n§l§gSpanish Help:§r\n§f(!) Agregue una conexión con una cámara de seguridad\n- Al establecer una conexión con una cámara\npuede monitorear el área\n\n§g¿Cómo puedo agregar una cámara?\n§7- Simplemente escriba el nombre de su cámara y estar dentro de \na un radio de 3 bloques de la cámara\n§8(esto es obligatorio de lo contrario la camara no se ajustara correctamente)"}]}`)
+                                player.runCommand(`tellraw @a[m=1] {"rawtext":[{"text":"§l§g- §eCamera Setup | Help §g-§r\n§f(!) Add a connection with a security camera\n- By establishing a connection with a camera\nyou can monitor the area\n\n§gHow can I add a camera?\n§7- Just type the name of your camera and be within \na 3 block radius of the camera\n§8(this is mandatory otherwise the camera will not adjust correctly)\n\n§l§gSpanish Help:§r\n§f(!) Agregue una conexión con una cámara de seguridad\n- Al establecer una conexión con una cámara\npuede monitorear el área\n\n§g¿Cómo puedo agregar una cámara?\n§7- Simplemente escriba el nombre de su cámara y estar dentro de \na un radio de 3 bloques de la cámara\n§8(esto es obligatorio de lo contrario la camara no se ajustara correctamente)"}]}`)
                             });
                         }
                     });
@@ -78,11 +78,11 @@ world.beforeEvents.itemUse.subscribe((data) => {
                 system.run(async () => {
                     var form = new ActionFormData();
                     system.run(async () => {
-                        player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 air`)
-                        await player.runCommandAsync(`tp @s @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"]`);
-                        await player.runCommandAsync(`event entity @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"] fb:despawn2`);
+                        player.runCommand(`replaceitem entity @s slot.armor.head 1 air`)
+                        await player.runCommand(`tp @s @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"]`);
+                        await player.runCommand(`event entity @e[type=fb:camera_entity_testing,tag="executing: ${player.nameTag}"] fb:despawn2`);
                         player.removeTag('fb_tablet_camera');
-                        player.runCommandAsync(`camera @s clear`)
+                        player.runCommand(`camera @s clear`)
                     });
                 });
             }
@@ -99,9 +99,9 @@ system.runInterval(async => {
 
         if (player.hasTag("fb_tablet_camera")) {
             player.addEffect('invisibility', 3 * 3 * true)
-            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
-            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
-            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
+            player.runCommand(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
+            player.runCommand(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
+            player.runCommand(`replaceitem entity @s slot.armor.head 1 fb:faztab_effect_item`)
             player.playAnimation('animation.player.camera', { blendOutTime: 0.1 })
         }
 
@@ -109,7 +109,7 @@ system.runInterval(async => {
         //entities
 
         if (player.hasTag("new_form_execute")) {
-            player.runCommandAsync(`replaceitem entity @s slot.armor.head 1 air`)
+            player.runCommand(`replaceitem entity @s slot.armor.head 1 air`)
             player.removeTag("new_form_execute");
             var form = new ModalFormData()
             form.title("§fFaztab - Camera setup")
@@ -117,8 +117,8 @@ system.runInterval(async => {
             form.show(player).then(async (result) => {
                 let cameraname = result.formValues[0];
                 try {
-                    await player.runCommandAsync(`tag @e[type=fb:camera_entity_testing,r=3] add "cameras:${player.nameTag}${cameraname}"`);
-                    await player.runCommandAsync(`tag @e[type=fb:camera_entity_testing,r=3] add "cameras:${player.nameTag}"`);
+                    await player.runCommand(`tag @e[type=fb:camera_entity_testing,r=3] add "cameras:${player.nameTag}${cameraname}"`);
+                    await player.runCommand(`tag @e[type=fb:camera_entity_testing,r=3] add "cameras:${player.nameTag}"`);
                     player.onScreenDisplay.setActionBar(`§7Camera setup - Name: ${cameraname}!`);
                 } catch (e) {
                     player.onScreenDisplay.setActionBar(`§cError!`);
