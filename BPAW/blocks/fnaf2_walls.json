@@ -1,0 +1,197 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:fnaf2_advanced_wall",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"fbd:walls_0_plant": [
+					"none",
+					"wall_tiles_red",
+					"wall_tiles_purple",
+					"wall_tiles_black",
+					"wall",
+					"wall_tiles_red_top",
+					"wall_tiles"
+				],
+				"fbd:walls_1_plant": [
+					"none",
+					"wall_tiles_red",
+					"wall_tiles_purple",
+					"wall_tiles_black",
+					"wall",
+					"wall_tiles_red_top",
+					"wall_tiles",
+					"wall_down_block_black"
+				],
+				"fbd:walls_2_plant": [
+					"none",
+					"wall_tiles_red",
+					"wall_tiles_purple",
+					"wall_tiles_black",
+					"wall",
+					"wall_tiles_red_top",
+					"wall_tiles",
+					"wall_down_block_black"
+				],
+				"fbd:walls_3_plant": [
+					"none",
+					"wall_tiles_red",
+					"wall_tiles_purple",
+					"wall_tiles_black",
+					"wall",
+					"wall_tiles_red_top",
+					"wall_tiles",
+					"wall_down_block_black"
+				]
+			}
+		},
+		"components": {
+			"minecraft:custom_components": [
+				"fbd:advanced_wall_fnaf2"
+			],
+"minecraft:light_dampening": 15,
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.advanced_wall",
+				"bone_visibility": {
+					"wall_tiles_red_0": "q.block_state('fbd:walls_0_plant') == 'wall_tiles_red'",
+					"wall_tiles_red_1": "q.block_state('fbd:walls_1_plant') == 'wall_tiles_red'",
+					"wall_tiles_red_2": "q.block_state('fbd:walls_2_plant') == 'wall_tiles_red'",
+					"wall_tiles_red_3": "q.block_state('fbd:walls_3_plant') == 'wall_tiles_red'",
+					"wall_tiles_purple_0": "q.block_state('fbd:walls_0_plant') == 'wall_tiles_purple'",
+					"wall_tiles_purple_1": "q.block_state('fbd:walls_1_plant') == 'wall_tiles_purple'",
+					"wall_tiles_purple_2": "q.block_state('fbd:walls_2_plant') == 'wall_tiles_purple'",
+					"wall_tiles_purple_3": "q.block_state('fbd:walls_3_plant') == 'wall_tiles_purple'",
+					"wall_tiles_black_0": "q.block_state('fbd:walls_0_plant') == 'wall_tiles_black'",
+					"wall_tiles_black_1": "q.block_state('fbd:walls_1_plant') == 'wall_tiles_black'",
+					"wall_tiles_black_2": "q.block_state('fbd:walls_2_plant') == 'wall_tiles_black'",
+					"wall_tiles_black_3": "q.block_state('fbd:walls_3_plant') == 'wall_tiles_black'",
+					"wall_0": "q.block_state('fbd:walls_0_plant') == 'wall'",
+					"wall_1": "q.block_state('fbd:walls_1_plant') == 'wall'",
+					"wall_2": "q.block_state('fbd:walls_2_plant') == 'wall'",
+					"wall_3": "q.block_state('fbd:walls_3_plant') == 'wall'",
+					"wall_tiles_0": "q.block_state('fbd:walls_0_plant') == 'wall_tiles'",
+					"wall_tiles_1": "q.block_state('fbd:walls_1_plant') == 'wall_tiles'",
+					"wall_tiles_2": "q.block_state('fbd:walls_2_plant') == 'wall_tiles'",
+					"wall_tiles_3": "q.block_state('fbd:walls_3_plant') == 'wall_tiles'",
+					"wall_tiles_red_top_0": "q.block_state('fbd:walls_0_plant') == 'wall_tiles_red_top'",
+					"wall_tiles_red_top_1": "q.block_state('fbd:walls_1_plant') == 'wall_tiles_red_top'",
+					"wall_tiles_red_top_2": "q.block_state('fbd:walls_2_plant') == 'wall_tiles_red_top'",
+					"wall_tiles_red_top_3": "q.block_state('fbd:walls_3_plant') == 'wall_tiles_red_top'",
+					"wall_down_block_black_0": "q.block_state('fbd:walls_0_plant') == 'wall_down_block_black'",
+					"wall_down_block_black_1": "q.block_state('fbd:walls_1_plant') == 'wall_down_block_black'",
+					"wall_down_block_black_2": "q.block_state('fbd:walls_2_plant') == 'wall_down_block_black'",
+					"wall_down_block_black_3": "q.block_state('fbd:walls_3_plant') == 'wall_down_block_black'"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "fnaf2_wall_texture",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"dirt": {
+					"texture": "fnaf2_wall_texture",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"handle": {
+					"texture": "fnaf2_wall_texture",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"haddle_bottom": {
+					"texture": "bridge_roof",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_tiles_red": {
+					"texture": "fnaf2_wall_up",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_tiles_purple": {
+					"texture": "fnaf2_wall_tiles",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_tiles_black": {
+					"texture": "fnaf2_wall_down",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall": {
+					"texture": "stage_purple_bricks",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_tiles_red_top": {
+					"texture": "stage_white_wall_tiles",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_down_block_black": {
+					"texture": "stage_white_wall",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"wall_tiles": {
+					"texture": "texture_vent_block",
+					"render_method": "opaque",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west' || q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

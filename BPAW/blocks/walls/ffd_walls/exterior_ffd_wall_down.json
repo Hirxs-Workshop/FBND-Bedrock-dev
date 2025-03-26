@@ -1,0 +1,59 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:ffd_wall_down",
+			"is_experimental": false,
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "new_exterior_ffd_wall_texture",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "new_exterior_ffd_wall_texture",
+					"render_method": "opaque"
+				},
+				"*": {
+					"texture": "new_exterior_ffd_wall_down",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:map_color": "#646D85",
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"tag:wall": {}
+		}
+	}
+}

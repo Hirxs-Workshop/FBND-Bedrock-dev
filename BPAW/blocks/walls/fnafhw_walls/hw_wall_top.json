@@ -1,0 +1,155 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:hw_wall_up",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "hw_wall_up",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "hw_wall_up",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "hw_wall_up",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "hw_wall_up",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "hw_wall_up_2",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "hw_wall_up_2",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "hw_wall_up_2",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "hw_wall_up_2",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "hw_wall_texture",
+							"render_method": "opaque"
+						},
+						"north": {
+							"texture": "hw_wall_up_3",
+							"render_method": "opaque"
+						},
+						"west": {
+							"texture": "hw_wall_up_3",
+							"render_method": "opaque"
+						},
+						"south": {
+							"texture": "hw_wall_up_3",
+							"render_method": "opaque"
+						},
+						"east": {
+							"texture": "hw_wall_up_3",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:wall": {},
+			"tag:changeable": {},
+			"minecraft:display_name": "fb:hw_wall_up",
+			"minecraft:map_color": "#646D85",
+			"minecraft:light_dampening": 15,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 4
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

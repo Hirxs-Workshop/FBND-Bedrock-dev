@@ -1,0 +1,66 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:ifm_wall_2",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"tag:wall": {},
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "iwfm_3",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "iwfm_3",
+					"render_method": "opaque"
+				},
+				"*": {
+					"texture": "iwfm_2",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2"
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

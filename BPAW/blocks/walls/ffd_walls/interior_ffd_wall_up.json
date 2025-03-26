@@ -1,0 +1,170 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fb:in_ffd_wall_top",
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"*": {
+							"texture": "new_interior_ffd_wall_up",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"*": {
+							"texture": "new_interior_ffd_wall_up_dirty",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"*": {
+							"texture": "interior_ffd_wall_up_confetti_1",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"*": {
+							"texture": "interior_ffd_wall_up_confetti_2",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.solid_block_2",
+					"minecraft:material_instances": {
+						"up": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "new_interior_ffd_wall_middle",
+							"render_method": "opaque"
+						},
+						"*": {
+							"texture": "interior_ffd_wall_up_confetti_3",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:wall": {},
+			"tag:changeable": {},
+			"minecraft:map_color": "#646D85",
+			"minecraft:light_dampening": 15,
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "new_interior_ffd_wall_middle",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "new_interior_ffd_wall_middle",
+					"render_method": "opaque"
+				},
+				"*": {
+					"texture": "new_interior_ffd_wall_up",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 4
+			},
+			"minecraft:geometry": "geometry.solid_block_2",
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

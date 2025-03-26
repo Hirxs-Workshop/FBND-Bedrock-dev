@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": false
+			},
+			"identifier": "fd:inv_block"
+		},
+		"permutations": [],
+		"components": {
+			"tag:wall": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "inv",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1000000
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1000000
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:flammable": {
+				"catch_chance_modifier": 1000000,
+				"destroy_chance_modifier": 1000000
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2"
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:loot": "loot_tables/empty.json"
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "FB&D v4.12.2 | §6Experiment - Advanced Walls §r| FB&D Feature",
+		"description": "Enable a experimental feature called §eadvanced walls§r on FB&D",
+		"min_engine_version": [
+			1,
+			21,
+			60
+		],
+		"uuid": "97acd090-e804-46ca-92b0-cb6cde9016f8",
+		"version": "1.5.5"
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "e91a6659-4bc8-4006-83db-94e045b526da",
+			"version": "1.5.5"
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "c023712c-66e2-4173-a3e5-52e4fde938e1",
+			"entry": "scripts/main_aw.js",
+			"version": "1.5.5"
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.18.0"
+		}
+	]
+}

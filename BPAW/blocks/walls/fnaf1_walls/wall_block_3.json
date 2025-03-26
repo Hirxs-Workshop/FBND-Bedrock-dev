@@ -1,0 +1,68 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"menu_category": {
+				"group": "construction",
+				"category": "construction"
+			},
+			"identifier": "fb:wall_block_3"
+		},
+		"permutations": [],
+		"components": {
+			"tag:wall": {},
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "fnaf1_wall_side",
+					"render_method": "opaque"
+				},
+				"*": {
+					"texture": "fnaf1_wall_tiles_side_middle",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.solid_block_2"
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

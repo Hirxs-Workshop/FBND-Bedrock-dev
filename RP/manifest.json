@@ -1,27 +1,27 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "RP | FB&D v4.12.2",
+		"name": "RP | FB&D v4.13.0",
 		"description": "Have you ever wanted to replicate a restaurant from FNAF but in Minecraft?",
 		"min_engine_version": [
 			1,
 			21,
 			60
 		],
-		"uuid": "eaf1146e-e5f0-44ae-b2e0-26748c04254c",
-		"version": "4.12.2"
+		"uuid": "d8c54070-fd11-4cab-9081-b7383cb145e2",
+		"version": "4.13.0"
 	},
 	"modules": [
 		{
 			"type": "resources",
 			"uuid": "e6460e02-aefd-4ce1-ba21-e219a2c11e30",
-			"version": "4.12.2"
+			"version": "4.13.0"
 		}
 	],
 	"dependencies": [
 		{
-			"uuid": "aa451e6f-d46a-418e-978e-bd81e76e87c9",
-			"version": "4.12.2"
+			"uuid": "e716b5ce-da3d-4076-8367-27da7d4cb55c",
+			"version": "4.13.0"
 		}
 	]
 }
