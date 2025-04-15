@@ -7,11 +7,4 @@ assignees: ''
 
 ---
 
-## Necessary information
-- **MC Version type:** Bedrock
-- **MC version:**
-- **FB&D version:**
-- **Discord nametag:**
-
-## Bug report desc:
-(Write here an explanation/summary or more of your report)
+## Bug report
